@@ -30,8 +30,14 @@ Plataforma web oficial diseñada para la **Baja TT Cuenca**, centrada en ofrecer
 🗺️ Estado del Proyecto (Roadmap)
 
 [x] Index / Home: Estructura principal y Hero section terminada.
+
 [x] Sobre Nosotros: Sección con imágenes dinámicas y bordes decorativos.
+
 [x] Noticias: Grid dinámico con JavaScript y paginación funcional.
+
 [ ] Multimedia: Galería de fotos y vídeos de las etapas (Próximamente).
+
 [ ] Contacto: Formulario de inscripción y consultas técnicas.
+
 [ ] Patrocinadores: Espacio dedicado a las marcas que apoyan la Baja TT Cuenca.
+
