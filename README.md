@@ -27,7 +27,7 @@ Plataforma web oficial diseñada para la **Baja TT Cuenca**, centrada en ofrecer
 - **CSS3 (Custom Properties)**: Uso de variables para una gestión de colores centralizada (amarillos racing, tonos oscuros).
 - **JavaScript (Vanilla)**: Lógica de paginación y renderizado dinámico de artículos.
   
-🗺️ Estado del Proyecto (Roadmap)
+## 🗺️ Estado del Proyecto (Roadmap)
 
 [x] Index / Home: Estructura principal y Hero section terminada.
 
