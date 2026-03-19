@@ -221,6 +221,14 @@ footer{
     padding: 25px;
     background-color: var(--negro);
 }
+.contenedor-footer{
+    color:var(--claro);
+    text-align: center;
+}.contenedor-footer a{
+    color:var(--gris-claro);
+}.guion-footer{
+    color:var(--amarillo-principal)
+}
 .contenedor-navegacion-footer {
     display: flex;
     justify-content: center;
