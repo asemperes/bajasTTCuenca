@@ -4,7 +4,7 @@
     --principal: rgb(137, 72, 72);   /* #894848 */
     --negro: rgb(0, 0, 0);       /* #000000 */
     --oscuro:#0f0f0f;
-    --amarillo-principal:rgb(230, 175, 73);
+    --amarillo-principal:rgb(230, 175, 73); /*#E6AF49*/
     --amarillo: rgb(239, 225, 149); /* #EFE195 */
     --secundario: rgb(211, 105, 95);  /* #D3695F */
     --secundario2: rgb(146, 103, 104); /* #926768 */
@@ -18,10 +18,15 @@
     --border-width: .24vw;
     --gutter: 2vw;
     --text-gray: #666;
+    --text-light-gray:#bbb;
     --border-color: #eee;
     --fia-blue: #003876;
+    --borde-gris:#333;
+    --marron:#110205;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 ::selection{
     background-color: var(--principal);
     color:var(--amarillo-principal);
@@ -320,7 +325,7 @@ footer{
     padding: 32px 24px;
     font-size: 14px;
     font-family: inherit;
-    color: white;
+    color: var(--claro);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -355,7 +360,7 @@ footer{
 
     padding: 12px 16px;
     border-radius: 8px;
-    color: #fff;
+    color: var(--claro);
     font-family: inherit;
     background-color: transparent;
     border: 1px solid #414141;
@@ -365,7 +370,7 @@ footer{
     padding: 12px 16px;
     border-radius: 8px;
     resize: none;
-    color: #fff;
+    color: var(--claro);
     height: 96px;
     border: 1px solid #414141;
     background-color: transparent;
@@ -402,7 +407,7 @@ footer{
 }
 .form-container .form-submit-btn:hover {
     background-color: var(--amarillo-principal);
-    border-color: #fff;
+    border-color: var(--claro);
 }
 
 @media (max-width: 1165px) {
@@ -451,10 +456,13 @@ footer{
         left: 50%;
         transform: translate(-50%,-50%);
         color: var(--principal);
-        text-shadow: 0px 0px 5px var(--principal);
-        font-size: clamp(1.2rem, 5vw, 2rem);
+        font-size: clamp(1.2rem, 2vw, 2rem);
         font-weight: bold;
         text-transform: capitalize;
+        background-color: var(--oscuro);
+        padding: 5px 15px;
+        border-radius: 25px;
+        border:1px solid var(--principal);
     }
     .contenedor-navegacion {
         display: none;
