@@ -1,150 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuencamotor | Noticias</title>
-  <link rel="stylesheet" href="styles/estilosGenerales.css">
-  <link rel="stylesheet" href="styles/estilosNoticias.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuencamotor | Noticias</title>
+    <link rel="stylesheet" href="styles/estilosGenerales.css">
+    <link rel="stylesheet" href="styles/estilosNoticias.css">
 </head>
+
 <body>
-    <header class="header" nombre-seccion="Noticias">
+    <header class="header" nombre-seccion="Noticias" style="position: absolute;">
         <div class="contenedor-logo">
-            <img src="img/favicon.png" alt="Logo cuencamotor">
+            <img src="img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
         </div>
         <div class="contenedor-navegacion">
-        <nav>
-            <ul>
-                <li class="listas-nav"><a href="index.html" class="enlace-nav"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg></a></li>
-                <li class="listas-nav"><a href="nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
-                <li class="listas-nav"><a href="noticias.html" class="enlace-nav-activo">Noticias</a></li>
-                <li class="listas-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
-                <li class="listas-nav"><a href="multimedia.html" class="enlace-nav">MULTIMEDIA</a></li>
-                <li class="listas-nav"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
-            </ul>
-        <div class="contenedor-inscripcion">
-            <a href="inscripciones.html" class="boton-inscripcion">Inscribirse</a>
+            <nav>
+                <ul>
+                    <li class="listas-nav"><a href="index.html" class="enlace-nav"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg></a></li>
+                    <li class="listas-nav"><a href="nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
+                    <li class="listas-nav"><a href="noticias.html" class="enlace-nav-activo">Noticias</a></li>
+                    <li class="listas-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
+                    <li class="listas-nav"><a href="multimedia.html" class="enlace-nav">MULTIMEDIA</a></li>
+                    <li class="listas-nav"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
+                </ul>
+                <div class="contenedor-inscripcion">
+                    <a href="inscripciones.html" class="boton-inscripcion">Inscribirse</a>
+                </div>
+            </nav>
         </div>
-        </nav>
-    </div>
-        <div class="contenedor-desplegable">
-            <svg class="desplegable"
-            xmlns="http://www.w3.org/2000/svg"
-            width="55"
-            height="55"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            stroke="#000000"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-            <path d="M7 6h10" />
-            <path d="M4 12h16" />
-            <path d="M7 12h13" />
-            <path d="M7 18h10" />
-            </svg>
+        <!-- nav -->
+        <div class="nav-burger" id="burger">
+            <span></span><span></span><span></span>
         </div>
     </header>
+    <!-- mobile nav -->
+    <div class="nav-mobile" id="mobileNav">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="patrocinadores.html">Patrocinadores</a>
+        <a href="inscripciones.html" style="color:var(--principal)">Inscribirse →</a>
+    </div>
     <main>
         <section class="seccion-noticias" id="noticias">
-        <nav class="indice-anios">
-            <a href="#noticias2025" class="enlace-anio anio-active" id="link-2025">2025</a>
-            <a href="#noticias2024" class="enlace-anio" id="link-2024">2024</a>
-        </nav>
+            <nav class="indice-anios">
+                <a href="#noticias2025" class="enlace-anio anio-active" id="link-2025">2025</a>
+                <a href="#noticias2024" class="enlace-anio" id="link-2024">2024</a>
+            </nav>
 
             <div class="grid-noticias">
                 <div class="separador">
                     <h2>2025</h2>
                 </div>
-                <div class="div-anio"id="noticias2025"></div>
+                <div class="div-anio" id="noticias2025"></div>
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/2_Josep-Pedro-gana-el-XI-Rallye-de-Cuenca_2025_FOTO-K13-SPORT_-931x1024.webp" alt="Ganador Rally XI Rallye TT Cuenca">
+                        <img src="img/noticias/2_Josep-Pedro-gana-el-XI-Rallye-de-Cuenca_2025_FOTO-K13-SPORT_-931x1024.webp"
+                            alt="Ganador Rally XI Rallye TT Cuenca">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">6 OCT 2025</span>
                         <h3>Josep Pedró ha ganado el XI Rallye TT Cuenca</h3>
-                        <p>El dakariano Josep Pedró, con su Husqvarna FE 450, ha ganado en el recorrido de más de 300 kilómetros del XI Rallye TT de Cuenca. El piloto de Barcelona ha sido muy rápido y técnico en una emocionante carrera de principio a fin. El segundo cajón del podio se lo ha llevado el joven aragonés</p>
+                        <p>El dakariano Josep Pedró, con su Husqvarna FE 450, ha ganado en el recorrido de más de 300
+                            kilómetros del XI Rallye TT de Cuenca. El piloto de Barcelona ha sido muy rápido y técnico
+                            en una emocionante carrera de principio a fin. El segundo cajón del podio se lo ha llevado
+                            el joven aragonés</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp" alt="Ganador Rally XI Rallye TT Cuenca">
+                        <img src="img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+                            alt="Ganador Rally XI Rallye TT Cuenca">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">4 OCT 2025</span>
                         <h3>Luis Recuenco gana el XI Rallye TT de Cuenca</h3>
-                        <p>Luis Recuenco gana el XI Rallye TT de Cuenca, y Santiago Carnicer gana el Campeonato de España de Rallyes TT 2025. La ultima cita del Nacional ha destacado por la belleza de su recorrido, la dureza del trazado, sus trialeras y los caminos rápidos. El público, que ha estado presente en cada kilómetro del recorrido</p>
+                        <p>Luis Recuenco gana el XI Rallye TT de Cuenca, y Santiago Carnicer gana el Campeonato de
+                            España de Rallyes TT 2025. La ultima cita del Nacional ha destacado por la belleza de su
+                            recorrido, la dureza del trazado, sus trialeras y los caminos rápidos. El público, que ha
+                            estado presente en cada kilómetro del recorrido</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/José-Maria-Reyes-González_gana-la-prologo-FOTO-K13-SPORT_031025.jpg" alt="Ganador de la Etapa Súper Especial">
+                        <img src="img/noticias/José-Maria-Reyes-González_gana-la-prologo-FOTO-K13-SPORT_031025.jpg"
+                            alt="Ganador de la Etapa Súper Especial">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">3 OCT 2025</span>
                         <h3>José M.Reyes ha ganado La Etapa Súper Especial con un brillante recorrido</h3>
-                        <p>La Etapa Súper Especial ha sido rapidísima, técnica, espectacular y muy reñida. JOSE M. REYES HA GANADO LA ETAPA SÚPER ESPECIAL CON UN BRILLANTE RECORRIDO. José María Reyes y Santiago Costa han realizado una espectacular Etapa Súper Especial y con su BRP CAN-AM MAVERICK XRS TURBO, han dado todo un recital frente a los cientos</p>
+                        <p>La Etapa Súper Especial ha sido rapidísima, técnica, espectacular y muy reñida. JOSE M. REYES
+                            HA GANADO LA ETAPA SÚPER ESPECIAL CON UN BRILLANTE RECORRIDO. José María Reyes y Santiago
+                            Costa han realizado una espectacular Etapa Súper Especial y con su BRP CAN-AM MAVERICK XRS
+                            TURBO, han dado todo un recital frente a los cientos</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/7_Javier-Vega-vence-la-Super-Especial_foto-K13-SPORT_-1-1024x720.webp" alt="Javier Vega gana la Etapa Súper Especial">
+                        <img src="img/noticias/7_Javier-Vega-vence-la-Super-Especial_foto-K13-SPORT_-1-1024x720.webp"
+                            alt="Javier Vega gana la Etapa Súper Especial">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">3 OCT 2025</span>
                         <h3>Un rapidísimo Javier Vega ha ganado la Etapa Súper Especial del Rallye de Cuenca</h3>
-                        <p>La Etapa Súper Especial, a rebosar de espectadores, ha sido todo un espectáculo UN RAPIDÍSIMO JAVIER VEGA HA GANADO LA ETAPA SÚPER ESPECIAL DEL RALLYE DE CUENCA El dakariano Javier Vega ha ganado en el recorrido de casi 11 kilómetros de la etapa Súper Especial donde con su moto, la Kove 450 Rally EX</p>
+                        <p>La Etapa Súper Especial, a rebosar de espectadores, ha sido todo un espectáculo UN RAPIDÍSIMO
+                            JAVIER VEGA HA GANADO LA ETAPA SÚPER ESPECIAL DEL RALLYE DE CUENCA El dakariano Javier Vega
+                            ha ganado en el recorrido de casi 11 kilómetros de la etapa Súper Especial donde con su
+                            moto, la Kove 450 Rally EX</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/5_Santi-Carnicer_FOTO-K13-SPORT_-1024x683.webp" alt="Inscripción de altura Rallye TT Cuenca">
+                        <img src="img/noticias/5_Santi-Carnicer_FOTO-K13-SPORT_-1024x683.webp"
+                            alt="Inscripción de altura Rallye TT Cuenca">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">1 OCT 2025</span>
                         <h3>Rallye TT Cuenca, una inscripción de altura con más de 120 equipos</h3>
-                        <p>La última carrera del Nacional se prevé muy emocionante porque de ella saldrá el Campeón de España de Rallyes TT 2025. RALLYE TT CUENCA, UNA INSCRIPCIÓN DE ALTURA CON MAS DE 120 EQUIPOS. Cuenca Motor 4×4 reunirá, a partir de mañana jueves, a más de 120 equipos, los mejores del panorama nacional, en el Recinto</p>
+                        <p>La última carrera del Nacional se prevé muy emocionante porque de ella saldrá el Campeón de
+                            España de Rallyes TT 2025. RALLYE TT CUENCA, UNA INSCRIPCIÓN DE ALTURA CON MAS DE 120
+                            EQUIPOS. Cuenca Motor 4×4 reunirá, a partir de mañana jueves, a más de 120 equipos, los
+                            mejores del panorama nacional, en el Recinto</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/3_FRIVAL-II-Galardon-Honor-2025_MG_0205-262x300.jpg" alt="Empresa conquense FRIVALL, premiada con el II Galardón Cuenca 2025">
+                        <img src="img/noticias/3_FRIVAL-II-Galardon-Honor-2025_MG_0205-262x300.jpg"
+                            alt="Empresa conquense FRIVALL, premiada con el II Galardón Cuenca 2025">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">30 SEP 2025</span>
                         <h3>La empresa conquense FRIVALL, premiada con el II Galardón Cuenca 2025</h3>
-                        <p>Frivall esta enfocado en reducir emisiones de efecto invernadero y consolidar el arraigo en la España rural. Cristina Gil Velázquez, gerente de FRIVALL en Cuenca, recogerá el II Galardón Cuenca 2025 durante la Ceremonia de Entrega de Premios del XI Rally TT . LA EMPRESA CONQUENSE FRIVALL, PREMIADA CON EL II GALARDÓN CUENCA 2025</p>
+                        <p>Frivall esta enfocado en reducir emisiones de efecto invernadero y consolidar el arraigo en
+                            la España rural. Cristina Gil Velázquez, gerente de FRIVALL en Cuenca, recogerá el II
+                            Galardón Cuenca 2025 durante la Ceremonia de Entrega de Premios del XI Rally TT . LA EMPRESA
+                            CONQUENSE FRIVALL, PREMIADA CON EL II GALARDÓN CUENCA 2025</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/2_XI-Reallye-TT-Cuenca-2025_Foto-K13-Sport_baja-1024x683.webp" alt="Los equipos empiezan a inscribirse en el Rallye TT de Cuenca">
+                        <img src="img/noticias/2_XI-Reallye-TT-Cuenca-2025_Foto-K13-Sport_baja-1024x683.webp"
+                            alt="Los equipos empiezan a inscribirse en el Rallye TT de Cuenca">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">11 SEP 2025</span>
-                        <h3>Los equipos empiezan a inscribirse en el XI Rallye TT de Cuenca, la última carrera del campeonato de España</h3>
-                        <p>La prueba deportiva pasará por 25 municipios con un interesante Patrimonio cultural y natural, y muy cerca del Parque Astronómico de la Serranía de Cuenca que acaba de ser declarado Destino Turístico StarLight, por la UNESCO. LOS EQUIPOS EMPIEZAN A INSCRIBIRSE EN EL XI RALLYE TT DE CUENCA, LA ULTIMA CARRERA DEL CAMPEONATO DE ESPAÑA.</p>
+                        <h3>Los equipos empiezan a inscribirse en el XI Rallye TT de Cuenca, la última carrera del
+                            campeonato de España</h3>
+                        <p>La prueba deportiva pasará por 25 municipios con un interesante Patrimonio cultural y
+                            natural, y muy cerca del Parque Astronómico de la Serranía de Cuenca que acaba de ser
+                            declarado Destino Turístico StarLight, por la UNESCO. LOS EQUIPOS EMPIEZAN A INSCRIBIRSE EN
+                            EL XI RALLYE TT DE CUENCA, LA ULTIMA CARRERA DEL CAMPEONATO DE ESPAÑA.</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
@@ -152,95 +184,120 @@
                 <div class="separador">
                     <h2>2024</h2>
                 </div>
-                <div class="div-anio"id="noticias2024"></div>
+                <div class="div-anio" id="noticias2024"></div>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1º_6_MG_0415_Santi-Carnicer-1024x717.webp" alt="Santiago Carnicer, campeón de España de Rallyes TT en Cuenca">
+                        <img src="img/noticias/1º_6_MG_0415_Santi-Carnicer-1024x717.webp"
+                            alt="Santiago Carnicer, campeón de España de Rallyes TT en Cuenca">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">8 OCT 2024</span>
                         <h3>Santiago Carnicer, campeón de España de Rallyes TT en Cuenca</h3>
-                        <p>De nuevo, el rallye TT de Cuenca ha disfrutado de un público entregado, donde miles de aficionados han llenado todos los caminos de la provincia. SANTIAGO CARNICER, CAMPEÓN DE ESPAÑA DE RALLYES TT EN CUENCA Santiago Carnicer y Sergio Peinado han ganado, a los mandos de su nueva Toyota Hilux T1, el Campeonato de España</p>
+                        <p>De nuevo, el rallye TT de Cuenca ha disfrutado de un público entregado, donde miles de
+                            aficionados han llenado todos los caminos de la provincia. SANTIAGO CARNICER, CAMPEÓN DE
+                            ESPAÑA DE RALLYES TT EN CUENCA Santiago Carnicer y Sergio Peinado han ganado, a los mandos
+                            de su nueva Toyota Hilux T1, el Campeonato de España</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1_Joan-Pedrero_Rallye-Cuenca_foto-K13Sport-1024x665.webp" alt="Joan Pedrero gana el Rallye TT de Cuenca con KTM">
+                        <img src="img/noticias/1_Joan-Pedrero_Rallye-Cuenca_foto-K13Sport-1024x665.webp"
+                            alt="Joan Pedrero gana el Rallye TT de Cuenca con KTM">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">7 OCT 2024</span>
                         <h3>Joan Pedrero gana el X Rallye TT de Cuenca con KTM</h3>
-                        <p>El dakariano Joan Pedrero ha ganado con autoridad el X Rallye TT de Cuenca, la última cita del Nacional de Raids TT. Según ha manifestado el piloto de Canet de Mar, aunque en los primeros compases de la carrera le costó coger el ritmo de su KTM, ha sido una prueba donde ha disfrutado mucho.</p>
+                        <p>El dakariano Joan Pedrero ha ganado con autoridad el X Rallye TT de Cuenca, la última cita
+                            del Nacional de Raids TT. Según ha manifestado el piloto de Canet de Mar, aunque en los
+                            primeros compases de la carrera le costó coger el ritmo de su KTM, ha sido una prueba donde
+                            ha disfrutado mucho.</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1_Santiago-Carnicer-vence-en-el-Rallye-Tt-de-Cuenca_Foto-K13-Sport.webp" alt="Santiago Carnicer vence en el Rallye TT de Cuenca y se proclama campeón de España de Rallyes TT 2024">
+                        <img src="img/noticias/1_Santiago-Carnicer-vence-en-el-Rallye-Tt-de-Cuenca_Foto-K13-Sport.webp"
+                            alt="Santiago Carnicer vence en el Rallye TT de Cuenca y se proclama campeón de España de Rallyes TT 2024">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">7 OCT 2024</span>
                         <h3>Gran victoria de Santiago Carnicer en el X Rallye TT de Cuenca</h3>
-                        <p>La última cita del Campeonato de España de Rallyes TT 2024 ha sido una prueba muy rápida y técnica GRAN VICTORIA DE SANTIAGO CARNICER EN EL X RALLYE TT DE CUENCA. Santiago Carnicer ha ganado el rallye TT de Cuenca en el que se ha impuesto de manera absoluta.</p>
+                        <p>La última cita del Campeonato de España de Rallyes TT 2024 ha sido una prueba muy rápida y
+                            técnica GRAN VICTORIA DE SANTIAGO CARNICER EN EL X RALLYE TT DE CUENCA. Santiago Carnicer ha
+                            ganado el rallye TT de Cuenca en el que se ha impuesto de manera absoluta.</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1_Carnicer-ganador-Prologo-Cuenca-foto-K13-sport_4-octubre-2024-1024x576.webp" alt="Santiago Carnicer gana la etapa Súper Especial del Rallye de Cuenca">
+                        <img src="img/noticias/1_Carnicer-ganador-Prologo-Cuenca-foto-K13-sport_4-octubre-2024-1024x576.webp"
+                            alt="Santiago Carnicer gana la etapa Súper Especial del Rallye de Cuenca">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">5 OCT 2024</span>
                         <h3>Santiago Carnicer gana la etapa Súper Especial del Rallye TT de Cuenca</h3>
-                        <p>Santiago Carnicer copilotado por Sergio Peinado, gana la Etapa Prologo del Rallye TT de Cuenca. El castellonense ha realizado una brillante etapa en un tiempo de 5:35.9 con su recién estrenada Toyota Hilux.</p>
+                        <p>Santiago Carnicer copilotado por Sergio Peinado, gana la Etapa Prologo del Rallye TT de
+                            Cuenca. El castellonense ha realizado una brillante etapa en un tiempo de 5:35.9 con su
+                            recién estrenada Toyota Hilux.</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1-Trigo-vencedor-Super-Especial-fotoK13-sport-1024x683.webp" alt="Alonso Trigo gana la Súper Especial en Cuenca">
+                        <img src="img/noticias/1-Trigo-vencedor-Super-Especial-fotoK13-sport-1024x683.webp"
+                            alt="Alonso Trigo gana la Súper Especial en Cuenca">
                         <span class="categoria">Competición</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">4 OCT 2024</span>
                         <h3>Alonso Trigo, gana la Súper Especial en Cuenca</h3>
-                        <p>El madrileño Alonso Trigo, con KTM 450 EXC, acaba de ganar la Etapa Super Especial del Campeonato de España de Raids TT que se está celebrando en Cuenca. En segunda posición ha llegado Javier Vega, el líder provisional del Nacional con su YamahaWR450 Rallye. Y el tercer puesto ha sido para Juan Pedrero García con</p>
+                        <p>El madrileño Alonso Trigo, con KTM 450 EXC, acaba de ganar la Etapa Super Especial del
+                            Campeonato de España de Raids TT que se está celebrando en Cuenca. En segunda posición ha
+                            llegado Javier Vega, el líder provisional del Nacional con su YamahaWR450 Rallye. Y el
+                            tercer puesto ha sido para Juan Pedrero García con</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/RALLY-TT-CUENCA-2024_-1.webp" alt="Cuenca, el epicentro del motor nacional">
+                        <img src="img/noticias/RALLY-TT-CUENCA-2024_-1.webp"
+                            alt="Cuenca, el epicentro del motor nacional">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">3 OCT 2024</span>
                         <h3>Cuenca, el epicentro del motor nacional</h3>
-                        <p>125 equipos en la parrilla de salida en el X Rally TT de Cuenca En Cuenca habrá un ojeador para evaluar que la carrera cumple con las condiciones para ascender a Campeonato de Europa. Cuenca, el epicentro del motor nacional.</p>
+                        <p>125 equipos en la parrilla de salida en el X Rally TT de Cuenca En Cuenca habrá un ojeador
+                            para evaluar que la carrera cumple con las condiciones para ascender a Campeonato de Europa.
+                            Cuenca, el epicentro del motor nacional.</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/rallye-tt-cuenca-CAMPEONATO-ESPAÑA-2024_Foto-Kike-Belenguer-1024x683.webp" alt="Cuenca coronará al campeón de España de Raids TT">
+                        <img src="img/noticias/rallye-tt-cuenca-CAMPEONATO-ESPAÑA-2024_Foto-Kike-Belenguer-1024x683.webp"
+                            alt="Cuenca coronará al campeón de España de Raids TT">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">1 OCT 2024</span>
                         <h3>Raid TT Cuenca. Cuenca coronará al Campeón de España de Raids TT</h3>
-                        <p>El Campeonato de España de Raids TT disputa su última cita de la temporada 2024, en Cuenca. Raid TT Cuenca. Cuenca coronará al Campeón de España de Raids TT Cuenca será el escenario perfecto para que los más de 60 pilotos inscritos en esta disciplina disfruten de un gran final de temporada, que se prevé lleno de</p>
+                        <p>El Campeonato de España de Raids TT disputa su última cita de la temporada 2024, en Cuenca.
+                            Raid TT Cuenca. Cuenca coronará al Campeón de España de Raids TT Cuenca será el escenario
+                            perfecto para que los más de 60 pilotos inscritos en esta disciplina disfruten de un gran
+                            final de temporada, que se prevé lleno de</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
@@ -253,72 +310,93 @@
                     <div class="noticia-contenido">
                         <span class="fecha">1 OCT 2024</span>
                         <h3>Éxito de inscripción, 125 equipos tomarán la salida de la X Rally TT de Cuenca</h3>
-                        <p>La Organización de la prueba ha diseñado un nuevo recorrido de 400 kilómetros por los caminos más singulares de Castilla La Mancha Éxito de inscripción, 125 equipos tomarán la salida de la X Rally TT de Cuenca</p>
+                        <p>La Organización de la prueba ha diseñado un nuevo recorrido de 400 kilómetros por los caminos
+                            más singulares de Castilla La Mancha Éxito de inscripción, 125 equipos tomarán la salida de
+                            la X Rally TT de Cuenca</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1_Foto-Fundacion-Step-by-Step-1024x681.webp" alt="Fundación Step by Step">
+                        <img src="img/noticias/1_Foto-Fundacion-Step-by-Step-1024x681.webp"
+                            alt="Fundación Step by Step">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">26 SEP 2024</span>
                         <h3>Récord de inscritos de la ParaBaja Step by Step, en el X Rally TT de Cuenca</h3>
-                        <p>Diez equipos de la ParaBaja Step by Step, en la salida en el Rallye TT de Cuenca   Récord de inscritos de la ParaBaja Step by Step, en el X Rally TT de Cuenca.</p>
+                        <p>Diez equipos de la ParaBaja Step by Step, en la salida en el Rallye TT de Cuenca Récord de
+                            inscritos de la ParaBaja Step by Step, en el X Rally TT de Cuenca.</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/teniente-coronel-María-Jesús-Pascual-Ruiz_Rallye-TT-Cuenca.webp" alt="Teniente coronel María Jesús Pascual Ruiz, premiada con el Galardón Cuenca 2024">
+                        <img src="img/noticias/teniente-coronel-María-Jesús-Pascual-Ruiz_Rallye-TT-Cuenca.webp"
+                            alt="Teniente coronel María Jesús Pascual Ruiz, premiada con el Galardón Cuenca 2024">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">17 SEP 2024</span>
                         <h3>La Guardia Civil, premiada con el Galardón Cuenca 2024</h3>
-                        <p>La Guardia Civil de Cuenca ha sido distinguida con el “Galardón Cuenca” instaurado por el Club Cuenca Motor 4×4, por el apoyo, la seguridad y la logística que aporta al Rallye de Cuenca. Con esta distinción el Club deportivo ha querido reconocer y agradecer la implicación de la Comandancia con el Rallye, con el gran</p>
+                        <p>La Guardia Civil de Cuenca ha sido distinguida con el “Galardón Cuenca” instaurado por el
+                            Club Cuenca Motor 4×4, por el apoyo, la seguridad y la logística que aporta al Rallye de
+                            Cuenca. Con esta distinción el Club deportivo ha querido reconocer y agradecer la
+                            implicación de la Comandancia con el Rallye, con el gran</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/jpeg-optimizer_image-20-11-22-06-32-1-1024x683.webp" alt="Comienzan las inscripciones del X Rally de Cuenca 11 septiembre 2024">
+                        <img src="img/noticias/jpeg-optimizer_image-20-11-22-06-32-1-1024x683.webp"
+                            alt="Comienzan las inscripciones del X Rally de Cuenca 11 septiembre 2024">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">11 SEP 2024</span>
-                        <h3>Comienzan las inscripciones del X Rally de Cuenca, la última cita del Campeonato de España de Raids TT</h3>
-                        <p>La última carrera del Campeonato de España de Raids TT  se prevé de alto voltaje. En Cuenca se coronará el Campeón de España El X Rallye TT de Cuenca ha abierto las inscripciones para una de las pruebas más potentes de todas las organizadas por el Club Cuenca Motor 4×4, y al que asistirán los</p>
+                        <h3>Comienzan las inscripciones del X Rally de Cuenca, la última cita del Campeonato de España
+                            de Raids TT</h3>
+                        <p>La última carrera del Campeonato de España de Raids TT se prevé de alto voltaje. En Cuenca se
+                            coronará el Campeón de España El X Rallye TT de Cuenca ha abierto las inscripciones para una
+                            de las pruebas más potentes de todas las organizadas por el Club Cuenca Motor 4×4, y al que
+                            asistirán los</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1_Nani-Roma_3-veces-campeon-rallye-Cuenca-1024x527.webp" alt="Comienzan las inscripciones del X Rally de Cuenca 2024">
+                        <img src="img/noticias/1_Nani-Roma_3-veces-campeon-rallye-Cuenca-1024x527.webp"
+                            alt="Comienzan las inscripciones del X Rally de Cuenca 2024">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">28 AGO 2024</span>
                         <h3>Comienzan las inscripciones del X Rally de Cuenca 2024</h3>
-                        <p>La última carrera del Campeonato de España de Rallyes Todoterreno 2024, llena de novedades para celebrar su 10º Edición. El rallye TT de Cuenca acaba de abrir las inscripciones para el rallye que se prevé más potente de todos los organizados por el Club Cuenca Motor, ya que este año se conmemora la 10º Edición</p>
+                        <p>La última carrera del Campeonato de España de Rallyes Todoterreno 2024, llena de novedades
+                            para celebrar su 10º Edición. El rallye TT de Cuenca acaba de abrir las inscripciones para
+                            el rallye que se prevé más potente de todos los organizados por el Club Cuenca Motor, ya que
+                            este año se conmemora la 10º Edición</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/I-Galardon-Honor_X-Rallye-TT-Cuenca-24.jpg" alt="Instauración del Galardón Cuenca por el Club Cuenca Motor 4x4">
+                        <img src="img/noticias/I-Galardon-Honor_X-Rallye-TT-Cuenca-24.jpg"
+                            alt="Instauración del Galardón Cuenca por el Club Cuenca Motor 4x4">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">14 AGO 2024</span>
                         <h3>El Club Cuenca Motor 4x4, instaura el "Galardón Cuenca".</h3>
-                        <p>Con el galardón el Club Cuenca Motor 4×4 quiere reconocer el apoyo de los deportistas, las Instituciones Públicas y las empresas privadas al Rallye de Cuenca, que se ha convertido en un referente en Castilla La Mancha. El Club Cuenca Motor 4×4, instaura el “Galardón Cuenca”. Con motivo del X Aniversario de la prueba nacional</p>
+                        <p>Con el galardón el Club Cuenca Motor 4×4 quiere reconocer el apoyo de los deportistas, las
+                            Instituciones Públicas y las empresas privadas al Rallye de Cuenca, que se ha convertido en
+                            un referente en Castilla La Mancha. El Club Cuenca Motor 4×4, instaura el “Galardón Cuenca”.
+                            Con motivo del X Aniversario de la prueba nacional</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
@@ -331,81 +409,119 @@
                     <div class="noticia-contenido">
                         <span class="fecha">6 AGO 2024</span>
                         <h3>Cuenta atrás para el X Aniversario del Rallye TT de Cuenca</h3>
-                        <p>La Inscripción se abre en un par de semanas La edición 2024 del Rallye TT de Cuenca será toda una celebración, ya que la carrera cumple una década prodigiosa en la que se ha convertido en un icono en la competición del motor, tanto en coches como en motos. El rallye, que requiere una gran</p>
+                        <p>La Inscripción se abre en un par de semanas La edición 2024 del Rallye TT de Cuenca será toda
+                            una celebración, ya que la carrera cumple una década prodigiosa en la que se ha convertido
+                            en un icono en la competición del motor, tanto en coches como en motos. El rallye, que
+                            requiere una gran</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
 
                 <article class="tarjeta-noticia">
                     <div class="noticia-imagen">
-                        <img src="img/noticias/1_empieza-Rallye-TT-Cuenca_-foto-kike-belenguer-cuenca-noticiaweb-1024x683.webp" alt="">
+                        <img src="img/noticias/1_empieza-Rallye-TT-Cuenca_-foto-kike-belenguer-cuenca-noticiaweb-1024x683.webp"
+                            alt="">
                         <span class="categoria">Técnica</span>
                     </div>
                     <div class="noticia-contenido">
                         <span class="fecha">17 JUL 2024</span>
                         <h3>El X Rally TT de Cuenca se prepara para su edición más especial</h3>
-                        <p>El Rallye de Cuenca 2024 llegará cargado de novedades para celebrar su décimo Aniversario por todo lo alto. Para ello el Club Cuenca Motor 4×4, con Víctor Alijas al frente, lleva meses trabajando en la carrera más valorada por los deportistas y aficionados, tanto de coches como de motos, que se disputará en tierras conquenses</p>
+                        <p>El Rallye de Cuenca 2024 llegará cargado de novedades para celebrar su décimo Aniversario por
+                            todo lo alto. Para ello el Club Cuenca Motor 4×4, con Víctor Alijas al frente, lleva meses
+                            trabajando en la carrera más valorada por los deportistas y aficionados, tanto de coches
+                            como de motos, que se disputará en tierras conquenses</p>
                         <a href="#" class="leer-mas">Leer noticia →</a>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-upper">
-            <div class="contenedor-logo-footer">
-                <img src="img/placaBajasTTCuenca-Photoroom.webp" alt="Logo CUENCAMOTOR" class="logo-hero">
-                <div class="contenedor-redes">
-                    <a href="https://www.facebook.com/profile.php?id=100063715416500&locale=es_ES" target="_blank" rel="noopener noreferrer">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/cuencamotor4x4/" target="_blank" rel="noopener noreferrer">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-                    </a>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-hero">
+            <div class="footer-brand">
+                <img src="img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
+                <div class="footer-brand-text">
+                    <p class="footer-brand-name">Baja TT Cuenca</p>
+                    <p class="footer-brand-sub">FIA European Cup · 2026</p>
                 </div>
             </div>
-            <div class="contenedor-navegacion-footer">
-                <nav>
-                    <ul>
-                        <li class="listas-nav nav-footer"><a href="index.html" class="enlace-nav">Inicio</a></li>
-                        <li class="listas-nav nav-footer"><a href="nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
-                        <li class="listas-nav nav-footer"><a href="noticias.html" class="enlace-nav-activo">Noticias</a></li>
-                        <li class="listas-nav nav-footer"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
-                        <li class="listas-nav nav-footer"><a href="multimedia.html" class="enlace-nav">MULTIMEDIA</a></li>
-                        <li class="listas-nav nav-footer"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
-                    </ul>
-                    <div class="contenedor-inscripcion-footer">
-                        <a href="inscripciones.html" class="boton-inscripcion-footer">Inscribirse</a>
-                    </div>
-                </nav>
+            <div class="footer-redes">
+                <a href="https://www.facebook.com/profile.php?id=100063715416500" target="_blank" rel="noopener"
+                    aria-label="Facebook">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/cuencamotor4x4/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="var(--oscuro)" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="var(--oscuro)" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </a>
             </div>
-            <div class="form-container">
-                <form class="form">
-                    <div class="form-group">
-                        <label for="email">Tu correo electrónico</label>
-                        <input type="text" id="email" name="email" required placeholder="Tu correo electrónico">
+        </div>
+
+        <!-- nav + form -->
+        <div class="footer-body">
+
+            <nav class="footer-nav">
+                <p class="footer-nav-label">Navegación</p>
+                <div class="footer-nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Sobre nosotros</a>
+                    <a href="noticias.html">Noticias</a>
+                    <a href="multimedia.html">Multimedia</a>
+                    <a href="inscripciones.html">Inscripciones</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="patrocinadores.html">Patrocinadores</a>
+                </div>
+            </nav>
+
+            <div class="footer-divider-v"></div>
+
+            <div class="footer-form-wrap">
+                <span class="footer-form-label">Escríbenos</span>
+                <form class="footer-form" onsubmit="handleFooterForm(event)">
+                    <div class="fg">
+                        <label for="f-email">Email</label>
+                        <input type="email" id="f-email" name="email" placeholder="tu@email.com" required />
                     </div>
-                    <div class="form-group">
-                        <label for="nombre">Tu nombre</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    <div class="fg">
+                        <label for="f-nombre">Nombre</label>
+                        <input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" />
                     </div>
-                    <div class="form-group">
-                        <label for="textarea">¿Cómo podemos ayudarte?</label>
-                        <textarea name="textarea" id="textarea" rows="10" cols="50" required placeholder="Describe tu consulta..."></textarea>
+                    <div class="fg full">
+                        <label for="f-mensaje">Mensaje</label>
+                        <textarea id="f-mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
                     </div>
-                    <button class="form-submit-btn" type="submit">Enviar</button>
+                    <div class="form-submit">
+                        <button type="submit">Enviar mensaje</button>
+                        <p class="footer-form-note">Se abrirá tu cliente<br>de correo con los datos.</p>
+                    </div>
                 </form>
             </div>
+
         </div>
+
+        <!-- lower -->
         <div class="footer-lower">
-            <div class="contenedor-footer">
-                <span class="texto-footer">© 2026 Cuenca Motor 4x4</span>
-                <span class="guion-footer">-</span>
-                <a href="politicas.html" class="enlace-politicas">Política de Privacidad</a>
-            </div>
+            <span class="footer-copy">
+                © 2026 Cuenca Motor 4×4
+                <span class="footer-copy-dot">·</span>
+                Baja TT Cuenca
+            </span>
+            <a href="politicas.html" class="footer-policy">Política de privacidad</a>
         </div>
+
     </footer>
-    <script src="scripts/scriptDesplegable.js" ></script>
-    <script src="scripts/scriptSeparadorNoticias.js" ></script>
+    <script src="scripts/scriptDesplegable.js"></script>
+    <script src="scripts/scriptSeparadorNoticias.js"></script>
+    <script src="scripts/scriptformfooter.js"></script>
+
 </body>
+
 </html>

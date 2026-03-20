@@ -1,17 +1,9 @@
-// Esperamos a que el DOM esté cargado para evitar errores
-document.addEventListener('DOMContentLoaded', () => {
-    
-    const botonMenu = document.querySelector('.desplegable');
-    const menuNavegacion = document.querySelector('.contenedor-navegacion');
+    // Mobile nav
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobileNav');
 
-    // Añadimos el evento de clic
-    botonMenu.addEventListener('click', () => {
-        if (menuNavegacion.style.display === 'flex') {
-            menuNavegacion.style.display = 'none';
-        } else if (window.innerWidth >= 1033) {
-            menuNavegacion.style.display = 'flex';
-        } else {
-            menuNavegacion.style.display = 'flex';
-        }
+if (burger) {
+    burger.addEventListener('click', () => {
+        mobileNav.classList.toggle('open');
     });
-});
+}

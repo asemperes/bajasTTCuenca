@@ -427,3 +427,10 @@ body {
     opacity: 1;
     transform: translateX(0);
 }
+@media(max-width:570px){
+    .hero{
+        padding-top: 0;
+    }.hero-left{
+        padding-top:8rem;
+    }
+}

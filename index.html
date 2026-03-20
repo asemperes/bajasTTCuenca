@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Álvaro Sempere">
-    <meta name="description" content="Web oficial de Bajas TT Cuenca (CuencaMotor). Descubre toda la emoción del rally que se une al Campeonato Europeo de la FIA. Información, etapas y clasificaciones.">
-    <meta property="og:title" content="Bajas TT Cuenca - CuencaMotor | FIA European Cup">
-    <meta property="og:description" content="El rally de Cuenca salta a la escena europea.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cuencamotor4x4.com">
-    <meta property="og:image" content="img/noticias/8_recuenco_5º-posicion_FOTO-K13-SPORT-1024x683.webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bajas TT Cuenca - CuencaMotor">
-    <meta name="twitter:creator" content="@semperefps">
-    <title>Cuencamotor 4x4</title>
-    <link rel="stylesheet" href="styles/estilos.css">
+    <meta name="description"
+        content="Web oficial de Bajas TT Cuenca (CuencaMotor). Descubre toda la emoción del rally que se une al Campeonato Europeo de la FIA.">
+    <title>Baja TT Cuenca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/estilosGenerales.css">
-    <link rel="preload" as="image" href="img/hero.webp">
-    <link rel="preload" as="image" href="img/placaBajasTTCuenca-Photoroom.webp">
+    <link rel="stylesheet" href="styles/estilosindex.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <div class="capa-fondo"></div>
-    <div class="capa-fondo-borrosa"></div>
     <header class="header" nombre-seccion="Inicio">
         <div class="contenedor-logo">
-            <img src="img/favicon.png" alt="Logo cuencamotor">
+            <img src="img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
         </div>
         <div class="contenedor-navegacion">
             <nav>
                 <ul>
-                    <li class="listas-nav"><a href="index.html" class="enlace-nav-activo"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg></a></li>
+                    <li class="listas-nav"><a href="index.html" class="enlace-nav-activo"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg></a></li>
                     <li class="listas-nav"><a href="nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
                     <li class="listas-nav"><a href="noticias.html" class="enlace-nav">Noticias</a></li>
                     <li class="listas-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
@@ -42,296 +41,340 @@
                 </div>
             </nav>
         </div>
-        <div class="contenedor-desplegable">
-            <svg class="desplegable"
-            xmlns="http://www.w3.org/2000/svg"
-            width="55"
-            height="55"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            stroke="#000000"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-            <path d="M7 6h10" />
-            <path d="M4 12h16" />
-            <path d="M7 12h13" />
-            <path d="M7 18h10" />
-            </svg>
+        <!-- nav -->
+        <div class="nav-burger" id="burger">
+            <span></span><span></span><span></span>
         </div>
     </header>
-    <main class="main">
-         <div class="contenedor-logo-hero">
-            <img src="img/placaBajasTTCuenca-Photoroom.webp" alt="Logo CUENCAMOTOR" class="logo-hero">
-         </div>
-         <div class="contenedor-texto-main">
-            <div class="contenedor-titulo-main">
-                <h1 class="titulo-main">¿Quiénes somos?</h1>
+    <!-- mobile nav -->
+    <div class="nav-mobile" id="mobileNav">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="patrocinadores.html">Patrocinadores</a>
+        <a href="inscripciones.html" style="color:var(--principal)">Inscribirse →</a>
+    </div>
+    <!-- ── HERO ── -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <!-- content -->
+        <div class="hero-content">
+            <div class="hero-left">
+                <p class="hero-eyebrow">Baja TT Cuenca · 2026</p>
+                <h1 class="hero-title">
+                    Baja<br>
+                    <span class="line-accent">TT</span><br>
+                    Cuenca
+                    <span class="line-thin">FIA European Cup</span>
+                </h1>
             </div>
-            <div class="contenedor-info-main">
-                <div class="info-main">
-                    <p class="pmain">
-                        El Club Deportivo <strong>Cuenca Motor 4x4</strong> es una asociación deportiva con sede en Cuenca (España) dedicada al automovilismo de rally todoterreno. Organiza una de las pruebas más importantes del <strong>Campeonato de España de Rallyes Todo Terreno (CERTT)</strong>: el Rallye TT de Cuenca.
-                    </p>
-                    <p class="pmain">
-                        Este rally se celebra anualmente desde al menos mediados de los años 2010 y ha ido creciendo hasta consolidarse dentro del calendario nacional de rallies todoterreno.
-                    </p>
-                    <div class="contenedor-enlace">
-                        <a href="nosotros.html" class="enlace">Ver más</a>
-                    </div>
-                </div>
-            </div>
-
-            <section class="container-inscripcion">
-                <div class="inscripcion">
-                    <h3>Inscríbete en nuestra competición</h3>
-                    <p>Manda hoy mismo tu formulario para entrar en <span class="negrita">nuestra competición</span>, si te gusta el mundillo, no te arrepentirás!</p>
-                    
-                    <div class="contenedor-enlace-inscripcion"><a href="inscripciones.html" class="enlace-inscripcion">Inscribirse</a></div>
-                </div>
-            </section>
-            <section class="galeria-multimedia">
-                <div class="texto-multimedia">
-                    <h1 class="titulo-multimedia">¿Quieres acercarte un poco más a nuestros eventos?</h1>
-                    <p class="descripcion-multimedia">
-                        Echa un vistazo a nuestra colección de imágenes y vídeos exclusivos de nuestros eventos. Si te gusta lo que ves,
-                        siempre puedes inscribirte y pasar a formar parte de nuestra comunidad.
-                    </p>
-                    <a href="multimedia.html" class="boton-galeria">VER GALERÍA</a>
-                </div>
-
-                <div class="mosaico-imagenes">
-                    
-                    <div class="columna columna-baja">
-                        <div class="grupo-animado">
-                            <img src="img/noticias/I-Galardon-Honor_X-Rallye-TT-Cuenca-24.jpg" loading="lazy" decoding="async" alt="Galardón de Honor">
-                            <img src="img/noticias/1_Carnicer-ganador-Prologo-Cuenca-foto-K13-sport_4-octubre-2024-1024x576.webp" loading="lazy" decoding="async" alt="Carnicer campeón de España de Rallys">
-                            <img src="img/noticias/teniente-coronel-María-Jesús-Pascual-Ruiz_Rallye-TT-Cuenca.webp" loading="lazy" decoding="async" alt="Guardia civil premiada con el galardón cuenca 2024">
-                            <img src="img/noticias/I-Galardon-Honor_X-Rallye-TT-Cuenca-24.jpg" loading="lazy" decoding="async" alt="Galardón de Honor">
-                            <img src="img/noticias/1_Carnicer-ganador-Prologo-Cuenca-foto-K13-sport_4-octubre-2024-1024x576.webp" loading="lazy" decoding="async" alt="Carnicer campeón de España de Rallys">
-                            <img src="img/noticias/teniente-coronel-María-Jesús-Pascual-Ruiz_Rallye-TT-Cuenca.webp" loading="lazy" decoding="async" alt="Guardia civil premiada con el galardón cuenca 2024">
-                        </div>
-                    </div>
-
-                    <div class="columna columna-sube">
-                        <div class="grupo-animado">
-                            <img src="img/noticias/1_empieza-Rallye-TT-Cuenca_-foto-kike-belenguer-cuenca-noticiaweb-1024x683.webp" loading="lazy" decoding="async" alt="Kike Belenguer Cuenca">
-                            <img src="img/noticias/3_FRIVAL-II-Galardon-Honor-2025_MG_0205-262x300.jpg" loading="lazy" decoding="async" alt="Galardón de Honor FRIVALL 2025">
-                            <img src="img/noticias/1_Joan-Pedrero_Rallye-Cuenca_foto-K13Sport-1024x665.webp" loading="lazy" decoding="async" alt="Joan Pedrero Rally Cuenca">
-                            <img src="img/noticias/1_empieza-Rallye-TT-Cuenca_-foto-kike-belenguer-cuenca-noticiaweb-1024x683.webp" loading="lazy" decoding="async" alt="Kike Belenguer Cuenca">
-                            <img src="img/noticias/3_FRIVAL-II-Galardon-Honor-2025_MG_0205-262x300.jpg" loading="lazy" decoding="async" alt="Galardón de Honor FRIVALL 2025">
-                            <img src="img/noticias/1_Joan-Pedrero_Rallye-Cuenca_foto-K13Sport-1024x665.webp" loading="lazy" decoding="async" alt="Joan Pedrero Rally Cuenca">
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section class="noticias">
-                <div class="noticias-container">
-                    <div class="noticias-header">
-                        <h2>noticias</h2>
-                        <a href="noticias.html" class="see-all">VER TODAS ↗</a>
-                    </div>
-
-                    <div class="noticias-list">
-                        <article class="noticias-item">
-                            <div class="noticias-image">
-                                <picture>
-                                    <source media="(max-width: 600px)" srcset="img/noticias/2_Josep-Pedro-gana-el-XI-Rallye-de-Cuenca_2025_FOTO-K13-SPORT_-931x1024.webp">
-                                    <img src="img/miniatura-noticias/2_Josep-Pedro-gana-el-XI-Rallye-de-Cuenca_2025_FOTO-K13-SPORT_-resized.webp" alt="Josep Pedró ganador del XI RALLYE TT DE CUENCA">
-                                </picture>
-                            </div>
-                            <div class="noticias-content">
-                                <p class="noticias-date">06.10.25 - <span class="category">GANADOR</span></p>
-                                <h3 class="noticias-title">JOSEP PEDRÓ HA GANADO EL XI RALLYE TT CUENCA.</h3>
-                            </div>
-                            <div class="noticias-arrow">↗</div>
-                        </article>
-                        <article class="noticias-item">
-                            <div class="noticias-image">
-                                <picture>
-                                    <source media="(max-width: 600px)" srcset="img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp">
-                                    <img src="img/miniatura-noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-resized.webp" alt="Luis Recuenco ganador del XI RALLYE TT DE CUENCA">
-                                </picture>
-                            </div>
-                            <div class="noticias-content">
-                                <p class="noticias-date">04.10.25 - <span class="category">GANADOR</span></p>
-                                <h3 class="noticias-title">LUIS RECUENCO GANA EL XI RALLYE TT DE CUENCA.</h3>
-                            </div>
-                            <div class="noticias-arrow">↗</div>
-                        </article>
-
-                        <article class="noticias-item">
-                            <div class="noticias-image">
-                                <picture>
-                                    <source media="(max-width: 600px)" srcset="img/noticias/José-Maria-Reyes-González_gana-la-prologo-FOTO-K13-SPORT_031025.jpg">
-                                    <img src="img/miniatura-noticias/José-Maria-Reyes-González_gana-la-prologo-FOTO-K13-SPORT_031025-resized.webp" alt="Jose M. Reyes ganador de la etapa super especial del Rallye de Cuenca">
-                                </picture>
-                            </div>
-                            <div class="noticias-content">
-                                <p class="noticias-date">03.10.25 - <span class="category">GANADOR</span></p>
-                                <h3 class="noticias-title">JOSE M. REYES HA GANADO LA ETAPA SÚPER ESPECIAL CON UN BRILLANTE RECORRIDO.</h3>
-                            </div>
-                            <div class="noticias-arrow">↗</div>
-                        </article>
-
-                        <article class="noticias-item">
-                            <div class="noticias-image">
-                                <picture>
-                                    <source media="(max-width: 600px)" srcset="img/noticias/7_Javier-Vega-vence-la-Super-Especial_foto-K13-SPORT_-1-1024x720.webp">
-                                    <img src="img/miniatura-noticias/7_Javier-Vega-vence-la-Super-Especial_foto-K13-SPORT_-1-resized.webp" alt="Javier Vega ganador de la etapa super especial del Rallye de Cuenca">
-                                </picture>
-                            </div>
-                            <div class="noticias-content">
-                                <p class="noticias-date">03.10.25 - <span class="category">GANADOR</span></p>
-                                <h3 class="noticias-title">UN RAPIDÍSIMO JAVIER VEGA HA GANADO LA ETAPA SÚPER ESPECIAL DEL RALLYE DE CUENCA</h3>
-                            </div>
-                            <div class="noticias-arrow">↗</div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section class="patrocinadores">
-                <h2>Nuestros Patrocinadores Oficiales</h2>
-                <div class="contenedor-patrocinadores">
-                    <div class="fila-patrocinadores fila-6">
-                        <div class="patrocinador">
-                            <a href="https://ayuntamiento.cuenca.es/" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/ayuntamiento-cuenca-logo.jpg" alt="Ayuntamiento de Cuenca">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://villardeolalla.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/ayuntamiento-villar-de-olalla.png" alt="Ayuntamiento de Villar de Olalla">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://certt.rfeda.es/" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/certt-cubo.png" alt="CERTT CUBO">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.csd.gob.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/consejo-superior-de-deportes.png" alt="Consejo Superior de Deportes">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.dipucuenca.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/diputacion-cuenca.jpg" alt="Diputación de Cuenca">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.facm.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/facm.jpg" alt="FACM Federación de Automovilismo de Castilla-La Mancha">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="fila-patrocinadores fila-5">
-                        <div class="patrocinador">
-                            <a href="https://fcmm.net" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/fcmm.webp" alt="Federacion Castellano-Manchega de Motociclismo">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.patel.es/es/frivall.html" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/frivall.jpg" alt="FriVall Carnicas">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.globalcaja.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/globalcaja.png" alt="Globalcaja">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.gt2i.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/gt2i.png" alt="GT2I">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.castillalamancha.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/jccm-logo.png" alt="Junta de Castilla-La Mancha">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="fila-patrocinadores fila-3">
-                        <div class="patrocinador">
-                            <a href="https://www.loteriasyapuestas.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/logo-loterias.png" alt="Loterías">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.michelin.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/logo-michelin.png" alt="Michelin">
-                            </a>
-                        </div>
-                        <div class="patrocinador">
-                            <a href="https://www.rfeda.es" target="_blank" rel="noopener noreferrer">
-                                <img src="img/logosPatros/rfeda-vertical.color.png" alt="RFEDA Real Federación Española de Automovilismo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-         </div>
-    </main>
-    <footer>
-        <div class="footer-upper">
-            <div class="contenedor-logo-footer">
-                <img src="img/placaBajasTTCuenca-Photoroom.webp" alt="Logo CUENCAMOTOR" class="logo-hero">
-                <div class="contenedor-redes">
-                    <a href="https://www.facebook.com/profile.php?id=100063715416500&locale=es_ES" target="_blank" rel="noopener noreferrer">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/cuencamotor4x4/" target="_blank" rel="noopener noreferrer">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-                    </a>
+            <div class="hero-right">
+                <div class="hero-badge">FIA European Cup 2026</div>
+                <a href="inscripciones.html" class="hero-cta">
+                    Inscribirse
+                </a>
+                <div class="hero-scroll">
+                    <div class="scroll-line"></div>
+                    Scroll
                 </div>
             </div>
-            <div class="contenedor-navegacion-footer">
-                <nav>
-                    <ul>
-                        <li class="listas-nav nav-footer"><a href="index.html" class="enlace-nav-activo">Inicio</a></li>
-                        <li class="listas-nav nav-footer"><a href="nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
-                        <li class="listas-nav nav-footer"><a href="noticias.html" class="enlace-nav">Noticias</a></li>
-                        <li class="listas-nav nav-footer"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
-                        <li class="listas-nav nav-footer"><a href="multimedia.html" class="enlace-nav">MULTIMEDIA</a></li>
-                        <li class="listas-nav nav-footer"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
-                    </ul>
-                    <div class="contenedor-inscripcion-footer">
-                        <a href="inscripciones.html" class="boton-inscripcion-footer">Inscribirse</a>
-                    </div>
-                </nav>
+        </div>
+    </section>
+
+    <!-- ── STATS ── -->
+    <div class="stats-bar reveal">
+        <div class="stat-item">
+            <span class="stat-num">2016</span>
+            <span class="stat-label">Primera edición</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">+400</span>
+            <span class="stat-label">Km de recorrido</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">+20</span>
+            <span class="stat-label">Municipios implicados</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-num">2026</span>
+            <span class="stat-label">FIA European Cup</span>
+        </div>
+    </div>
+
+    <!-- ── ABOUT ── -->
+    <section class="about">
+        <div class="about-img">
+            <img src="img/noticias/1_Joan-Pedrero_Rallye-Cuenca_foto-K13Sport-1024x665.webp" alt="Rallye TT Cuenca"
+                loading="lazy" />
+        </div>
+        <div class="about-text reveal">
+            <p class="section-label">Club Deportivo Cuenca Motor 4×4</p>
+            <h2 class="about-title">El rally<br>que <span>conquista</span><br>Europa</h2>
+            <p class="about-body">
+                El <strong>Club Deportivo Cuenca Motor 4×4</strong> organiza uno de los rallyes todoterreno más
+                importantes de España. Desde 2016, la prueba recorre más de <strong>400 km de pistas forestales y
+                    caminos rurales</strong> de la provincia de Cuenca, y en 2026 da el salto al <strong>calendario
+                    internacional FIA</strong>.
+            </p>
+            <a href="nosotros.html" class="btn-ghost">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+                Conoce el club
+            </a>
+        </div>
+    </section>
+
+    <!-- ── INSCRIPCIÓN CTA ── -->
+    <section class="inscripcion-cta reveal">
+        <div class="cta-left">
+            <p class="cta-tag">Inscripciones abiertas · 2026</p>
+            <h2 class="cta-title">Forma parte de la<br><span>Baja TT Cuenca</span></h2>
+        </div>
+        <div class="cta-right">
+            <div class="cta-cats">
+                <span class="cta-cat">FIA</span>
+                <span class="cta-cat">CERTT</span>
+                <span class="cta-cat">FIM Europe</span>
+                <span class="cta-cat">Rally Raid</span>
             </div>
-            <div class="form-container">
-                <form class="form">
-                    <div class="form-group">
-                        <label for="email">Tu correo electrónico</label>
-                        <input type="text" id="email" name="email" required placeholder="Tu correo electrónico">
+            <a href="inscripciones.html" class="btn-inscripcion">
+                Ver inscripciones
+            </a>
+        </div>
+    </section>
+
+    <!-- ── MULTIMEDIA ── -->
+    <section class="multimedia">
+        <div class="multimedia-text reveal">
+            <p class="section-label">Galería</p>
+            <h2 class="multimedia-title">Vive el<br><span>rally</span><br>desde dentro</h2>
+            <p class="multimedia-desc">Imágenes y vídeos exclusivos de nuestros eventos. Adrenalina, paisaje y
+                competición en estado puro.</p>
+            <a href="multimedia.html" class="btn-ghost">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+                Ver galería completa
+            </a>
+        </div>
+        <div class="multimedia-mosaic">
+            <div class="mosaic-img">
+                <img src="img/noticias/1_empieza-Rallye-TT-Cuenca_-foto-kike-belenguer-cuenca-noticiaweb-1024x683.webp"
+                    loading="lazy" alt="Rally TT Cuenca">
+            </div>
+            <div class="mosaic-img">
+                <img src="img/noticias/1_Carnicer-ganador-Prologo-Cuenca-foto-K13-sport_4-octubre-2024-1024x576.webp"
+                    loading="lazy" alt="Rally TT Cuenca">
+            </div>
+            <div class="mosaic-img">
+                <img src="img/noticias/teniente-coronel-María-Jesús-Pascual-Ruiz_Rallye-TT-Cuenca.webp" loading="lazy"
+                    alt="Rally TT Cuenca">
+            </div>
+        </div>
+    </section>
+
+    <!-- ── NOTICIAS ── -->
+    <section class="noticias-section">
+        <div class="section-header">
+            <h2>Últimas noticias</h2>
+            <div class="section-line"></div>
+            <a href="noticias.html" class="section-link">Ver todas ↗</a>
+        </div>
+        <div class="noticias-grid">
+            <a href="noticias.html" class="noticia-card">
+                <div class="noticia-img">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="img/miniatura-noticias/2_Josep-Pedro-gana-el-XI-Rallye-de-Cuenca_2025_FOTO-K13-SPORT_-resized.webp">
+                        <img src="img/noticias/2_Josep-Pedro-gana-el-XI-Rallye-de-Cuenca_2025_FOTO-K13-SPORT_-931x1024.webp"
+                            alt="Josep Pedró ganador del XI RALLYE TT DE CUENCA">
+                    </picture>
+                </div>
+                <div class="noticia-body">
+                    <p class="noticia-meta">06.10.25 · <span>Ganador</span></p>
+                    <h3 class="noticia-title">Josep Pedró gana el XI Rallye TT Cuenca</h3>
+                    <div class="noticia-arrow">Leer más →</div>
+                </div>
+            </a>
+            <a href="noticias.html" class="noticia-card">
+                <div class="noticia-img">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="img/miniatura-noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-resized.webp">
+                        <img src="img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+                            alt="Luis Recuenco ganador del XI RALLYE TT DE CUENCA">
+                    </picture>
+                </div>
+                <div class="noticia-body">
+                    <p class="noticia-meta">04.10.25 · <span>Ganador</span></p>
+                    <h3 class="noticia-title">Luis Recuenco gana el XI Rallye TT de Cuenca</h3>
+                    <div class="noticia-arrow">Leer más →</div>
+                </div>
+            </a>
+            <a href="noticias.html" class="noticia-card">
+                <div class="noticia-img">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="img/miniatura-noticias/José-Maria-Reyes-González_gana-la-prologo-FOTO-K13-SPORT_031025-resized.webp">
+                        <img src="img/noticias/José-Maria-Reyes-González_gana-la-prologo-FOTO-K13-SPORT_031025.jpg"
+                            alt="Jose M. Reyes ganador de la etapa super especial del Rallye de Cuenca">
+                    </picture>
+                </div>
+                <div class="noticia-body">
+                    <p class="noticia-meta">03.10.25 · <span>Ganador</span></p>
+                    <h3 class="noticia-title">Jose M. Reyes gana la etapa súper especial</h3>
+                    <div class="noticia-arrow">Leer más →</div>
+                </div>
+            </a>
+            <a href="noticias.html" class="noticia-card">
+                <div class="noticia-img">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="img/miniatura-noticias/7_Javier-Vega-vence-la-Super-Especial_foto-K13-SPORT_-1-resized.webp">
+                        <img src="img/noticias/7_Javier-Vega-vence-la-Super-Especial_foto-K13-SPORT_-1-1024x720.webp"
+                            alt="Javier Vega ganador de la etapa super especial del Rallye de Cuenca">
+                    </picture>
+                </div>
+                <div class="noticia-body">
+                    <p class="noticia-meta">03.10.25 · <span>Ganador</span></p>
+                    <h3 class="noticia-title">Javier Vega gana la súper especial del Rallye de Cuenca</h3>
+                    <div class="noticia-arrow">Leer más →</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ── PATROCINADORES ── -->
+    <section class="patrocinadores-section reveal">
+        <div class="section-header">
+            <h2>Patrocinadores</h2>
+            <div class="section-line"></div>
+            <a href="patrocinadores.html" class="section-link">Ver todos ↗</a>
+        </div>
+        <div class="patros-grid">
+            <div class="patro-item"><a href="https://ayuntamiento.cuenca.es/" target="_blank"><img
+                        src="img/logosPatros/ayuntamiento-cuenca-logo.jpg" alt="Ayuntamiento de Cuenca"></a></div>
+            <div class="patro-item"><a href="https://villardeolalla.com/" target="_blank"><img
+                        src="img/logosPatros/ayuntamiento-villar-de-olalla.png" alt="Ayuntamiento Villar de Olalla"></a>
+            </div>
+            <div class="patro-item"><a href="https://certt.rfeda.es/" target="_blank"><img
+                        src="img/logosPatros/certt-cubo.png" alt="CERTT"></a></div>
+            <div class="patro-item"><a href="https://www.csd.gob.es" target="_blank"><img
+                        src="img/logosPatros/consejo-superior-de-deportes.png" alt="Consejo Superior de Deportes"></a>
+            </div>
+            <div class="patro-item"><a href="https://www.dipucuenca.es" target="_blank"><img
+                        src="img/logosPatros/diputacion-cuenca.jpg" alt="Diputación de Cuenca"></a></div>
+            <div class="patro-item"><a href="https://www.facm.es" target="_blank"><img src="img/logosPatros/facm.jpg"
+                        alt="FACM"></a></div>
+            <div class="patro-item"><a href="https://fcmm.net" target="_blank"><img src="img/logosPatros/fcmm.webp"
+                        alt="FCMM"></a></div>
+            <div class="patro-item"><a href="https://www.patel.es/es/frivall.html" target="_blank"><img
+                        src="img/logosPatros/frivall.jpg" alt="FriVall"></a></div>
+            <div class="patro-item"><a href="https://www.globalcaja.es" target="_blank"><img
+                        src="img/logosPatros/globalcaja.png" alt="Globalcaja"></a></div>
+            <div class="patro-item"><a href="https://www.gt2i.es" target="_blank"><img src="img/logosPatros/gt2i.png"
+                        alt="GT2I"></a></div>
+            <div class="patro-item"><a href="https://www.castillalamancha.es" target="_blank"><img
+                        src="img/logosPatros/jccm-logo.png" alt="Junta CLM"></a></div>
+            <div class="patro-item"><a href="https://www.michelin.es" target="_blank"><img
+                        src="img/logosPatros/logo-michelin.png" alt="Michelin"></a></div>
+            <div class="patro-item"><a href="https://www.rfeda.es" target="_blank"><img
+                        src="img/logosPatros/rfeda-vertical.color.png" alt="RFEDA"></a></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-hero">
+            <div class="footer-brand">
+                <img src="img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
+                <div class="footer-brand-text">
+                    <p class="footer-brand-name">Baja TT Cuenca</p>
+                    <p class="footer-brand-sub">FIA European Cup · 2026</p>
+                </div>
+            </div>
+            <div class="footer-redes">
+                <a href="https://www.facebook.com/profile.php?id=100063715416500" target="_blank" rel="noopener"
+                    aria-label="Facebook">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/cuencamotor4x4/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="var(--oscuro)" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="var(--oscuro)" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- nav + form -->
+        <div class="footer-body">
+
+            <nav class="footer-nav">
+                <p class="footer-nav-label">Navegación</p>
+                <div class="footer-nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Sobre nosotros</a>
+                    <a href="noticias.html">Noticias</a>
+                    <a href="multimedia.html">Multimedia</a>
+                    <a href="inscripciones.html">Inscripciones</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="patrocinadores.html">Patrocinadores</a>
+                </div>
+            </nav>
+
+            <div class="footer-divider-v"></div>
+
+            <div class="footer-form-wrap">
+                <span class="footer-form-label">Escríbenos</span>
+                <form class="footer-form" onsubmit="handleFooterForm(event)">
+                    <div class="fg">
+                        <label for="f-email">Email</label>
+                        <input type="email" id="f-email" name="email" placeholder="tu@email.com" required />
                     </div>
-                    <div class="form-group">
-                        <label for="nombre">Tu nombre</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    <div class="fg">
+                        <label for="f-nombre">Nombre</label>
+                        <input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" />
                     </div>
-                    <div class="form-group">
-                        <label for="textarea">¿Cómo podemos ayudarte?</label>
-                        <textarea name="textarea" id="textarea" rows="10" cols="50" required placeholder="Describe tu consulta..."></textarea>
+                    <div class="fg full">
+                        <label for="f-mensaje">Mensaje</label>
+                        <textarea id="f-mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
                     </div>
-                    <button class="form-submit-btn" type="submit">Enviar</button>
+                    <div class="form-submit">
+                        <button type="submit">Enviar mensaje</button>
+                        <p class="footer-form-note">Se abrirá tu cliente<br>de correo con los datos.</p>
+                    </div>
                 </form>
             </div>
+
         </div>
+
+        <!-- lower -->
         <div class="footer-lower">
-            <div class="contenedor-footer">
-                <span class="texto-footer">© 2026 Cuenca Motor 4x4</span>
-                <span class="guion-footer">-</span>
-                <a href="politicas.html" class="enlace-politicas">Política de Privacidad</a>
-            </div>
+            <span class="footer-copy">
+                © 2026 Cuenca Motor 4×4
+                <span class="footer-copy-dot">·</span>
+                Baja TT Cuenca
+            </span>
+            <a href="politicas.html" class="footer-policy">Política de privacidad</a>
         </div>
+
     </footer>
-    <script src="scripts/scriptBlur.js" ></script>
-    <script src="scripts/scriptDesplegable.js" ></script>
+
+    <script src="scripts/scriptdesplegable.js"></script>
+    <script src="scripts/scriptscrollreveal.js"></script>
+    <script src="scripts/scriptformfooter.js"></script>
+
 </body>
+
 </html>
