@@ -108,6 +108,7 @@ main {
 .separador h2 {
     position: relative;
     top:5px;
+    margin:19px 0px;
 }
 .separador h2::after {
     content: "NOTICIAS";

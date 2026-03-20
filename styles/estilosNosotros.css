@@ -62,7 +62,8 @@ main {
     border-radius: 4px;
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Efecto inclinado */
     transition: 0.3s;
-    width: 171px;
+    max-width: 250px;
+    width: 100%;
     text-align: center;
 }
 .btn-saber-mas:hover {

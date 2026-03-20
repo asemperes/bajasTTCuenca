@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/estilosNosotros.css">
 </head>
 <body>
-    <header class="header" nombre-seccion="Sobre Nosotros">
+    <header class="header" nombre-seccion="Nosotros">
         <div class="contenedor-logo">
             <img src="img/favicon.png" alt="Logo cuencamotor">
         </div>
@@ -23,7 +23,7 @@
                 <li class="listas-nav"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
             </ul>
         <div class="contenedor-inscripcion">
-            <a href="#" class="boton-inscripcion">Inscribirse</a>
+            <a href="inscripciones.html" class="boton-inscripcion">Inscribirse</a>
         </div>
         </nav>
     </div>
@@ -61,7 +61,7 @@
                     <p>
                         Desde la organización, nuestro objetivo es fusionar la adrenalina de la competición con el respeto al medio ambiente y el impulso del turismo local. ¡Gas y polvo en el corazón de Cuenca!
                     </p>
-                    <a href="contacto.html" class="btn-saber-mas">Únete a la aventura</a>
+                    <a href="historia.html" class="btn-saber-mas">Nuestra Historia</a>
                 </div>
             </div>
         </section>
@@ -125,19 +125,23 @@
                         <li class="listas-nav nav-footer"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
                     </ul>
                     <div class="contenedor-inscripcion-footer">
-                        <a href="#" class="boton-inscripcion-footer">Inscribirse</a>
+                        <a href="inscripciones.html" class="boton-inscripcion-footer">Inscribirse</a>
                     </div>
                 </nav>
             </div>
             <div class="form-container">
                 <form class="form">
                     <div class="form-group">
-                    <label for="email">Tu correo electrónico</label>
-                    <input type="text" id="email" name="email" required placeholder="Tu correo electrónico">
+                        <label for="email">Tu correo electrónico</label>
+                        <input type="text" id="email" name="email" required placeholder="Tu correo electrónico">
                     </div>
                     <div class="form-group">
-                    <label for="textarea">¿Cómo podemos ayudarte?</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required placeholder="Describe tu consulta..."></textarea>
+                        <label for="nombre">Tu nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">¿Cómo podemos ayudarte?</label>
+                        <textarea name="textarea" id="textarea" rows="10" cols="50" required placeholder="Describe tu consulta..."></textarea>
                     </div>
                     <button class="form-submit-btn" type="submit">Enviar</button>
                 </form>

@@ -4,6 +4,7 @@
     --principal: rgb(137, 72, 72);   /* #894848 */
     --negro: rgb(0, 0, 0);       /* #000000 */
     --oscuro:#0f0f0f;
+    --oscuro2:#0a0a0a;
     --amarillo-principal:rgb(230, 175, 73); /*#E6AF49*/
     --amarillo: rgb(239, 225, 149); /* #EFE195 */
     --secundario: rgb(211, 105, 95);  /* #D3695F */
@@ -18,6 +19,7 @@
     --border-width: .24vw;
     --gutter: 2vw;
     --text-gray: #666;
+    --text-gray2:#9a968f;
     --text-light-gray:#bbb;
     --border-color: #eee;
     --fia-blue: #003876;
@@ -35,6 +37,14 @@ img {
   transition: opacity 0.5s ease-in-out;
 }
 /* ESTILOS GENERAL */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -251,6 +261,7 @@ footer{
     display: flex;
     align-items: center;
     position: relative;
+    min-width: 211.55px;
     padding: 15px;
 }
 .nav-footer{
@@ -268,7 +279,7 @@ footer{
     padding: 5px 20px;
     border-radius: 25px;
     background-image: linear-gradient(to right, var(--amarillo-principal), var(--principal));
-    width: 140.55px;
+    width: 100%;
 }
 .contenedor-navegacion-footer nav ul {
     list-style-type: none;
@@ -439,8 +450,12 @@ footer{
         flex: 1 1 calc(50% - 20px);
     }.contenedor-navegacion-footer nav{
         align-items: initial;
-    }.boton-inscripcion-footer {
-        width: calc(100% - 30px);
+    }
+}
+@media (max-width:680px){
+    .contenedor-navegacion-footer{
+        order:2;
+        flex: 1 1 100%;
     }
 }
 @media (min-width: 1034px) {
@@ -471,6 +486,7 @@ footer{
         padding: 5px 15px;
         border-radius: 25px;
         border:1px solid var(--principal);
+        text-align: center;
     }
     .contenedor-navegacion {
         display: none;
@@ -486,7 +502,7 @@ footer{
         border-radius: 25px;
     }.desplegable {
         position: fixed;
-        top:5px;
+        top:12.5px;
         right: 10px;
     }
     .contenedor-navegacion nav {
