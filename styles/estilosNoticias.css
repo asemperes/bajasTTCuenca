@@ -1,10 +1,11 @@
-
 main {
     background-color: var(--oscuro);
 }
+
 .seccion-noticias {
     padding: 80px 10%;
 }
+
 .grid-noticias {
     display: grid;
     /* Crea 2 columnas iguales en PC, y 1 en móvil automáticamente */
@@ -13,26 +14,32 @@ main {
     margin-top: 40px;
     position: relative;
 }
+
 .tarjeta-noticia {
     background-color: var(--gris-fondo);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease;
     border: 1px solid var(--borde-gris);
+
 }
+
 .tarjeta-noticia:hover {
     transform: translateY(-10px);
     border-color: var(--amarillo-principal);
 }
+
 .noticia-imagen {
     position: relative;
     height: 200px;
 }
+
 .noticia-imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* Etiqueta flotante sobre la imagen */
 .categoria {
     position: absolute;
@@ -46,58 +53,66 @@ main {
     text-transform: uppercase;
     border-radius: 4px;
 }
+
 .noticia-contenido {
     display: flex;
     flex-direction: column;
     /* Forzamos a que la tarjeta siempre tenga una altura mínima coherente */
-    min-height: 250px; 
+    min-height: 250px;
     padding: 20px;
     box-sizing: border-box;
 }
+
 .fecha {
     color: var(--amarillo-principal);
     font-size: 13px;
     font-weight: bold;
 }
+
 .noticia-contenido h3 {
     margin-bottom: 10px;
     display: -webkit-box;
-    color:var(--claro);
+    color: var(--claro);
     line-clamp: 2;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 .noticia-contenido p {
     display: -webkit-box;
     line-clamp: 3;
-    -webkit-line-clamp: 3; 
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     color: var(--text-light-gray);
     /* Le damos un margen inferior fijo para que el botón no se pegue */
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     /* Quitamos el flex-grow para que no ignore el clamp */
     flex-grow: 0;
 }
+
 .leer-mas {
     /* Esta línea empuja el botón al fondo del contenedor .noticia-contenido */
     /* independientemente de cuánto texto haya arriba */
-    margin-top: auto; 
-    
+    margin-top: auto;
+
     align-self: flex-start;
     font-weight: bold;
     color: var(--amarillo-principal);
     text-decoration: none;
 }
+
 .leer-mas:hover {
     text-decoration: underline;
 }
+
 .separador {
-    grid-column: 1 / -1; /* Ocupa toda la fila */
+    grid-column: 1 / -1;
+    /* Ocupa toda la fila */
     text-align: center;
     margin: 40px 0;
-    color:var(--claro);
+    color: var(--claro);
     background-color: var(--gris-fondo);
     border-radius: 10px;
     position: sticky;
@@ -105,29 +120,34 @@ main {
     z-index: 150;
     transition: all 0.2s ease;
 }
+
 .separador h2 {
     position: relative;
-    top:5px;
-    margin:19px 0px;
+    top: 5px;
+    margin: 19px 0px;
 }
+
 .separador h2::after {
     content: "NOTICIAS";
     position: absolute;
     text-transform: uppercase;
-    top:-5px;
-    color:var(--amarillo-principal);
+    top: -5px;
+    color: var(--amarillo-principal);
     font-size: 10px;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
 }
+
 .separador.activado {
     background-color: var(--amarillo-principal);
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
+
 .activado h2::after {
     color: var(--oscuro);
 }
+
 /* Estilos para el menú de años */
 /* Contenedor del menú */
 .indice-anios {
@@ -141,16 +161,19 @@ main {
     z-index: 1000;
 
 }
+
 .div-anio {
     height: 1px;
-    grid-column: 1 / -1; /* Ocupa toda la fila */
+    grid-column: 1 / -1;
+    /* Ocupa toda la fila */
     visibility: hidden;
     margin-top: -1px;
 }
+
 /* Estilo base de los enlaces de año */
 .enlace-anio {
     padding: 8px 16px;
-    background-color: var(--gris-claro); 
+    background-color: var(--gris-claro);
     color: var(--claro);
     text-decoration: none;
     border-radius: 4px;
@@ -161,14 +184,14 @@ main {
     text-align: center;
 }
 
-/* Efecto Hover (al pasar el ratón) */
+/* Efecto Hover */
 .enlace-anio:hover {
     background-color: var(--borde-gris);
     border-color: var(--principal);
     box-shadow: 0 0 10px rgba(137, 72, 72, 0.3);
 }
 
-/* CLASE ACTIVA: Cuando estás en ese año */
+/* CLASE ACTIVA */
 .anio-active {
     background-color: var(--principal);
     color: var(--claro);
@@ -183,4 +206,22 @@ main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+
+    .seccion-noticias {
+        padding: 3.5rem clamp(1.5rem, 6vw, 5rem) 5rem;
+    }
+}
+
+/* ---------------------
+    SCROLL REVEAL
+    --------------------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

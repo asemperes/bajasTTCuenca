@@ -1,37 +1,59 @@
-
-const items = document.querySelectorAll('.tl-item');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      observer.unobserve(e.target);
+// OBSERVER HISTORIA
+const timelineItems = document.querySelectorAll('.tl-item');
+const observerTimeline = new IntersectionObserver(entradas => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('visible');
+      observerTimeline.unobserve(entrada.target);
     }
   });
 }, { threshold: 0.15 });
-items.forEach(i => observer.observe(i));
+timelineItems.forEach(item => observerTimeline.observe(item));
+
 // OBSERVER INSCRIPCIONES
-const revealEls = document.querySelectorAll('.card, .sportity-item');
-const observer2 = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      observer2.unobserve(e.target);
+const tarjetasInscripcion = document.querySelectorAll('.card, .sportity-item');
+const observerInscripciones = new IntersectionObserver(entradas => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('visible');
+      observerInscripciones.unobserve(entrada.target);
     }
   });
 }, { threshold: 0.1 });
-revealEls.forEach(el => observer2.observe(el));
-// OBSERVER NOTICIAS
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+tarjetasInscripcion.forEach(tarjeta => observerInscripciones.observe(tarjeta));
+
+// OBSERVER INDEX
+const seccionesIndex = document.querySelectorAll('.reveal, .noticia-card');
+const observerIndex = new IntersectionObserver(entradas => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('visible');
+      observerIndex.unobserve(entrada.target);
+    }
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.reveal, .noticia-card').forEach(el => obs.observe(el));
+seccionesIndex.forEach(seccion => observerIndex.observe(seccion));
 
 // OBSERVER POLITICAS
-  const obs2 = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); obs2.unobserve(e.target); }
-    });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.legal-article').forEach(el => obs2.observe(el));
+const articulosLegales = document.querySelectorAll('.legal-article');
+const observerPoliticas = new IntersectionObserver(entradas => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('visible');
+      observerPoliticas.unobserve(entrada.target);
+    }
+  });
+}, { threshold: 0.08 });
+articulosLegales.forEach(articulo => observerPoliticas.observe(articulo));
+
+// OBSERVER NOTICIAS
+const tarjetasNoticias = document.querySelectorAll('.tarjeta-noticia');
+const observerNoticias = new IntersectionObserver(entradas => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('visible');
+      observerNoticias.unobserve(entrada.target);
+    }
+  });
+}, { threshold: 0.1 });
+tarjetasNoticias.forEach(noticia => observerNoticias.observe(noticia));

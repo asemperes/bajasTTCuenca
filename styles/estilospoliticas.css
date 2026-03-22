@@ -4,7 +4,7 @@
       overflow-x: hidden;
     }
  
-    /* ── HEADER ── */
+    /* -- HEADER -- */
     .page-header {
       padding: 8rem clamp(1.5rem, 6vw, 5rem) 0;
       border-bottom: 1px solid var(--borde-gris);
@@ -45,7 +45,7 @@
     @media (max-width: 410px) {
       .header-date { width: 100%; white-space: wrap;}
     }
-    /* ── LAYOUT ── */
+    /* -- LAYOUT -- */
     .legal-layout {
       display: grid;
       grid-template-columns: 220px 1fr;
@@ -54,7 +54,7 @@
       margin: 0 auto;
     }
  
-    /* ── ÍNDICE LATERAL ── */
+    /* -- ÍNDICE LATERAL -- */
     .legal-index {
       padding: 3rem 2rem 3rem clamp(1.5rem, 6vw, 5rem);
       border-right: 1px solid var(--borde-gris);
@@ -103,7 +103,7 @@
       .legal-index { display: none; }
     }
  
-    /* ── CONTENIDO ── */
+    /* -- CONTENIDO -- */
     .legal-content {
       padding: 4rem clamp(1.5rem, 5vw, 4rem) 6rem;
       max-width: 780px;

@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ── HERO ── */
+/* -- HERO -- */
 .hero {
     position: relative;
     min-height: 52vh;
@@ -90,7 +90,7 @@ body {
     pointer-events: none;
 }
 
-/* ── BODY ── */
+/* -- BODY -- */
 .contact-body {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -98,7 +98,7 @@ body {
     border-top: 1px solid var(--borde-gris);
 }
 
-/* ── SIDEBAR ── */
+/* -- SIDEBAR -- */
 .sidebar {
     padding: 3.5rem clamp(1.5rem, 4vw, 3.5rem);
     border-right: 1px solid var(--borde-gris);
@@ -236,7 +236,7 @@ body {
     fill: currentColor;
 }
 
-/* ── FORM ── */
+/* -- FORM -- */
 .form-col {
     padding: 3.5rem clamp(1.5rem, 4vw, 3.5rem);
 }
@@ -360,7 +360,7 @@ body {
     font-style: italic;
 }
 
-/* ── RESPONSIVE ── */
+/* -- RESPONSIVE -- */
 @media (max-width: 700px) {
     .hero {
         grid-template-columns: 1fr;
@@ -405,7 +405,7 @@ body {
     }
 }
 
-/* ── REVEAL ── */
+/* -- REVEAL -- */
 .reveal {
     opacity: 0;
     transform: translateY(22px);
@@ -431,6 +431,8 @@ body {
     .hero{
         padding-top: 0;
     }.hero-left{
-        padding-top:8rem;
+        padding-top:8rem;    
+        border-top: var(--oscuro);
+
     }
 }

@@ -11,7 +11,7 @@
         overflow-x: hidden;
     }
 
-    /* ── HERO ── */
+    /* -- HERO -- */
     .hero {
         position: relative;
         height: 60vh;
@@ -76,14 +76,14 @@
         color: var(--principal);
     }
 
-    /* ── SECTION WRAPPER ── */
+    /* -- SECTION WRAPPER -- */
     .section {
         max-width: 1100px;
         margin: 0 auto;
         padding: 5rem clamp(1.5rem, 5vw, 3rem);
     }
 
-    /* ── INTRO ── */
+    /* -- INTRO -- */
     .intro {
         display: grid;
         grid-template-columns: 1fr 2px 2fr;
@@ -127,7 +127,7 @@
         }
     }
 
-    /* ── TIMELINE TITLE ── */
+    /* -- TIMELINE TITLE -- */
     .tl-title {
         display: flex;
         align-items: center;
@@ -148,7 +148,7 @@
         background: linear-gradient(to right, var(--principal), transparent);
     }
 
-    /* ── TIMELINE ── */
+    /* -- TIMELINE -- */
     .timeline {
         position: relative;
         padding-left: 0;
@@ -215,7 +215,7 @@
         order: 3;
     }
 
-    /* ── DOT ── */
+    /* -- DOT -- */
     .tl-dot {
         display: flex;
         justify-content: center;
@@ -251,7 +251,7 @@
         fill: var(--claro);
     }
 
-    /* ── CONTENT ── */
+    /* -- CONTENT -- */
     .tl-year {
         font-family: 'Bebas Neue', sans-serif;
         font-size: 3.8rem;
@@ -298,7 +298,7 @@
         border-radius: 2px;
     }
 
-    /* ── MEDIA ── */
+    /* -- MEDIA -- */
     .tl-media {
         border-radius: 6px;
         overflow: hidden;
@@ -333,7 +333,7 @@
         border-color: rgba(232, 67, 10, .7);
     }
 
-    /* ── STATS BAR ── */
+    /* -- STATS BAR -- */
     .stats {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -367,7 +367,7 @@
         margin-top: .4rem;
     }
 
-    /* ── MOBILE ── */
+    /* -- MOBILE -- */
     @media (max-width: 768px) {
         .timeline::before {
             left: 20px;

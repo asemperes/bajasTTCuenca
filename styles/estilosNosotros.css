@@ -152,7 +152,7 @@ main {
         flex-direction: column;
     }
     .sobre-nosotros, .eventos-container {
-        padding: 50px 10%;
+        padding: 3.5rem clamp(1.5rem, 6vw, 5rem) 5rem;
     }
     .eventos-imagen, .nosotros-imagen{
         order: 2; 
