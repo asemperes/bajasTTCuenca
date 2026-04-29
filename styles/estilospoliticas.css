@@ -59,7 +59,7 @@
       padding: 3rem 2rem 3rem clamp(1.5rem, 6vw, 5rem);
       border-right: 1px solid var(--borde-gris);
       position: sticky;
-      top: 0;
+      top: 3rem;
       height: fit-content;
       max-height: 100vh;
       overflow-y: auto;
@@ -142,7 +142,7 @@
       margin-bottom: .6rem;
     }
     .legal-article h2 {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--font-display);
       font-size: clamp(1.5rem, 3vw, 2rem);
       letter-spacing: .06em;
       color: var(--claro);

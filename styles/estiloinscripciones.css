@@ -18,7 +18,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: clamp(5rem, 18vw, 16rem);
         color: rgba(255, 255, 255, 0.02);
         white-space: nowrap;
@@ -36,7 +36,7 @@
     }
 
     .page-header h1 {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: clamp(3rem, 8vw, 6.5rem);
         line-height: .9;
         letter-spacing: .04em;
@@ -89,7 +89,7 @@
         background: transparent;
         border: 1px solid var(--borde-gris);
         color: var(--text-light-gray);
-        font-family: 'Barlow', sans-serif;
+        font-family: var(--font-body);
         font-size: .75rem;
         font-weight: 600;
         letter-spacing: .1em;
@@ -184,7 +184,7 @@
         position: absolute;
         top: 1rem;
         left: 1.2rem;
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: 3rem;
         line-height: 1;
         color: rgba(255, 255, 255, .12);
@@ -208,7 +208,7 @@
     }
 
     .card-title {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: 2rem;
         letter-spacing: .06em;
         line-height: 1;
@@ -288,7 +288,7 @@
         padding: .85rem 1.2rem;
         background: var(--principal);
         color: #fff;
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: 1.05rem;
         letter-spacing: .1em;
         text-decoration: none;
@@ -316,7 +316,7 @@
         background: transparent;
         border: 1px solid var(--borde-gris);
         color: var(--text-light-gray);
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: 1rem;
         letter-spacing: .1em;
         text-decoration: none;
@@ -345,7 +345,7 @@
         background: transparent;
         border: 1px solid rgba(230, 175, 73, .4);
         color: var(--amarillo-principal);
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: 1rem;
         letter-spacing: .1em;
         text-decoration: none;
@@ -426,7 +426,7 @@
     }
 
     .sportity-header h2 {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: clamp(1.8rem, 4vw, 2.8rem);
         letter-spacing: .06em;
         white-space: nowrap;
@@ -481,7 +481,7 @@
     }
 
     .sportity-code {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: var(--font-display);
         font-size: 1.4rem;
         letter-spacing: .08em;
         color: var(--amarillo-principal);

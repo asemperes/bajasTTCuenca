@@ -20,13 +20,13 @@ Plataforma web oficial diseñada para la **Baja TT Cuenca**, centrada en ofrecer
 
 [x] Index / Home: Estructura principal de indexado terminada.
 
-[/] Sobre Nosotros: Imagenes y texto correctos, falta terminar la sección de Eventos.
+[X] Sobre Nosotros: Imagenes y texto correctos, falta terminar la sección de Eventos.
 
-[/] Noticias: Grid responsive, falta hacer todas y cada una de las noticias detalladamente.
+[/] Noticias: Grid responsive, falta hacer todas y cada una de las noticias detalladamente (Por terminar).
 
-[ ] Multimedia: Galería de fotos y vídeos de las etapas (Próximamente).
+[X] Multimedia: Galería de fotos y vídeos de las etapas.
 
-[ ] Contacto: Formulario de inscripción y consultas técnicas (Próximamente).
+[X] Contacto: Formulario de inscripción y consultas técnicas.
 
-[ ] Patrocinadores: Espacio dedicado a las marcas que apoyan la Baja TT Cuenca (Próximamente).
+[X] Patrocinadores: Espacio dedicado a las marcas que apoyan la Baja TT Cuenca.
 
