@@ -3,7 +3,7 @@ main {
     background:
         radial-gradient(circle clamp(560px, 150vw, 1920px) at top center, rgba(137, 72, 72, 0.22), transparent 35%),
         linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(15, 15, 15, 1) 28%, rgba(15, 15, 15, 1) 100%);
-
+    background-attachment: fixed;
 }
 
 .seccion-noticias {
@@ -26,6 +26,7 @@ main {
     transition: transform 0.3s ease;
     border: 1px solid var(--borde-gris);
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+    position: relative;
 }
 
 .tarjeta-noticia:hover {
@@ -107,9 +108,16 @@ main {
     color: var(--amarillo-principal);
     text-decoration: none;
 }
-
+/* Con esto hago que todo el card sea clickeable y no solo en enlace */
+.leer-mas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
 .leer-mas:hover {
-    text-decoration: underline;
+    text-shadow: 0 0 3px rgba(230, 175, 73, .8);
+
 }
 
 .separador {
@@ -138,9 +146,9 @@ main {
     content: "NOTICIAS";
     position: absolute;
     text-transform: uppercase;
-    top: -5px;
+    top: -7px;
     color: var(--amarillo-principal);
-    font-size: 10px;
+    font-size: .75rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -223,18 +231,4 @@ main {
     main {
         background:var(--oscuro);
     }
-}
-
-/* ---------------------
-    SCROLL REVEAL
-    --------------------- */
-.reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity .6s ease, transform .6s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
 }

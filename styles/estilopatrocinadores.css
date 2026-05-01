@@ -151,19 +151,21 @@
     font-family: var(--font-body);
     font-size: 15px;
     font-weight: 300;
-    color: var(--text-gray);
+    color: var(--text-gray2);
     line-height: 1.7;
 }
 .cat-back {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     margin-top: 20px;
     font-size: 11px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: var(--borde-gris);
+    color: var(--text-gray);
     text-decoration: none;
     font-family: var(--font-body);
-    transition: color 0.15s;
+    transition: color .2s;
     background-color: var(--gris);
     padding: 8px 10px 8px 10px;
     border-radius: 2px;
@@ -173,9 +175,20 @@
     align-items: center;
     gap:5px;
 }
-.cat-back:hover {
-    color: var(--amarillo-principal);
+.cat-back svg {
+    width: .95em;
+    height: .95em;
+    vertical-align: middle;
+    transition: transform .2s;
+    color:var(--text-gray);
+    fill:var(--text-gray)
 }
+.cat-back:hover, .cat-back:hover svg {
+    color: var(--amarillo-principal);
+    fill:var(--amarillo-principal);
+    border-color: var(--amarillo-principal);
+}
+
 .sponsors-grid {
     display: grid;
     gap: 8px;
@@ -225,8 +238,8 @@ span.sponsor-card {
 .fondo-fia {
     background-color: var(--fia-blue);
     box-shadow: 0 0 10px var(--fia-blue);
-
 }
+
 /* Responsive*/
 @media (max-width: 900px) {
     .sponsors-category {

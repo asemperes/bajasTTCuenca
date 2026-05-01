@@ -156,6 +156,12 @@ body {
     color: var(--text-light-gray);
     transition: color .2s;
 }
+.social-row svg{
+    width: 18px;
+    color:var(--text-gray);
+    height: 18px;
+    transition: transform .2s;
+}
 
 .social-row:last-child {
     border-bottom: none;
@@ -191,13 +197,9 @@ body {
     transition: color .2s;
 }
 
-.social-arrow {
-    font-size: .7rem;
-    color: var(--text-gray);
-    transition: transform .2s;
-}
 
-.social-row:hover .social-arrow {
+
+.social-row:hover svg {
     transform: translateX(3px);
 }
 

@@ -21,6 +21,7 @@
   <!-- COOKIES -->
   <script id="cookieyes" type="text/javascript"
     src="https://cdn-cookieyes.com/client_data/557454200c22beb96a436e76/script.js"></script>
+  <!-- AQUÍ VA A IR EL ADSENSE -->
 </head>
 
 <body>
@@ -48,7 +49,13 @@
         </div>
       </nav>
     </div>
-    <div class="nav-burger" id="burger"><span></span><span></span><span></span></div>
+    <div class="nav-burger" id="burger">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+
+    </div>
   </header>
 
   <div class="nav-mobile" id="mobileNav">
@@ -58,7 +65,12 @@
     <a href="multimedia.html">Multimedia</a>
     <a href="contacto.html">Contacto</a>
     <a href="patrocinadores.html">Patrocinadores</a>
-    <a href="inscripciones.html" style="color:var(--principal)">Inscribirse →</a>
+    <a href="inscripciones.html" style="color:var(--principal)">Inscribirse
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18l6-6-6-6" />
+      </svg>
+    </a>
   </div>
 
   <!--HERO-->
@@ -76,7 +88,7 @@
     <!-- Índice de años superpuesto abajo a la derecha -->
     <nav class="hero-indice" aria-label="Ir a año">
       <span class="hero-indice-label">Ediciones</span>
-      <a href="#y2025">2025</a>
+      <a href="#">2025</a>
       <a href="#y2024">2024</a>
       <a href="#y2023">2023</a>
       <a href="#y2021">2021</a>
@@ -87,7 +99,7 @@
     </nav>
 
     <!-- Flecha scroll down -->
-    <a class="hero-scroll" href="#y2025" aria-label="Ver galería">
+    <a class="hero-scroll" href="#" aria-label="Ver galería">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 5v14M5 12l7 7 7-7" />
@@ -108,7 +120,7 @@
             <span class="edicion-categoria cat-origen">OCTAVA EDICIÓN</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -116,19 +128,19 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2025.jpg"
+        <div class="foto-item reveal foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2025.jpg"
             alt="2025" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2025.jpg" alt="2025"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2025.jpg" alt="2025"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2025.jpg" alt="2025"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2025.jpg" alt="2025"
             loading="lazy"></div>
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2025.jpg"
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2025.jpg"
             alt="2025" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2025.jpg" alt="2025"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2025.jpg" alt="2025"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2025.jpg" alt="2025"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2025.jpg" alt="2025"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2025.jpg" alt="2025"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2025.jpg" alt="2025"
             loading="lazy"></div>
       </div>
     </section>
@@ -143,7 +155,7 @@
             <span class="edicion-categoria cat-origen">SÉPTIMA EDICIÓN</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -151,19 +163,19 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2024.jpg"
+        <div class="foto-item reveal foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2024.jpg"
             alt="2024" loading="lazy"></div>
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2024.jpg" alt="2024"
-            loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2024.png" alt="2024"
-            loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2024.jpg" alt="2024"
-            loading="lazy"></div>
-        <div class="foto-item " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2024.jpg"
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2024.jpg"
             alt="2024" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2024.jpg" alt="2024"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2024.png" alt="2024"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2024.jpg" alt="2024"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2024.jpg" alt="2024"
+            loading="lazy"></div>
+        <div class="foto-item reveal " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2024.jpg" alt="2024"
+            loading="lazy"></div>
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2024.jpg" alt="2024"
+            loading="lazy"></div>
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2024.jpg" alt="2024"
             loading="lazy"></div>
       </div>
     </section>
@@ -178,7 +190,7 @@
             <span class="edicion-categoria cat-origen">SEXTA EDICIÓN</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -186,19 +198,19 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2023.jpg"
+        <div class="foto-item reveal foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2023.jpg"
             alt="2023" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2023.jpg" alt="2023"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2023.jpg" alt="2023"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2023.jpg" alt="2023"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2023.jpg" alt="2023"
             loading="lazy"></div>
-        <div class="foto-item foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2023.jpg"
+        <div class="foto-item reveal foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2023.jpg"
             alt="2023" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2023.jpg" alt="2023"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2023.jpg" alt="2023"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2023.jpg" alt="2023"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2023.jpg" alt="2023"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2023.jpg" alt="2023"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2023.jpg" alt="2023"
             loading="lazy"></div>
       </div>
     </section>
@@ -213,7 +225,7 @@
             <span class="edicion-categoria cat-origen">QUINTA EDICIÓN</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -221,19 +233,19 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2021.jpg" alt="2021"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2021.jpg" alt="2021"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2021.jpg" alt="2021"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2021.jpg" alt="2021"
             loading="lazy"></div>
-        <div class="foto-item foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2021.jpg"
+        <div class="foto-item reveal foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2021.jpg"
             alt="2021" loading="lazy"></div>
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2021.jpg"
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2021.jpg"
             alt="2021" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2021.jpg" alt="2021"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2021.jpg" alt="2021"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2021.jpg" alt="2021"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2021.jpg" alt="2021"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2021.jpg" alt="2021"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2021.jpg" alt="2021"
             loading="lazy"></div>
       </div>
     </section>
@@ -248,7 +260,7 @@
             <span class="edicion-categoria cat-origen">CUARTA EDICIÓN</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -256,19 +268,19 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2020.jpg"
+        <div class="foto-item reveal foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2020.jpg"
             alt="2020" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2020.jpg" alt="2020"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2020.jpg" alt="2020"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2020.jpg" alt="2020"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2020.jpg" alt="2020"
             loading="lazy"></div>
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2020.jpg" alt="2020"
-            loading="lazy"></div>
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2020.jpg"
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2020.jpg"
             alt="2020" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2020.jpg" alt="2020"
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2020.jpg"
+            alt="2020" loading="lazy"></div>
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2020.jpg" alt="2020"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2020.jpg" alt="2020"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2020.jpg" alt="2020"
             loading="lazy"></div>
       </div>
     </section>
@@ -283,7 +295,7 @@
             <span class="edicion-categoria cat-origen">TERCERA EDICIÓN</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -291,19 +303,19 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2019.jpg" alt="2019"
+        <div class="foto-item reveal " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2019.jpg" alt="2019"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2019.jpg" alt="2019"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2019.jpg" alt="2019"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2019.jpg"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2019.jpg" alt="2019"
+            loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2019.jpg"
             alt="2019" loading="lazy"></div>
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto7-2019.jpg" alt="2019"
+        <div class="foto-item reveal " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2019.jpg" alt="2019"
             loading="lazy"></div>
-        <div class="foto-item " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2019.jpg"
-            alt="2019" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2019.jpg" alt="2019"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2019.jpg" alt="2019"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2019.jpg" alt="2019"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2019.jpg" alt="2019"
             loading="lazy"></div>
 
       </div>
@@ -319,7 +331,7 @@
             <span class="edicion-categoria cat-origen">SEGUNDA EDICIÓN</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -327,15 +339,15 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2017.jpg"
+        <div class="foto-item reveal foto-grande" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2017.jpg"
             alt="2017" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2017.jpg" alt="2017"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2017.jpg" alt="2017"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2017.jpg" alt="2017"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2017.jpg" alt="2017"
             loading="lazy"></div>
-        <div class="foto-item " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2017.jpg"
-            alt="2017" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2017.jpg" alt="2017"
+        <div class="foto-item reveal " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2017.jpg" alt="2017"
+            loading="lazy"></div>
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2017.jpg" alt="2017"
             loading="lazy"></div>
       </div>
     </section>
@@ -350,7 +362,7 @@
             <span class="edicion-categoria cat-origen">Primera edición</span>
           </div>
         </div>
-        <a class="edicion-volver" href="#y2025">
+        <a class="edicion-volver" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7" />
@@ -358,17 +370,17 @@
           Volver al inicio</a>
       </div>
       <div class="foto-mosaico">
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2016.jpg"
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto1-2016.jpg"
             alt="2016" loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2016.jpg" alt="2016"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto2-2016.jpg" alt="2016"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2016.jpg" alt="2016"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto4-2016.jpg" alt="2016"
             loading="lazy"></div>
-        <div class="foto-item foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2016.jpg"
+        <div class="foto-item reveal foto-apaisada" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto3-2016.jpg"
             alt="2016" loading="lazy"></div>
-        <div class="foto-item " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2016.jpg" alt="2016"
+        <div class="foto-item reveal " onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto5-2016.jpg" alt="2016"
             loading="lazy"></div>
-        <div class="foto-item" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2016.jpg" alt="2016"
+        <div class="foto-item reveal" onclick="abrirLightbox(this)"><img src="img/galeria/fotos/foto6-2016.jpg" alt="2016"
             loading="lazy"></div>
       </div>
     </section>
@@ -377,7 +389,9 @@
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" onclick="cerrarLightbox()">
-    <button class="lightbox-cerrar" onclick="cerrarLightbox()">✕</button>
+    <button class="lightbox-cerrar" onclick="cerrarLightbox()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+    </button>
     <img class="lightbox-foto" id="lightboxFoto" src="" alt="" onclick="event.stopPropagation()">
   </div>
 
@@ -447,6 +461,7 @@
   <script src="scripts/scriptDesplegable.js"></script>
   <script src="scripts/scriptformfooter.js"></script>
   <script src="scripts/abrirFotos.js"></script>
+  <script src="scripts/scriptscrollreveal.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-62VNT8HSR0"></script>
   <script>

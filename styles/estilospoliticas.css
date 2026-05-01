@@ -210,4 +210,11 @@
       color: var(--amarillo-principal) !important;
       border-bottom-color: rgba(230,175,73,.4) !important;
     }
+    .contact-block p svg {
+      width: 1.2em;
+      height: 1.2em;
+      vertical-align: middle;
+      margin-right: .5em;
+      fill: var(--amarillo-principal);
+    }
     .contact-block a:hover { border-bottom-color: var(--amarillo-principal) !important; }

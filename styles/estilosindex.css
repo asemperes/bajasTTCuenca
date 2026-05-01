@@ -316,6 +316,8 @@
             gap: 3rem;
             flex-wrap: wrap;
             border-bottom: 1px solid var(--borde-gris);
+            border-top: 1px solid var(--borde-gris);
+
         }
         .inscripcion-cta::before {
             content: 'INSCRÍBETE';
@@ -582,6 +584,7 @@
             padding: 4rem clamp(1.5rem, 6vw, 5rem);
             background: var(--gris);
             border-bottom: 1px solid var(--borde-gris);
+            border-top: 1px solid var(--borde-gris);
         }
         .patros-grid {
             display: flex;
@@ -606,11 +609,3 @@
         .patro-item img:hover {
             transform: scale(1.08);
         }
-        /* ---------------------
-           SCROLL REVEAL
-        ---------------------===*/
-        .reveal {
-            opacity: 0; transform: translateY(24px);
-            transition: opacity .6s ease, transform .6s ease;
-        }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
