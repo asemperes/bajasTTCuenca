@@ -1,0 +1,215 @@
+/*---------------------*/
+/* ESTILO GENERAL */
+/*---------------------*/
+main {
+    padding-top: 80px; /* Para que no quede debajo del header */
+    background-color: var(--oscuro);
+    background:
+        radial-gradient(circle clamp(560px, 150vw, 1920px) at top center, rgba(137, 72, 72, 0.22), transparent 35%),
+        linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(15, 15, 15, 1) 28%, rgba(15, 15, 15, 1) 100%);
+
+}
+
+/*---------------------*/
+/* SECCIÓN NOSOTROS */
+/*---------------------*/
+.sobre-nosotros {
+    padding: 80px 10%;
+    color: var(--claro);
+}
+.contenedor-nosotros {
+    display: flex;
+
+    gap: 50px;
+    flex-wrap: wrap; /* Para que en móvil baje una debajo de otra */
+}
+.nosotros-imagen {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+    clip-path: polygon(1% 0, 90% 0, 100% 100%, 10% 100%);
+}
+.nosotros-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: 0.3s;
+    background-color: var(--principal)
+}
+.nosotros-imagen:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.nosotros-texto {
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    justify-content: center;
+    flex-flow:column;
+}
+.titulo-seccion {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+.titulo-seccion span {
+    color: var(--amarillo-principal);
+    text-transform: uppercase;
+}
+.nosotros-texto p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.btn-saber-mas {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--principal);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Efecto inclinado */
+    transition: 0.3s;
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+}
+.btn-saber-mas:hover {
+    background-color: var(--amarillo-principal);
+    transform: translateX(10px);
+}
+/*---------------------*/
+/* SECCIÓN EVENTOS */
+/*---------------------*/
+.eventos-container {
+    padding: 80px 10%;
+    font-family: sans-serif;
+    margin: auto;
+    display: flex;
+    gap:50px;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex:1;
+}
+.agenda h2 {
+    font-size: 1.8rem;
+    color: var(--amarillo-principal);
+
+}
+.evento-card {
+    background: var(--gris);
+    color: var(--claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    gap:15px;
+    border: 1px solid var(--borde-gris);
+}
+
+.evento-card:hover {
+    transform: translateX(10px); /* Se mueve un poco al pasar el ratón */
+    background: var(--gris-claro);
+}
+.fecha {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 20px; /* Para que no lo pise el recorte */
+    color: var(--text-gray); /* Color de acento */
+    min-width: 80px;
+}
+.info h3 { margin: 0; font-size: 1.1rem; }
+.info p { margin: 5px 0 0; opacity: 0.8; font-size: 0.9rem; }
+.btn-evento {
+    background: var(--principal);
+    color: var(--claro);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.eventos-imagen {
+    flex: 1;
+    position: relative;
+    clip-path: polygon(1% 0, 90% 0, 100% 100%, 10% 100%);
+    min-width: 300px;
+}.eventos-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(20%);
+    transition: 0.3s;
+    background-color: var(--principal)
+}.eventos-imagen:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+@media (max-width: 1033px) {
+
+    .contenedor-nosotros, .eventos-container {
+        flex-direction: column;
+    }
+    .sobre-nosotros, .eventos-container {
+        padding: 3.5rem clamp(1.5rem, 6vw, 5rem) 5rem;
+    }
+    .eventos-imagen, .nosotros-imagen{
+        order: 2; 
+        clip-path: none;
+    }
+    .eventos-imagen img, .nosotros-imagen img {
+        border-radius: 5px;
+        width: 100%;
+        min-width: initial;
+    }
+    .eventos-imagen:hover img, .nosotros-imagen:hover img {
+        filter: grayscale(0%);
+        transform: none;
+    }
+    .agenda, .nosotros-texto {
+        order: 1; 
+    }
+}
+@media (max-width: 470px) {
+    .evento-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }.fecha {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }.btn-evento {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+    }.nosotros-texto {
+        min-width: initial;
+    }  .eventos-imagen, .nosotros-imagen{
+        min-width: initial;
+        width: 100%;
+    }
+}
+@media (max-width: 820px) {
+    main {
+        background:var(--oscuro);
+    }
+    .btn-saber-mas {
+        max-width: none;
+        clip-path: none;
+        
+    }
+}
