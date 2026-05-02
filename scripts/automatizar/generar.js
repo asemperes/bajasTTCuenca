@@ -1,7 +1,11 @@
+// ARCHIVO JS PARA GENERAR HTML POR CADA ENTRADA DEL JSON
+// ME LO HIZO CLAUDE PERO ERA NECESARIO PARA HACERLO RÁPIDO
 const fs = require('fs');
+const path = require('path');
 const noticias = require('./noticias.json');
 
-fs.mkdirSync('./noticias', { recursive: true });
+const DIR_SALIDA = path.join(__dirname, '../../noticias');
+fs.mkdirSync(DIR_SALIDA, { recursive: true });
 
 function formatearFecha(isoString) {
     const fecha = new Date(isoString);
@@ -32,12 +36,12 @@ function generarHTML(noticia) {
     <meta property="og:type" content="article">
     <title>${noticia.titulo} - Baja TT Cuenca</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../styles/estilosGenerales.css">
-    <link rel="stylesheet" href="../styles/estilosNoticia.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicons2/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons2/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons2/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons2/apple-touch-icon.png">
+    <link rel="stylesheet" href="../../styles/estilosGenerales.css">
+    <link rel="stylesheet" href="../../styles/estilosNoticia.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicons2/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicons2/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicons2/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicons2/apple-touch-icon.png">
     <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/557454200c22beb96a436e76/script.js"></script>
 </head>
 <body>
@@ -45,20 +49,20 @@ function generarHTML(noticia) {
     <!-- HEADER -->
     <header class="header" nombre-seccion="Noticias">
         <div class="contenedor-logo">
-            <img src="../img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
+            <img src="../../img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
         </div>
         <div class="contenedor-navegacion">
             <nav>
                 <ul>
-                    <li class="listas-nav"><a href="../index.html" class="enlace-nav"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg></a></li>
-                    <li class="listas-nav"><a href="../nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
-                    <li class="listas-nav"><a href="../noticias.html" class="enlace-nav-activo">Noticias</a></li>
-                    <li class="listas-nav"><a href="../contacto.html" class="enlace-nav">Contacto</a></li>
-                    <li class="listas-nav"><a href="../multimedia.html" class="enlace-nav">Multimedia</a></li>
-                    <li class="listas-nav"><a href="../patrocinadores.html" class="enlace-nav">Patrocinadores</a></li>
+                    <li class="listas-nav"><a href="../../index.html" class="enlace-nav"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg></a></li>
+                    <li class="listas-nav"><a href="../../nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
+                    <li class="listas-nav"><a href="../../noticias.html" class="enlace-nav-activo">Noticias</a></li>
+                    <li class="listas-nav"><a href="../../contacto.html" class="enlace-nav">Contacto</a></li>
+                    <li class="listas-nav"><a href="../../multimedia.html" class="enlace-nav">Multimedia</a></li>
+                    <li class="listas-nav"><a href="../../patrocinadores.html" class="enlace-nav">Patrocinadores</a></li>
                 </ul>
                 <div class="contenedor-inscripcion">
-                    <a href="../inscripciones.html" class="boton-inscripcion">Inscribirse</a>
+                    <a href="../../inscripciones.html" class="boton-inscripcion">Inscribirse</a>
                 </div>
             </nav>
         </div>
@@ -69,13 +73,13 @@ function generarHTML(noticia) {
 
     <!-- mobile nav -->
     <div class="nav-mobile" id="mobileNav">
-        <a href="../index.html">Inicio</a>
-        <a href="../nosotros.html">Nosotros</a>
-        <a href="../noticias.html">Noticias</a>
-        <a href="../multimedia.html">Multimedia</a>
-        <a href="../contacto.html">Contacto</a>
-        <a href="../patrocinadores.html">Patrocinadores</a>
-        <a href="../inscripciones.html" style="color:var(--principal)">Inscribirse
+        <a href="../../index.html">Inicio</a>
+        <a href="../../nosotros.html">Nosotros</a>
+        <a href="../../noticias.html">Noticias</a>
+        <a href="../../multimedia.html">Multimedia</a>
+        <a href="../../contacto.html">Contacto</a>
+        <a href="../../patrocinadores.html">Patrocinadores</a>
+        <a href="../../inscripciones.html" style="color:var(--principal)">Inscribirse
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6" /></svg>
         </a>
     </div>
@@ -98,9 +102,9 @@ function generarHTML(noticia) {
     <!-- CUERPO -->
     <div class="noticia-body">
         <div class="noticia-breadcrumb">
-            <a href="../index.html">Inicio</a>
+            <a href="../../index.html">Inicio</a>
             <span class="noticia-breadcrumb-sep">›</span>
-            <a href="../noticias.html">Noticias</a>
+            <a href="../../noticias.html">Noticias</a>
             <span class="noticia-breadcrumb-sep">›</span>
             <span>${noticia.titulo.substring(0, 60)}${noticia.titulo.length > 60 ? '...' : ''}</span>
         </div>
@@ -111,7 +115,7 @@ function generarHTML(noticia) {
             ${contenidoHTML}
         </div>
 
-        <a href="../noticias.html" class="noticia-back">
+        <a href="../../noticias.html" class="noticia-back">
             <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
             Volver a noticias
         </a>
@@ -121,7 +125,7 @@ function generarHTML(noticia) {
     <footer class="footer">
         <div class="footer-hero">
             <div class="footer-brand">
-                <img src="../img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
+                <img src="../../img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
                 <div class="footer-brand-text">
                     <p class="footer-brand-name">Baja TT Cuenca</p>
                     <p class="footer-brand-sub">FIA European Cup · 2026</p>
@@ -140,13 +144,13 @@ function generarHTML(noticia) {
             <nav class="footer-nav">
                 <p class="footer-nav-label">Navegación</p>
                 <div class="footer-nav-links">
-                    <a href="../index.html">Inicio</a>
-                    <a href="../nosotros.html">Sobre nosotros</a>
-                    <a href="../noticias.html">Noticias</a>
-                    <a href="../multimedia.html">Multimedia</a>
-                    <a href="../inscripciones.html">Inscripciones</a>
-                    <a href="../contacto.html">Contacto</a>
-                    <a href="../patrocinadores.html">Patrocinadores</a>
+                    <a href="../../index.html">Inicio</a>
+                    <a href="../../nosotros.html">Sobre nosotros</a>
+                    <a href="../../noticias.html">Noticias</a>
+                    <a href="../../multimedia.html">Multimedia</a>
+                    <a href="../../inscripciones.html">Inscripciones</a>
+                    <a href="../../contacto.html">Contacto</a>
+                    <a href="../../patrocinadores.html">Patrocinadores</a>
                 </div>
             </nav>
             <div class="footer-divider-v"></div>
@@ -174,13 +178,13 @@ function generarHTML(noticia) {
         </div>
         <div class="footer-lower">
             <span class="footer-copy">© 2026 Cuenca Motor 4×4 <span class="footer-copy-dot">·</span> Baja TT Cuenca</span>
-            <a href="../politicas.html" class="footer-policy">Política de privacidad</a>
+            <a href="../../politicas.html" class="footer-policy">Política de privacidad</a>
         </div>
     </footer>
 
-    <script src="../scripts/scriptdesplegable.js"></script>
-    <script src="../scripts/scriptscrollreveal.js"></script>
-    <script src="../scripts/scriptformfooter.js"></script>
+    <script src="../../scripts/scriptdesplegable.js"></script>
+    <script src="../../scripts/scriptscrollreveal.js"></script>
+    <script src="../../scripts/scriptformfooter.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-62VNT8HSR0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -196,12 +200,17 @@ function generarHTML(noticia) {
 let generadas = 0;
 
 noticias.forEach(noticia => {
-    const slug = noticia.url.split('/').pop();
-    if (!slug) return;
+    const slug = noticia.url.split('/').filter(Boolean).pop();
+    if (!slug || slug.startsWith('http')) return;
+
+    const año = new Date(noticia.fecha).getFullYear();
+    const dirAño = path.join(DIR_SALIDA, String(año));
+    fs.mkdirSync(dirAño, { recursive: true });
 
     const html = generarHTML(noticia);
-    fs.writeFileSync(`./noticias/${slug}.html`, html, 'utf8');
-    console.log(`✅ noticias/${slug}.html`);
+    const fichero = path.join(dirAño, `${slug}.html`);
+    fs.writeFileSync(fichero, html, 'utf8');
+    console.log(`✅ noticias/${año}/${slug}.html`);
     generadas++;
 });
 
