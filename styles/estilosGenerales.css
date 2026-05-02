@@ -55,6 +55,7 @@ h6 {
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--oscuro);
 }
 
 ::selection {
@@ -112,6 +113,7 @@ body {
     margin: 10px auto;
     border-radius: 25px;
     width: calc(100% - 15px);
+
 }
 
 .contenedor-logo img {
@@ -776,6 +778,11 @@ body {
 @media (max-width: 570px) {
     .header::after {
         display: none;
+    }
+    .header {
+        background-color: var(--oscuro);
+        box-shadow: 0px 0px 10px 0px var(--oscuro),
+                    0px 0px 20px 0px var(--negro);
     }
 }
 
