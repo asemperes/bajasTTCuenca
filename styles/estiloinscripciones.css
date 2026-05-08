@@ -108,7 +108,6 @@
     .manual-btn svg {
         width: 13px;
         height: 13px;
-        fill: currentColor;
         flex-shrink: 0;
     }
 
@@ -304,7 +303,6 @@
     .btn-primary svg {
         width: 16px;
         height: 16px;
-        fill: currentColor;
     }
 
     .btn-secondary {
@@ -333,7 +331,6 @@
     .btn-secondary svg {
         width: 14px;
         height: 14px;
-        fill: currentColor;
     }
 
     .btn-outline-yellow {
@@ -361,9 +358,7 @@
     .btn-outline-yellow svg {
         width: 14px;
         height: 14px;
-        fill: currentColor;
     }
-
     .btn-divider {
         display: flex;
         align-items: center;
@@ -404,9 +399,8 @@
     }
 
     .meta-link svg {
-        width: 11px;
-        height: 11px;
-        fill: currentColor;
+        width: 12px;
+        height: 12px;
     }
 
     .meta-link:hover {
@@ -511,7 +505,6 @@
     .sportity-link svg {
         width: 11px;
         height: 11px;
-        fill: currentColor;
     }
 
 @media (max-width: 1250px) {
