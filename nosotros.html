@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -18,8 +18,13 @@
     <title>Sobre nosotros | Baja TT Cuenca</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500&display=swap"></noscript>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500&display=swap">
+    </noscript>
     <link rel="stylesheet" href="styles/estilosGenerales.css">
     <link rel="stylesheet" href="styles/estilosNosotros.css">
     <link rel="icon" type="image/x-icon" href="img/favicons2/favicon.ico">
@@ -39,15 +44,26 @@
         </div>
         <div class="contenedor-navegacion">
             <nav>
-                <ul>
+                <ul class="nav-escritorio">
                     <li class="listas-nav"><a href="index.html" class="enlace-nav"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                             </svg></a></li>
-                    <li class="listas-nav"><a href="nosotros.html" class="enlace-nav-activo">Sobre nosotros</a></li>
-                    <li class="listas-nav"><a href="noticias.html" class="enlace-nav">Noticias</a></li>
+                    <li class="listas-nav listas-nav--con-submenu">
+                        <a href="nosotros.html" class="enlace-nav-activo">Sobre nosotros</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="nosotros.html#organizadores">Organizadores</a></li>
+                        </ul>
+                    </li>
+                    <li class="listas-nav listas-nav--con-submenu">
+                        <a href="noticias.html" class="enlace-nav enlace-nav--con-submenu">Noticias</a>
+                        <ul class="submenu">
+                            <li><a href="prensa.html">Prensa</a></li>
+                        </ul>
+                    </li>
                     <li class="listas-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
                     <li class="listas-nav"><a href="multimedia.html" class="enlace-nav">MULTIMEDIA</a></li>
                     <li class="listas-nav"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
@@ -84,11 +100,7 @@
 
         <!-- SECCIÓN INFO NOSOTROS -->
         <section class="sobre-nosotros" id="nosotros">
-            <nav class="ruta" aria-label="Ruta de navegación">
-                <a href="../index.html">Inicio</a>
-                <span>/</span>
-                <a href="../nosotros.html">Sobre nosotros</a>
-            </nav>
+
             <div class="contenedor-nosotros">
                 <div class="nosotros-imagen">
                     <img src="img/seccionNosotros.webp" alt="Baja TT Cuenca en acción">
@@ -142,7 +154,42 @@
                 <img src="img/seccionEventos-1024x683.webp" alt="Baja TT Cuenca en acción">
             </div>
         </section>
+        <!-- SECCIÓN ORGANIZADORES -->
+        <section class="contenedor-organizadores" id="organizadores">
 
+            <!-- Banner -->
+            <div class="organizadores-banner">
+                <img src="img/cuencaMotor4x4.webp" alt="Organizador oficial" class="organizadores-banner-img">
+                <span class="organizadores-banner-texto">ORGANIZA<br>DORES</span>
+            </div>
+            <div class="organizadores-contenido">
+                <div class="organizadores-imagen">
+                    <img src="img/organizadores.webp" alt="Organizadores del Rallye TT Cuenca">
+                </div>
+                <div class="organizadores-texto">
+                    <h2 class="titulo-seccion">El equipo detrás del <span>evento</span></h2>
+                        <span>  
+                            El <strong>Club Deportivo Cuenca Motor 4x4</strong> es la entidad responsable de organizar el Rallye TT Cuenca /
+                            Baja TT Cuenca. Se trata de un club formado por apasionados del mundo <strong>off-road, la navegación y
+                            la competición todoterreno</strong>, con una fuerte vinculación con el territorio y el automovilismo en
+                            la provincia de <strong>Cuenca</strong>.
+                        </span>
+                    <br>
+                        <span>
+                            Desde su creación, el club ha trabajado para impulsar el deporte del motor off-road en
+                            Castilla-La Mancha, organizando actividades deportivas y eventos relacionados con el mundo del
+                            4x4.
+                        </span>
+                    <br>
+                        <span>
+                            Gracias al trabajo del club y al apoyo institucional y local, el <strong>Rallye TT Cuenca</strong> se ha
+                            consolidado como uno de los eventos off-road más relevantes de España y, desde 2026, como prueba
+                            del calendario europeo.
+                        </span>
+                </div>
+            </div>
+
+        </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
@@ -150,8 +197,7 @@
             <div class="footer-brand">
                 <img src="img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
                 <div class="footer-brand-text">
-                    <p class="footer-brand-name">Baja TT Cuenca</p>
-                    <p class="footer-brand-sub">FIA European Cup - 2026</p>
+                    <p class="footer-brand-name">Baja <span style="color:var(--amarillo-principal)">TT</span> Cuenca</p>
                 </div>
             </div>
             <div class="footer-redes">
