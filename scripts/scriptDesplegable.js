@@ -1,9 +1,10 @@
     // Mobile nav
-const burger = document.getElementById('burger');
-const mobileNav = document.getElementById('mobileNav');
-
-if (burger) {
-    burger.addEventListener('click', () => {
-        mobileNav.classList.toggle('open');
+    // Script para el desplegable del nav
+    document.getElementById('burger').addEventListener('click', () => {
+        document.getElementById('mobileNav').classList.toggle('open');
     });
-}
+ 
+    document.getElementById('mobileClose').addEventListener('click', () => {
+        document.getElementById('mobileNav').classList.toggle('open');
+    });
+ 

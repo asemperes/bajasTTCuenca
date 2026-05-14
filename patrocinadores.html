@@ -9,7 +9,7 @@
   <!-- Desarrollado por Álvaro Sempere Serrano y Hugo Gallego Palacios -->
   <meta name="description"
     content="Patrocinadores y colaboradores oficiales de la Baja TT Cuenca 2026. Instituciones y empresas que hacen posible el evento.">
-  <meta property="og:title" content="Patrocinadores — Baja TT Cuenca">
+  <meta property="og:title" content="Patrocinadores - Baja TT Cuenca">
   <meta property="og:description"
     content="Conoce a los patrocinadores y colaboradores que hacen posible la Baja TT Cuenca cada año.">
   <meta property="og:image" content="https://cuencamotor4x4.com/img/hero.webp">
@@ -39,14 +39,25 @@
     </div>
     <div class="contenedor-navegacion">
       <nav>
-        <ul>
+        <ul class="nav-escritorio">
           <li class="listas-nav"><a href="index.html" class="enlace-nav"><svg xmlns="http://www.w3.org/2000/svg"
                 fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg></a></li>
-          <li class="listas-nav"><a href="nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
-          <li class="listas-nav"><a href="noticias.html" class="enlace-nav">Noticias</a></li>
+          <li class="listas-nav listas-nav--con-submenu">
+              <a href="nosotros.html" class="enlace-nav">Sobre nosotros</a>
+              <ul class="submenu">
+                  <li><a href="historia.html">Historia</a></li>
+                  <li><a href="nosotros.html#organizadores">Organizadores</a></li>
+              </ul>
+          </li>
+          <li class="listas-nav listas-nav--con-submenu">
+              <a href="noticias.html" class="enlace-nav enlace-nav--con-submenu">Noticias</a>
+              <ul class="submenu">
+                  <li><a href="prensa.html">Prensa</a></li>
+              </ul>
+          </li>
           <li class="listas-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
           <li class="listas-nav"><a href="multimedia.html" class="enlace-nav">MULTIMEDIA</a></li>
           <li class="listas-nav"><a href="patrocinadores.html" class="enlace-nav-activo">PATROCINADORES</a></li>
@@ -83,7 +94,7 @@
   <header class="hero">
 
     <div class="hero-body">
-      <span class="hero-overline">Partners · Baja TT Cuenca · 2026</span>
+      <span class="hero-overline">Partners - Baja TT Cuenca</span>
       <h1 class="hero-title">
         Patrocinadores<br>
         y <span class="color-titulo">colaboradores</span>
@@ -355,13 +366,12 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
+    <footer class="footer">
     <div class="footer-hero">
       <div class="footer-brand">
         <img src="img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
         <div class="footer-brand-text">
-          <p class="footer-brand-name">Baja TT Cuenca</p>
-          <p class="footer-brand-sub">FIA European Cup · 2026</p>
+          <p class="footer-brand-name">Baja <span style="color:var(--amarillo-principal)">TT</span> Cuenca</p>
         </div>
       </div>
       <div class="footer-redes">
@@ -421,8 +431,8 @@
 
     <div class="footer-lower">
       <span class="footer-copy">
-        © 2026 Cuenca Motor 4×4
-        <span class="footer-copy-dot">·</span>
+        © 2026 Cuenca Motor 4x4
+        <span class="footer-copy-dot">-</span>
         Baja TT Cuenca
       </span>
       <a href="politicas.html" class="footer-policy">Política de privacidad</a>

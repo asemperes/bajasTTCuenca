@@ -9,7 +9,7 @@
   <!-- Desarrollado por Álvaro Sempere Serrano y Hugo Gallego Palacios -->
   <meta name="description"
     content="Descubre la historia del Rallye TT Cuenca, desde sus orígenes en 2016 hasta su incorporación al calendario europeo FIA en 2026.">
-  <meta property="og:title" content="Historia — Baja TT Cuenca">
+  <meta property="og:title" content="Historia - Baja TT Cuenca">
   <meta property="og:description"
     content="De prueba nacional a evento europeo FIA. Así ha crecido el Rallye TT Cuenca desde 2016.">
   <meta property="og:image" content="https://cuencamotor4x4.com/img/hero.webp">
@@ -39,14 +39,25 @@
     </div>
     <div class="contenedor-navegacion">
       <nav>
-        <ul>
+        <ul class="nav-escritorio">
           <li class="listas-nav"><a href="index.html" class="enlace-nav"><svg xmlns="http://www.w3.org/2000/svg"
                 fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg></a></li>
-          <li class="listas-nav"><a href="nosotros.html" class="enlace-nav-activo">Sobre nosotros</a></li>
-          <li class="listas-nav"><a href="noticias.html" class="enlace-nav">Noticias</a></li>
+          <li class="listas-nav listas-nav--con-submenu">
+              <a href="nosotros.html" class="enlace-nav-activo">Sobre nosotros</a>
+              <ul class="submenu">
+                  <li><a href="historia.html">Historia</a></li>
+                  <li><a href="nosotros.html#organizadores">Organizadores</a></li>
+              </ul>
+          </li>
+          <li class="listas-nav listas-nav--con-submenu">
+              <a href="noticias.html" class="enlace-nav enlace-nav--con-submenu">Noticias</a>
+              <ul class="submenu">
+                  <li><a href="prensa.html">Prensa</a></li>
+              </ul>
+          </li>
           <li class="listas-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
           <li class="listas-nav"><a href="multimedia.html" class="enlace-nav">MULTIMEDIA</a></li>
           <li class="listas-nav"><a href="patrocinadores.html" class="enlace-nav">PATROCINADORES</a></li>
@@ -221,13 +232,56 @@
 
   </main>
   <!-- FOOTER -->
-  <footer class="footer">
+      <!-- PATROCINADORES -->
+    <section class="patrocinadores-section reveal">
+        <div class="section-header">
+            <h2>Patrocinadores</h2>
+            <div class="section-line"></div>
+            <a href="patrocinadores.html" class="section-link">Ver todos
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H7M17 7v10" />
+                </svg>
+            </a>
+        </div>
+        <div class="patros-grid">
+            <div class="patro-item"><a href="https://ayuntamiento.cuenca.es/" target="_blank"><img
+                        src="img/logosPatros/ayuntamiento-cuenca-logo.webp" alt="Ayuntamiento de Cuenca"></a></div>
+            <div class="patro-item"><a href="https://villardeolalla.com/" target="_blank"><img
+                        src="img/logosPatros/ayuntamiento-villar-de-olalla.webp"
+                        alt="Ayuntamiento Villar de Olalla"></a>
+            </div>
+            <div class="patro-item"><a href="https://certt.rfeda.es/" target="_blank"><img
+                        src="img/logosPatros/certt-cubo.webp" alt="CERTT"></a></div>
+            <div class="patro-item"><a href="https://www.csd.gob.es" target="_blank"><img
+                        src="img/logosPatros/consejo-superior-de-deportes.webp" alt="Consejo Superior de Deportes"></a>
+            </div>
+            <div class="patro-item"><a href="https://www.dipucuenca.es" target="_blank"><img
+                        src="img/logosPatros/diputacion-cuenca.webp" alt="Diputación de Cuenca"></a></div>
+            <div class="patro-item"><a href="https://www.facm.es" target="_blank"><img src="img/logosPatros/facm.webp"
+                        alt="FACM"></a></div>
+            <div class="patro-item"><a href="https://fcmm.net" target="_blank"><img src="img/logosPatros/fcmm.webp"
+                        alt="FCMM"></a></div>
+            <div class="patro-item"><a href="https://www.patel.es/es/frivall.html" target="_blank"><img
+                        src="img/logosPatros/frivall.webp" alt="FriVall"></a></div>
+            <div class="patro-item"><a href="https://www.globalcaja.es" target="_blank"><img
+                        src="img/logosPatros/globalcaja.webp" alt="Globalcaja"></a></div>
+            <div class="patro-item"><a href="https://www.gt2i.es" target="_blank"><img src="img/logosPatros/gt2i.webp"
+                        alt="GT2I"></a></div>
+            <div class="patro-item"><a href="https://www.castillalamancha.es" target="_blank"><img
+                        src="img/logosPatros/jccm-logo.webp" alt="Junta CLM"></a></div>
+            <div class="patro-item"><a href="https://www.michelin.es" target="_blank"><img
+                        src="img/logosPatros/logo-michelin.webp" alt="Michelin"></a></div>
+            <div class="patro-item"><a href="https://www.rfeda.es" target="_blank"><img
+                        src="img/logosPatros/rfeda-vertical.color.webp" alt="RFEDA"></a></div>
+        </div>
+    </section>
+    <footer class="footer">
     <div class="footer-hero">
       <div class="footer-brand">
         <img src="img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
         <div class="footer-brand-text">
-          <p class="footer-brand-name">Baja TT Cuenca</p>
-          <p class="footer-brand-sub">FIA European Cup · 2026</p>
+          <p class="footer-brand-name">Baja <span style="color:var(--amarillo-principal)">TT</span> Cuenca</p>
         </div>
       </div>
       <div class="footer-redes">

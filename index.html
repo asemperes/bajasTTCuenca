@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0f0f0f">
+    <meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: dark)" />
     <meta name="author" content="Club Deportivo Cuenca Motor 4x4">
     <!-- Desarrollado por Álvaro Sempere Serrano y Hugo Gallego Palacios -->
     <meta name="description"
@@ -37,49 +38,91 @@
         <div class="contenedor-logo">
             <img src="img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
         </div>
-        <div class="contenedor-navegacion">
-            <nav>
-                <ul>
-                    <li class="listas-nav"><a href="index.html" class="enlace-nav-activo"><svg
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                            </svg></a></li>
-                    <li class="listas-nav"><a href="nosotros.html" class="enlace-nav">Sobre nosotros</a></li>
-                    <li class="listas-nav"><a href="noticias.html" class="enlace-nav">Noticias</a></li>
-                    <li class="listas-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
-                    <li class="listas-nav"><a href="multimedia.html" class="enlace-nav">Multimedia</a></li>
-                    <li class="listas-nav"><a href="patrocinadores.html" class="enlace-nav">Patrocinadores</a></li>
-                </ul>
-                <div class="contenedor-inscripcion">
-                    <a href="inscripciones.html" class="boton-inscripcion">Inscribirse</a>
-                </div>
-            </nav>
-        </div>
-        <!-- nav -->
-        <div class="nav-burger" id="burger">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </div>
-    </header>
-    <!-- mobile nav -->
-    <div class="nav-mobile" id="mobileNav">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="multimedia.html">Multimedia</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="patrocinadores.html">Patrocinadores</a>
-        <a href="inscripciones.html" style="color:var(--principal)">Inscribirse
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 18l6-6-6-6" />
-            </svg>
-        </a>
+    <div class="contenedor-navegacion">
+        <nav>
+            <ul class="nav-escritorio">
+ 
+                <!-- Enlace simple (activo) -->
+                <li class="listas-nav">
+                    <a href="index.html" class="enlace-nav-activo">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </a>
+                </li>
+ 
+                <!-- Enlace simple -->
+                <li class="listas-nav listas-nav--con-submenu">
+                    <a href="nosotros.html" class="enlace-nav">Sobre nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="nosotros.html#organizadores">Organizadores</a></li>
+                    </ul>
+                </li>
+                <!-- Enlace con submenú -->
+                <li class="listas-nav listas-nav--con-submenu">
+                    <a href="noticias.html" class="enlace-nav enlace-nav--con-submenu">
+                        Noticias
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="prensa.html">Prensa</a></li>
+                    </ul>
+                </li>
+ 
+                <!-- Enlace simple -->
+                <li class="listas-nav">
+                    <a href="contacto.html" class="enlace-nav">Contacto</a>
+                </li>
+ 
+                <!-- Enlace simple -->
+                <li class="listas-nav">
+                    <a href="multimedia.html" class="enlace-nav">Multimedia</a>
+                </li>
+ 
+                <!-- Enlace simple -->
+                <li class="listas-nav">
+                    <a href="patrocinadores.html" class="enlace-nav">Patrocinadores</a>
+                </li>
+ 
+            </ul>
+ 
+            <!-- Botón inscripción -->
+            <div class="contenedor-inscripcion">
+                <a href="inscripciones.html" class="boton-inscripcion">Inscribirse</a>
+            </div>
+        </nav>
     </div>
+ 
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="nav-burger" id="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+ 
+</header>
+ 
+ 
+<!-- Nav móvil -->
+<div class="nav-mobile" id="mobileNav">
+ 
+    <button class="nav-mobile-close" id="mobileClose">✕</button>
+ 
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="multimedia.html">Multimedia</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="patrocinadores.html">Patrocinadores</a>
+ 
+    <a href="inscripciones.html" style="color:var(--principal)">
+        Inscribirse
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+        </svg>
+    </a>
+ 
+</div>
     <!-- HERO -->
     <section class="hero">
         <div class="hero-bg"></div>
@@ -88,7 +131,7 @@
         <!-- content -->
         <div class="hero-content">
             <div class="hero-left">
-                <p class="hero-eyebrow">Baja TT Cuenca · 2026</p>
+                <p class="hero-eyebrow">CUENCAMOTOR 4X4</p>
                 <h1 class="hero-title">
                     Baja<br>
                     <span class="line-accent">TT</span><br>
@@ -160,7 +203,7 @@
     <!-- INSCRIPCIÓN CTA -->
     <section class="inscripcion-cta reveal">
         <div class="cta-left">
-            <p class="cta-tag">Inscripciones abiertas · 2026</p>
+            <p class="cta-tag">Inscripciones abiertas</p>
             <h2 class="cta-title">Forma parte de la<br><span>Baja TT Cuenca</span></h2>
         </div>
         <div class="cta-right">
@@ -219,7 +262,7 @@
             </a>
         </div>
         <div class="noticias-grid">
-            <a href="noticias.html" class="noticia-card reveal">
+            <a href="noticias/2025/josep-pedro-ha-ganado-el-xi-rallye-tt-cuenca.html" class="noticia-card reveal">
                 <div class="noticia-img">
                     <picture>
                         <source media="(max-width: 600px)"
@@ -229,12 +272,14 @@
                     </picture>
                 </div>
                 <div class="noticia-body">
-                    <p class="noticia-meta">06.10.25 · <span>Ganador</span></p>
+                    <p class="noticia-meta">06.10.25 - <span>Ganador</span></p>
                     <h3 class="noticia-title">Josep Pedró gana el XI Rallye TT Cuenca</h3>
-                    <div class="noticia-arrow">Leer más →</div>
+                    <div class="noticia-arrow">Leer más 
+                        →
+                    </div>
                 </div>
             </a>
-            <a href="noticias.html" class="noticia-card reveal">
+            <a href="noticias/2025/luis-recuenco-gana-el-xi-rallye-tt-de-cuenca.html" class="noticia-card reveal">
                 <div class="noticia-img">
                     <picture>
                         <source media="(max-width: 600px)"
@@ -244,12 +289,14 @@
                     </picture>
                 </div>
                 <div class="noticia-body">
-                    <p class="noticia-meta">04.10.25 · <span>Ganador</span></p>
+                    <p class="noticia-meta">04.10.25 - <span>Ganador</span></p>
                     <h3 class="noticia-title">Luis Recuenco gana el XI Rallye TT de Cuenca</h3>
-                    <div class="noticia-arrow">Leer más →</div>
+                    <div class="noticia-arrow">Leer más 
+                        →
+                    </div>
                 </div>
             </a>
-            <a href="noticias.html" class="noticia-card reveal">
+            <a href="noticias/2025/jose-m-reyes-ha-ganado-la-etapa-super-especial-con-un-brillante-recorrido.html" class="noticia-card reveal">
                 <div class="noticia-img">
                     <picture>
                         <source media="(max-width: 600px)"
@@ -259,12 +306,14 @@
                     </picture>
                 </div>
                 <div class="noticia-body">
-                    <p class="noticia-meta">03.10.25 · <span>Ganador</span></p>
+                    <p class="noticia-meta">03.10.25 - <span>Ganador</span></p>
                     <h3 class="noticia-title">Jose M. Reyes gana la etapa súper especial</h3>
-                    <div class="noticia-arrow">Leer más →</div>
+                    <div class="noticia-arrow">Leer más 
+                        →
+                    </div>
                 </div>
             </a>
-            <a href="noticias.html" class="noticia-card reveal">
+            <a href="noticias/2025/un-rapidisimo-javier-vega-ha-ganado-la-etapa-super-especial-del-rallye-de-cuenca.html" class="noticia-card reveal">
                 <div class="noticia-img">
                     <picture>
                         <source media="(max-width: 600px)"
@@ -274,9 +323,11 @@
                     </picture>
                 </div>
                 <div class="noticia-body">
-                    <p class="noticia-meta">03.10.25 · <span>Ganador</span></p>
+                    <p class="noticia-meta">03.10.25 - <span>Ganador</span></p>
                     <h3 class="noticia-title">Javier Vega gana la súper especial del Rallye de Cuenca</h3>
-                    <div class="noticia-arrow">Leer más →</div>
+                    <div class="noticia-arrow">Leer más 
+                        →
+                    </div>
                 </div>
             </a>
         </div>
@@ -337,8 +388,7 @@
             <div class="footer-brand">
                 <img src="img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
                 <div class="footer-brand-text">
-                    <p class="footer-brand-name">Baja TT Cuenca</p>
-                    <p class="footer-brand-sub">FIA European Cup · 2026</p>
+                    <p class="footer-brand-name">Baja <span style="color:var(--amarillo-principal)">TT</span> Cuenca</p>
                 </div>
             </div>
             <div class="footer-redes">
@@ -406,7 +456,7 @@
         <div class="footer-lower">
             <span class="footer-copy">
                 © 2026 Cuenca Motor 4×4
-                <span class="footer-copy-dot">·</span>
+                <span class="footer-copy-dot">-</span>
                 Baja TT Cuenca
             </span>
             <a href="politicas.html" class="footer-policy">Política de privacidad</a>

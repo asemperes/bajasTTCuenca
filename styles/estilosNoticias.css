@@ -38,7 +38,9 @@ main {
     position: relative;
     height: 200px;
 }
-
+.noticia-imagen-top img {
+    object-position: center 20%;
+}
 .noticia-imagen img {
     width: 100%;
     height: 100%;
