@@ -9,11 +9,12 @@ Plataforma web oficial diseñada para la **Baja TT Cuenca**, centrada en ofrecer
 
 - Interfaz totalmente responsive diseñada para dispositivos móviles.
 - Corrección de desbordamientos (*overflow*) en secciones críticas como el formulario de contacto y menús de navegación.
+- Faltan los submenús de navegación en la versión responsive
 
 ## 🛠️ Tecnologías utilizadas
 
 - **HTML5**: Estructura semántica y accesible.
-- **CSS3**: Uso de variables para una gestión de colores centralizada, y uso de herramientas para dar epicidad como `clip-path`.
+- **CSS3**: Uso de variables para una gestión de colores centralizada.
 - **JavaScript**: Renderizado dinámico de artículos, mejoras de optimización e interactividad con botones.
   
 ## 🗺️ Estado del Proyecto (Roadmap)
@@ -22,11 +23,16 @@ Plataforma web oficial diseñada para la **Baja TT Cuenca**, centrada en ofrecer
 
 [X] Sobre Nosotros: Imagenes y texto correctos, falta terminar la sección de Eventos.
 
-[/] Noticias: Grid responsive, falta hacer todas y cada una de las noticias detalladamente (Por terminar).
+[X] Nuestra Historia: Línea temporal de la historia de cuencamotor
 
-[X] Multimedia: Galería de fotos y vídeos de las etapas.
+[X] Noticias: Grid responsive con todas las noticias que van saliendo, se actualizan manualmente.
 
-[X] Contacto: Formulario de inscripción y consultas técnicas.
+[X] Multimedia: Galería de fotos (falta la galería de vídeos).
+
+[X] Contacto: Consultas técnicas.
 
 [X] Patrocinadores: Espacio dedicado a las marcas que apoyan la Baja TT Cuenca.
 
+[X] Inscripciones: Enlaces externos para inscribirse en cada competición, ver reglamentos etc...
+
+[ ] Inscripciones Voluntarios: Voluntarios que quieran contribuir a cuencamotor.
