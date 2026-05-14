@@ -576,36 +576,3 @@
                 padding: .75rem 1.6rem;
             }
         }
-
-        /* ---------------------
-           PATROCINADORES
-        --------------------- */
-        .patrocinadores-section {
-            padding: 4rem clamp(1.5rem, 6vw, 5rem);
-            background: var(--gris);
-            border-bottom: 1px solid var(--borde-gris);
-            border-top: 1px solid var(--borde-gris);
-        }
-        .patros-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem 3.5rem;
-            margin-top: 2.5rem;
-        }
-        .patros-grid:hover .patro-item img {
-            filter: grayscale(0) brightness(1);
-            opacity: 1;
-        }
-        .patro-item img {
-            height: 40px;
-            max-width: 110px;
-            object-fit: contain;
-            filter: grayscale(.4) brightness(.7);
-            opacity: .6;
-            transition: filter .3s, opacity .3s, transform .2s;
-        }
-        .patro-item img:hover {
-            transform: scale(1.08);
-        }
