@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <header class="header" nombre-seccion="Noticias" style="position: absolute;">
+    <header class="header" nombre-seccion="Noticias">
         <div class="contenedor-logo">
             <img src="img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
         </div>
@@ -91,18 +91,44 @@
             </svg>
         </a>
     </div>
+    <section class="hero-noticias" id="inicio">
+        <div class="hero-noticias-inner">
+            <div class="hero-noticias-texto">
+                <span class="hero-noticias-eyebrow">HASTA AHORA</span>
+                <h1 class="hero-noticias-titulo">TODAS LAS<br><span class="hero-noticias-titulo--accent">NOTICIAS</span></h1>
+                <p class="hero-noticias-desc">
+                    Crónicas, resultados y todo lo que rodea a la prueba puntuable del Campeonato Europeo de Bajas y el Campeonato de España de Rallyes TT.
+                </p>
+            </div>
+
+            <div class="hero-noticias-revista">
+                <a href="revistas/REVISTA_2026.pdf" target="_blank" rel="noopener" class="revista-wrap">
+                    <img src="revistas/cartel_2026.webp" alt="Revista Baja TT Cuenca 2026" class="revista-portada">
+                    <div class="revista-cta" aria-hidden="true">
+                        <span>Ver revista 2026</span>
+                    </div>
+                    <div class="revista-shine" aria-hidden="true"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <nav class="indice-anios">
+        <a href="#noticias2026" class="enlace-anio anio-active" id="link-2026">2026</a>
+        <a href="#noticias2025" class="enlace-anio" id="link-2025">2025</a>
+        <a href="#noticias2024" class="enlace-anio" id="link-2024">2024</a>
+    </nav>
     <main>
         <section class="seccion-noticias" id="noticias">
-            <nav class="indice-anios">
-                <a href="#noticias2026" class="enlace-anio anio-active" id="link-2026">2026</a>
-                <a href="#noticias2025" class="enlace-anio" id="link-2025">2025</a>
-                <a href="#noticias2024" class="enlace-anio" id="link-2024">2024</a>
-            </nav>
 
             <div class="grid-noticias">
                 <div class="separador">
-                    <!-- 2026 -->
                     <h2>2026</h2>
+                    <a href="#inicio" class="separador-volver">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 19V5M5 12l7-7 7 7"></path>
+                        </svg>
+                        Inicio
+                    </a>
                 </div>
                 <div class="div-anio" id="noticias2026"></div>
                 <article class="tarjeta-noticia reveal">
@@ -250,8 +276,13 @@
                 </article>
 
                 <div class="separador">
-                    <!-- 2025 -->
                     <h2>2025</h2>
+                    <a href="#inicio" class="separador-volver">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 19V5M5 12l7-7 7 7"></path>
+                        </svg>
+                        Inicio
+                    </a>
                 </div>
                 <div class="div-anio" id="noticias2025"></div>
                 <article class="tarjeta-noticia reveal">
@@ -439,8 +470,13 @@
                 </article>
 
                 <div class="separador">
-                    <!-- 2024 -->
                     <h2>2024</h2>
+                    <a href="#inicio" class="separador-volver">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 19V5M5 12l7-7 7 7"></path>
+                        </svg>
+                        Inicio
+                    </a>
                 </div>
                 <div class="div-anio" id="noticias2024"></div>
                 <article class="tarjeta-noticia reveal">
@@ -864,7 +900,7 @@
     <script src="scripts/scriptdesplegable.js" defer></script>
     <script src="scripts/scriptscrollreveal.js" defer></script>
     <script src="scripts/scriptformfooter.js" defer></script>
-    <script src="scripts/scriptSeparadorNoticias.js" defer></script>
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-62VNT8HSR0"></script>
