@@ -104,7 +104,6 @@ main {
     /* Esta línea empuja el botón al fondo del contenedor .noticia-contenido */
     /* independientemente de cuánto texto haya arriba */
     margin-top: auto;
-
     align-self: flex-start;
     font-weight: bold;
     color: var(--amarillo-principal);
@@ -230,7 +229,7 @@ main {
 .enlace-anio:hover {
     background: rgba(255,255,255,.04);
     color: var(--claro);
-    border-right: 1px solid var(--borde-gris);
+
 }
 
 /* CLASE ACTIVA */
@@ -238,6 +237,9 @@ main {
     background: var(--principal);
     color: var(--claro);
     border-right-color: var(--principal);
+}
+.anio-active:hover{
+        border-right: 1px solid var(--borde-gris);
 }
 
 @media (max-width: 1072px) {
@@ -251,6 +253,7 @@ main {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        top:72px;
     }
 
     .separador-volver {
@@ -304,7 +307,7 @@ main {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(../img/galeria/fotos/foto1-2019.jpg);
+    background-image: url(../revistas/hero-noticias.webp);
     background-size: cover;
     background-position: center 40%;
     filter: brightness(.4) saturate(.8);
