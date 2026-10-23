@@ -1,0 +1,71 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="ÉXITO DE INSCRIPCIÓN: 125 EQUIPOS TOMARÁN LA SALIDA DE LA X RALLY TT DE CUENCA - Baja TT Cuenca"
+    description="125 equipos han formalizado su participación en las categorías de Coches, Motos y ParaBaja en el X Rally TT de Cuenca, que supone el mayor número de inscritos en la historia de la prueba. El evento marca el décimo aniversario de esta prueba deportiva organizada por el Club Cuenc..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="ÉXITO DE INSCRIPCIÓN: 125 EQUIPOS TOMARÁN LA SALIDA DE LA X RALLY TT DE CUENCA"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="/img/noticias/Mapa-Rallye-TT-Cuenca-2024-1.webp" alt="ÉXITO DE INSCRIPCIÓN: 125 EQUIPOS TOMARÁN LA SALIDA DE LA X RALLY TT DE CUENCA">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 1 de octubre de 2024</span>
+            <h1 class="noticia-hero-titulo">ÉXITO DE INSCRIPCIÓN: 125 EQUIPOS TOMARÁN LA SALIDA DE LA X RALLY TT DE
+                CUENCA</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>1 de octubre de 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>ÉXITO DE INSCRIPCIÓN: 125 EQUIPOS TOMARÁN LA SALIDA DE LA X ...</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>125 equipos han formalizado su participación en las categorías de Coches, Motos y ParaBaja en el X Rally
+                TT de Cuenca, que supone el mayor número de inscritos en la historia de la prueba.</p>
+            <p>El evento marca el décimo aniversario de esta prueba deportiva organizada por el Club Cuenca Motor. La
+                organización ha diseñado un recorrido inédito de aproximadamente 400 kilómetros por Castilla La Mancha,
+                atravesando 20 localidades, con grandes cambios de terreno y con importantes áreas de monte muy
+                complicadas.</p>
+            <p>El Prólogo se disputará el viernes 4 de octubre a las 16:30 horas, con ceremonia de pódium por la tarde.
+                La jornada principal del sábado 5 de octubre contará con más de 400 kilómetros y gala de entrega de
+                trofeos al finalizar.</p>
+            <p>El X Rally TT de Cuenca es la última prueba del Campeonato de España de Rallyes Todo Terreno
+                (CERTT-Loterías) 2024.</p>
+            <img src="/img/noticias/Mapa-Rallye-TT-Cuenca-2024-1.webp" alt="MAPA DEL RALLYE TT DE CUENCA 2024" class="noticia-imagen">
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

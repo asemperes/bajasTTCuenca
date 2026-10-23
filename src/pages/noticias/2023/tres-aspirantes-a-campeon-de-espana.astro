@@ -1,0 +1,76 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="TRES ASPIRANTES A CAMPEÓN DE ESPAÑA. - Baja TT Cuenca"
+    description="El Rallye TT de Cuenca cotiza al alza en emoción porque de la carrera, que se disputará en tierras castellanomanchegas, saldrá el Campeón de España de Rallyes Todoterreno 2023 . Santiago Carnicer, Jesús Fuster y Carlos Vento, son los tres cabeza de lista para alzarse con el preci..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="TRES ASPIRANTES A CAMPEÓN DE ESPAÑA."
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="https://cuencamotor4x4.com/wp-content/uploads/2023/10/Santiago-Carnicer-en-Cuenca-2022_FOTO-Kike-Belenguer-1-1024x592.jpeg" alt="TRES ASPIRANTES A CAMPEÓN DE ESPAÑA.">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 11 de octubre de 2023</span>
+            <h1 class="noticia-hero-titulo">TRES ASPIRANTES A CAMPEÓN DE ESPAÑA.</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>11 de octubre de 2023</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>TRES ASPIRANTES A CAMPEÓN DE ESPAÑA.</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>El Rallye TT de Cuenca cotiza al alza en emoción porque de la carrera, que se disputará en tierras castellanomanchegas, saldrá el
+Campeón de España de Rallyes Todoterreno 2023
+.
+Santiago Carnicer, Jesús Fuster y Carlos Vento, son los tres cabeza de lista para alzarse con el preciado Título Nacional de Campeón de España.
+Así, la séptima y última cita se disputará en la provincia conquense, y tendrá su epicentro en la ciudad de Cuenca, los próximos 20 y 21 de octubre. Según la Organización, será una carrera de 450 kilómetros muy técnica en navegación donde los copilotos serán grandes protagonistas porque, además, en Cuenca será la primera vez se utilice el Road Book digital.
+Para los pilotos será muy lenta en algunos tramos por la dificultad del trazado, y aunque no será una prueba rompedora, será muy cambiante por caminos muy técnicos, pistas de monte; y senderos con hierba y zahorra.
+Hay que destacar que en Cuenca se disputará la ParaBaja Step by
+Step, la primera iniciativa del deporte del motor abierta a personas con
+capacidades diferentes en España. A esta
+magnífica iniciativa
+de automovilismo inclusivo, se han unido pilotos y
+copilotos ucranianos con
+secuelas físicas como consecuencia del conflicto
+bélico, y que formarán parte del Equipo STEP
+compuesto por cuatro coches, cuatro buggies y dos motos.
+Además, el IX Rallye TT de Cuenca es la última prueba puntuable para el
+Campeonato de
+España de Motos
+, de donde también saldrá el Campeón de España de motos de
+Raids.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

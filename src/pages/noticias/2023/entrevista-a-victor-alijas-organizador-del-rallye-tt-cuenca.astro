@@ -1,0 +1,65 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="ENTREVISTA A VICTOR ALIJAS, ORGANIZADOR DEL RALLYE TT CUENCA - Baja TT Cuenca"
+    description="«Pilotar en rallye y no haber corrido en Cuenca es como remar en piragüismo y no haber bajado el Sella» Durante esta entrevista, el Presidente del CLUB CUENCA MOTOR 4X4 y Organizador del Rallye TT Cuenca, desvela muchas preguntas que todos los aficionados al mundo del motor se cu..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="ENTREVISTA A VICTOR ALIJAS, ORGANIZADOR DEL RALLYE TT CUENCA"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="https://cuencamotor4x4.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-24-at-12.07.17.jpeg" alt="ENTREVISTA A VICTOR ALIJAS, ORGANIZADOR DEL RALLYE TT CUENCA">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 24 de septiembre de 2023</span>
+            <h1 class="noticia-hero-titulo">ENTREVISTA A VICTOR ALIJAS, ORGANIZADOR DEL RALLYE TT CUENCA</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>24 de septiembre de 2023</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>ENTREVISTA A VICTOR ALIJAS, ORGANIZADOR DEL RALLYE TT CUENCA</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>«Pilotar en rallye y no haber corrido en Cuenca es como remar en piragüismo y no haber bajado el Sella»
+Durante esta entrevista, el Presidente del CLUB CUENCA MOTOR 4X4 y Organizador del Rallye TT Cuenca, desvela muchas preguntas que todos los aficionados al mundo del motor se cuestionan estos días.
+¿Qué importancia tienen los voluntarios en una prueba de estas características?
+¿Se conoce ya el recorrido de esta edición?
+¿Qué horarios tiene el evento?
+¿Qué distancia más o menos se va a recorrer?
+Gracias al periódico
+Voces de Cuenca
+, podemos saber estas y otras respuestas, claves para hacernos una idea del nivel e importancia de esta prueba en nuestra Ciudad y fuera de ella.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

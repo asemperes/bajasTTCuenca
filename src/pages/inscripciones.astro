@@ -1,0 +1,348 @@
+---
+import { EVENTO, EDICION } from '@/config/evento';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/inscripciones.css';
+---
+
+<BaseLayout
+    title="Inscripciones | Baja TT Cuenca"
+    description={`Inscríbete en la Baja TT Cuenca ${EVENTO.anio}. Categorías FIA, CERTT, FIM Europe y Rally Raid Campeonato de España disponibles.`}
+    seccion="Inscripciones"
+    ogTitle={`Inscripciones - Baja TT Cuenca ${EVENTO.anio}`}
+    ogDescription={`Inscripciones abiertas para la Baja TT Cuenca ${EVENTO.anio}. FIA, CERTT, FIM Europe y Rally Raid Campeonato de España.`}
+>
+    <!-- HEADER -->
+    <header class="page-header">
+        <p class="header-tag">Baja TT Cuenca</p>
+        <h1><span>Inscripciones</span><br>Abiertas</h1>
+        <p class="header-sub">Elige tu campeonato y accede directamente al formulario de inscripción, reglamento y app
+            Sportity.</p>
+    </header>
+
+    <!-- MANUALES GLOBALES (compartidos por todas las categorías) -->
+    <div class="manuales-bar">
+        <span class="manuales-label">Manuales Stella</span>
+        <div class="manuales-links">
+            <a class="manual-btn" href="/pdf/Manual_Stella3Evo_V6_ES.pdf" target="_blank">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16 a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                </svg>
+                Manual ES
+            </a>
+            <a class="manual-btn" href="/pdf/Manual_Stella3Evo_V6_EN.pdf" target="_blank">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16 a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                </svg>
+                Manual EN
+            </a>
+            <a class="manual-btn" href="/pdf/stella_6_comp.pdf" target="_blank">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16 a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                </svg>
+                Stella 6 Comp
+            </a>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <section class="cards-section">
+        <div class="cards-grid">
+
+            <!-- FIA -->
+            <article class="card reveal">
+                <div class="card-img">
+                    <img src="/img/historia/historia_portada_optimized.webp" alt="FIA" loading="lazy" />
+                    <div class="card-img-overlay"></div>
+                    <span class="card-number">01</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-head">
+                        <h2 class="card-title">FIA</h2>
+                        <span class="card-badge badge-coches">Coches</span>
+                    </div>
+                    <p class="card-desc">Campeonato Internacional FIA. Inscripción disponible vía RFEDA o Anube Sport.
+                        Incluye 1 placa de asistencia; placa adicional bajo petición (100 €).</p>
+                    <div class="card-note">
+                        Road Book impreso: <strong>50 €</strong> (solicitud antes del límite de inscripción)<br>
+                        <strong>cuencamotor4x4@hotmail.com</strong>
+                    </div>
+                    <div class="card-links">
+                        <a class="btn-primary" href="https://www.rfeda.es/inscripcion/c/0/i/94553398/ebc-certt-baja-tt-cuenca" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <line x1="12" y1="14" x2="12" y2="18" />
+                                <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                            Inscripción RFEDA
+                        </a>
+                        <div class="btn-divider">o también</div>
+                        <a class="btn-outline-yellow" href="https://shop.anubesport.com/categoria-producto/espana/certt/cuenca_certt_2026/" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <line x1="12" y1="14" x2="12" y2="18" />
+                                <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                            Inscripción Anube
+                        </a>
+                        <div class="card-meta-links">
+                            <a class="meta-link" href="/pdf/reglamento_fia.pdf" target="_blank">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12 a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                Reglamento
+                            </a>
+                            <a class="meta-link" href="/pdf/FIA_coches_2026_sportity.pdf" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5 a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Sportity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CERTT -->
+            <article class="card reveal">
+                <div class="card-img">
+                    <img src="/img/historia/historia_Capitulo_1_2016_optimized.webp" alt="CERTT" loading="lazy" />
+                    <div class="card-img-overlay"></div>
+                    <span class="card-number">02</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-head">
+                        <h2 class="card-title">CERTT</h2>
+                        <span class="card-badge badge-coches">Coches</span>
+                    </div>
+                    <p class="card-desc">Campeonato de España de Rallyes Todo Terreno. Inscripción vía RFEDA o Anube
+                        Sport. Mismas condiciones de Road Book y placa de asistencia.</p>
+                    <div class="card-note">
+                        Road Book impreso: <strong>50 €</strong> - Placa adicional: <strong>100 €</strong><br>
+                        Solicitar en <strong>cuencamotor4x4@hotmail.com</strong>
+                    </div>
+                    <div class="card-links">
+                        <a class="btn-primary" href="https://www.rfeda.es/inscripcion/c/0/i/94553398/ebc-certt-baja-tt-cuenca" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <line x1="12" y1="14" x2="12" y2="18" />
+                                <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                            Inscripción RFEDA
+                        </a>
+                        <div class="btn-divider">o también</div>
+                        <a class="btn-outline-yellow" href="https://shop.anubesport.com/categoria-producto/espana/certt/cuenca_certt_2026/" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <line x1="12" y1="14" x2="12" y2="18" />
+                                <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                            Inscripción Anube
+                        </a>
+                        <div class="card-meta-links">
+                            <a class="meta-link" href="/pdf/Reglamento_provisional_BAJA_CUENCA_2026_V1.pdf" target="_blank">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12 a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                Reglamento
+                            </a>
+                            <a class="meta-link" href="/pdf/CERTT_coches_2026_sportity.pdf" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5 a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Sportity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FIM EUROPE -->
+            <article class="card reveal">
+                <div class="card-img">
+                    <img src="/img/fimEurope.webp" alt="FIM Europe" loading="lazy" />
+                    <div class="card-img-overlay"></div>
+                    <span class="card-number">03</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-head">
+                        <h2 class="card-title">FIM Europe</h2>
+                        <span class="card-badge badge-motos">Motos</span>
+                    </div>
+                    <p class="card-desc">Campeonato Europeo de Bajas FIM. Inscripción a través de la plataforma RFME –
+                        Fedemoto (Podiumsoft).</p>
+                    <div class="card-links">
+                        <a class="btn-primary" href="https://rfme-fedemoto.podiumsoft.info/login" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <line x1="12" y1="14" x2="12" y2="18" />
+                                <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                            Inscripción RFME
+                        </a>
+                        <div class="card-meta-links">
+                            <a class="meta-link" href="https://cuencamotor4x4.com/pages/reglamento-fim" target="_blank">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12 a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                Reglamento
+                            </a>
+                            <a class="meta-link" href="https://cuencamotor4x4.com/pages/sportity-fim" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5 a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Sportity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- RALLY RAID -->
+            <article class="card reveal">
+                <div class="card-img">
+                    <img src="/img/rallyRaid.webp" alt="Rally Raid" loading="lazy" />
+                    <div class="card-img-overlay"></div>
+                    <span class="card-number">04</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-head">
+                        <h2 class="card-title">Rally Raid</h2>
+                        <span class="card-badge badge-nacional">Cto. España</span>
+                    </div>
+                    <p class="card-desc">Campeonato de España de Rally Raid. Inscripción a través de la plataforma RFME
+                        – Fedemoto (Podiumsoft).</p>
+                    <div class="card-links">
+                        <a class="btn-primary" href="https://rfme-fedemoto.podiumsoft.info/login" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <line x1="12" y1="14" x2="12" y2="18" />
+                                <line x1="10" y1="16" x2="14" y2="16" />
+                            </svg>
+                            Inscripción RFME
+                        </a>
+                        <div class="card-meta-links">
+                            <a class="meta-link" href="https://cuencamotor4x4.com/pages/reglamento-rally" target="_blank">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12 a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                Reglamento
+                            </a>
+                            <a class="meta-link" href="/pdf/Motos_2026_sportity.pdf" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5 a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Sportity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- SPORTITY ACCESO RÁPIDO -->
+    <section class="sportity-section">
+        <div class="sportity-header">
+            <h2>Acceso Sportity</h2>
+            <div class="sportity-line"></div>
+        </div>
+        <div class="sportity-grid">
+            <div class="sportity-item reveal">
+                <span class="sportity-cat">FIA Coches</span>
+                <span class="sportity-code">BAJACUENCAFIA</span>
+                <a class="sportity-link" href="https://webapp.sportity.com/event/BAJACUENCAFIA/92ec0972-5bc5-4f8b-a329-4527f0d58cd3" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5 a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Abrir en Sportity
+                </a>
+            </div>
+            <div class="sportity-item reveal">
+                <span class="sportity-cat">CERTT Coches</span>
+                <span class="sportity-code">BAJACUENCACERTT</span>
+                <a class="sportity-link" href="https://webapp.sportity.com/event/BAJACUENCACERTT/9fb94998-db3f-4a6b-b1e4-5e8520c17f5d" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5 a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Abrir en Sportity
+                </a>
+            </div>
+            <div class="sportity-item reveal">
+                <span class="sportity-cat">Motos</span>
+                <span class="sportity-code">BAJACUENCAMOTOS</span>
+                <a class="sportity-link" href="https://webapp.sportity.com/event/BAJACUENCAMOTOS/28c4c329-fa12-41c0-b1ff-2bd5628c423d" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5 a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Abrir en Sportity
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

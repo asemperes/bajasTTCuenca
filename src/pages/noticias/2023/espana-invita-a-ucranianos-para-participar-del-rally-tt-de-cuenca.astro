@@ -1,0 +1,59 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="ESPAÑA INVITA A UCRANIANOS PARA PARTICIPAR DEL RALLY TT DE CUENCA - Baja TT Cuenca"
+    description="La Real Federación Española de Automovilismo extendió una invitación a cualquier soldado ucraniano herido interesado en correr el Rally TT Cuenca como copiloto como parte del programa ParaBaja Paso a Paso. El piloto ucraniano de Dakar, Vitaliy Yevtyekhov, da su opinión al res..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="ESPAÑA INVITA A UCRANIANOS PARA PARTICIPAR DEL RALLY TT DE CUENCA"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="https://cuencamotor4x4.com/wp-content/uploads/2023/08/Espana-invita-a-ucranianos-para-participar-del-Rally-TT-de-Cuenca.jpg" alt="ESPAÑA INVITA A UCRANIANOS PARA PARTICIPAR DEL RALLY TT DE CUENCA">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 21 de agosto de 2023</span>
+            <h1 class="noticia-hero-titulo">ESPAÑA INVITA A UCRANIANOS PARA PARTICIPAR DEL RALLY TT DE CUENCA</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>21 de agosto de 2023</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>ESPAÑA INVITA A UCRANIANOS PARA PARTICIPAR DEL RALLY TT DE C...</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>La Real Federación Española de Automovilismo extendió una invitación a cualquier soldado ucraniano herido interesado en correr el Rally TT Cuenca como copiloto como parte del programa ParaBaja Paso a Paso. El piloto ucraniano de Dakar, Vitaliy Yevtyekhov, da su opinión al respecto.
+En la siguiente URL podrán leer la noticia completa:
+https://somosdakar.com/espana-invita-a-ucranianos-para-participar-del-rally-tt-de-cuenca/</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

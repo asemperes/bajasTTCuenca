@@ -1,0 +1,67 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="EL CLUB CUENCA MOTOR 4X4, INSTAURA EL «GALARDÓN CUENCA» - Baja TT Cuenca"
+    description="Con motivo del X Aniversario de la prueba nacional de Rallyes Todoterreno, el Club Cuenca Motor 4×4 crea el Galardón Cuenca, con el que pretende reconocer y agradecer su implicación con la carrera conquense a distintos actores. Las categorías de reconocimiento incluyen al mejor d..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="EL CLUB CUENCA MOTOR 4X4, INSTAURA EL «GALARDÓN CUENCA»"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="/img/noticias/I-Galardon-Honor_X-Rallye-TT-Cuenca-24.jpg" alt="EL CLUB CUENCA MOTOR 4X4, INSTAURA EL «GALARDÓN CUENCA»">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 17 de agosto de 2024</span>
+            <h1 class="noticia-hero-titulo">EL CLUB CUENCA MOTOR 4X4, INSTAURA EL «GALARDÓN CUENCA»</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>17 de agosto de 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>EL CLUB CUENCA MOTOR 4X4, INSTAURA EL «GALARDÓN CUENCA»</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>Con motivo del X Aniversario de la prueba nacional de Rallyes Todoterreno, el Club Cuenca Motor 4×4 crea
+                el Galardón Cuenca, con el que pretende reconocer y agradecer su implicación con la carrera conquense a
+                distintos actores. Las categorías de reconocimiento incluyen al mejor deportista por logros
+                individuales, al mejor equipo por éxitos deportivos y solidaridad, a la mejor empresa privada por apoyo
+                a la carrera, y a las instituciones públicas por su respaldo al evento.</p>
+            <p>El ganador del I Galardón de Cuenca se dará a conocer en septiembre, un mes antes de la celebración del X
+                Rally TT de Cuenca 2024, y será entregado en Cuenca el próximo 5 de octubre, durante la Ceremonia de
+                Entrega de Premios del X Rally TT de Cuenca que, además, pondrá el broche de oro al Campeonato de España
+                de Rallyes TT 2024.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

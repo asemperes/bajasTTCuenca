@@ -1,0 +1,219 @@
+/* Estilos base: variables, reset, utilidades compartidas (section-header, anuncios, scroll reveal) */
+@layer base {
+/* ========= FUENTES ========= */
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500&display=swap'); */
+
+/* ========= VARIABLES ========= */
+:root {
+    --principal: rgb(137, 72, 72);
+    /* #894848 */
+    --negro: rgb(0, 0, 0);
+    /* #000000 */
+    --oscuro: #0f0f0f;
+    /* rgb(15 15 15) */
+    --oscuro2: #0a0a0a;
+    --amarillo-principal: rgb(230, 175, 73);
+    /*#E6AF49*/
+    --amarillo: rgb(239, 225, 149);
+    /* #EFE195 */
+    --secundario: rgb(211, 105, 95);
+    /* #D3695F */
+    --secundario2: rgb(146, 103, 104);
+    /* #926768 */
+    --rojo: rgb(255, 0, 0);
+    /* #FF0000 */
+    --claro: #FFFFFF;
+    /* Blanco */
+    --gris-fondo: #1a1a1a;
+    --gris: #121212;
+    /* Gris oscuro */
+    --gris-claro: #212121;
+    --x: 0%;
+    --y: 0%;
+    --border-width: .24vw;
+    --gutter: 2vw;
+    --text-gray: #666;
+    --text-gray2: #9a968f;
+    --text-claro: #d4d0c8;
+    --text-light-gray: #bbb;
+    --border-color: #eee;
+    --fia-blue: #003876;
+    --borde-gris: #333;
+    --marron: #110205;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--oscuro);
+}
+
+::selection {
+    background-color: var(--principal);
+    color: var(--amarillo-principal);
+}
+
+img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+svg {
+    display: inline;
+    width: 1em;
+    height: 1em;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+}
+
+/* ESTILOS GENERAL */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--oscuro);
+    color: var(--claro);
+    box-sizing: border-box;
+    font-size: 16px !important;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+/* ---------------------
+           PATROCINADORES
+        --------------------- */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    letter-spacing: .06em;
+    white-space: nowrap;
+}
+
+.section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--borde-gris);
+}
+
+.section-link {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    background-color: var(--gris);
+    text-decoration: none;
+    transition: color 0.15s;
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    border: 1px solid var(--borde-gris);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-link:hover {
+    color: var(--claro);
+}
+
+@media (max-width:400px) {
+    .section-header {
+        flex-flow: column;
+        gap: .5rem;
+    }
+
+    .section-link {
+        border-radius: 3px;
+        letter-spacing: .1em;
+        border: 1px solid var(--borde-gris);
+        padding: .75rem 1.6rem;
+    }
+}
+
+
+/* ----- ESTILOS ANUNCIOS ADSENSE ----- */
+.ad-container {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 24px 0;
+    position: relative;
+}
+
+.ad-container::before {
+    content: 'Publicidad';
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-gray);
+    margin-bottom: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ad-leaderboard {
+    max-width: 728px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ad-rectangle {
+    max-width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive — móvil */
+@media (max-width: 768px) {
+    .ad-leaderboard {
+        max-width: 100%;
+        height: auto;
+        min-height: 50px;
+    }
+}
+
+/* ---------------------
+           SCROLL REVEAL
+        ---------------------===*/
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}}

@@ -1,0 +1,90 @@
+---
+import '@/styles/components/footer.css';
+import { EVENTO, SITIO } from '@/config/evento';
+---
+
+<footer class="footer">
+    <div class="footer-hero">
+        <div class="footer-brand">
+            <img src="/img/placabajasttcuenca-photoroom.webp" alt="Baja TT Cuenca">
+            <div class="footer-brand-text">
+                <p class="footer-brand-name">Baja <span style="color:var(--amarillo-principal)">TT</span> Cuenca</p>
+            </div>
+        </div>
+        <div class="footer-redes">
+            <a href="https://www.facebook.com/profile.php?id=100063715416500" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/cuencamotor4x4/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="var(--oscuro)" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="var(--oscuro)" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- nav + form -->
+    <div class="footer-body">
+        <nav class="footer-nav">
+            <p class="footer-nav-label">Navegación</p>
+            <div class="footer-nav-links">
+                <a href="/">Inicio</a>
+                <a href="/nosotros">Sobre nosotros</a>
+                <a href="/noticias">Noticias</a>
+                <a href="/multimedia">Multimedia</a>
+                <a href="/inscripciones">Inscripciones</a>
+                <a href="/contacto">Contacto</a>
+                <a href="/patrocinadores">Patrocinadores</a>
+            </div>
+        </nav>
+
+        <div class="footer-divider-v"></div>
+
+        <div class="footer-form-wrap">
+            <span class="footer-form-label">Escríbenos</span>
+            <form class="footer-form" id="footerForm" data-email={SITIO.email}>
+                <div class="fg">
+                    <label for="f-email">Email</label>
+                    <input type="email" id="f-email" name="email" placeholder="tu@email.com" required />
+                </div>
+                <div class="fg">
+                    <label for="f-nombre">Nombre</label>
+                    <input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" />
+                </div>
+                <div class="fg full">
+                    <label for="f-mensaje">Mensaje</label>
+                    <textarea id="f-mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Enviar mensaje</button>
+                    <p class="footer-form-note">Se abrirá tu cliente<br>de correo con los datos.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- lower -->
+    <div class="footer-lower">
+        <span class="footer-copy">
+            © {EVENTO.anio} Cuenca Motor 4×4
+            <span class="footer-copy-dot">-</span>
+            Baja TT Cuenca
+        </span>
+        <a href="/politicas" class="footer-policy">Política de privacidad</a>
+    </div>
+</footer>
+
+<script>
+    // Abre el cliente de correo con los datos del formulario del footer
+    const form = document.getElementById('footerForm') as HTMLFormElement | null;
+    form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const datos = new FormData(form);
+        const body = encodeURIComponent(`Nombre: ${datos.get('nombre')}\nEmail: ${datos.get('email')}\n\n${datos.get('mensaje')}`);
+        window.location.href = `mailto:${form.dataset.email}?subject=Contacto web&body=${body}`;
+    });
+</script>

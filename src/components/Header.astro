@@ -1,0 +1,88 @@
+---
+import '@/styles/components/header.css';
+
+interface Props {
+    // Texto que aparece centrado en la cabecera en tablet (atributo nombre-seccion)
+    seccion: string;
+    // Enlace del menú que se marca como activo
+    activo?: 'inicio' | 'nosotros' | 'noticias' | 'contacto' | 'multimedia' | 'patrocinadores';
+}
+
+const { seccion, activo } = Astro.props;
+const clase = (clave: Props['activo']) => (clave === activo ? 'enlace-nav-activo' : 'enlace-nav');
+---
+
+<header class="header" nombre-seccion={seccion}>
+    <div class="contenedor-logo">
+        <img src="/img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
+    </div>
+    <div class="contenedor-navegacion">
+        <nav>
+            <ul class="nav-escritorio">
+                <li class="listas-nav">
+                    <a href="/" class={clase('inicio')} aria-label="Inicio">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="listas-nav listas-nav--con-submenu">
+                    <a href="/nosotros" class={clase('nosotros')}>Sobre nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="/historia">Historia</a></li>
+                        <li><a href="/nosotros#organizadores">Organizadores</a></li>
+                    </ul>
+                </li>
+
+                <li class="listas-nav listas-nav--con-submenu">
+                    <a href="/noticias" class={`${clase('noticias')} enlace-nav--con-submenu`}>Noticias</a>
+                    <ul class="submenu">
+                        <li><a href="/prensa">Prensa</a></li>
+                    </ul>
+                </li>
+
+                <li class="listas-nav"><a href="/contacto" class={clase('contacto')}>Contacto</a></li>
+                <li class="listas-nav"><a href="/multimedia" class={clase('multimedia')}>Multimedia</a></li>
+                <li class="listas-nav"><a href="/patrocinadores" class={clase('patrocinadores')}>Patrocinadores</a></li>
+            </ul>
+
+            <div class="contenedor-inscripcion">
+                <a href="/inscripciones" class="boton-inscripcion">Inscribirse</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="nav-burger" id="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+</header>
+
+<!-- Nav móvil -->
+<div class="nav-mobile" id="mobileNav">
+    <button class="nav-mobile-close" id="mobileClose">✕</button>
+
+    <a href="/">Inicio</a>
+    <a href="/nosotros">Nosotros</a>
+    <a href="/noticias">Noticias</a>
+    <a href="/multimedia">Multimedia</a>
+    <a href="/contacto">Contacto</a>
+    <a href="/patrocinadores">Patrocinadores</a>
+
+    <a href="/inscripciones" style="color:var(--principal)">
+        Inscribirse
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+        </svg>
+    </a>
+</div>
+
+<script>
+    // Script para el desplegable del nav móvil
+    const mobileNav = document.getElementById('mobileNav');
+    document.getElementById('burger')?.addEventListener('click', () => mobileNav?.classList.toggle('open'));
+    document.getElementById('mobileClose')?.addEventListener('click', () => mobileNav?.classList.toggle('open'));
+</script>

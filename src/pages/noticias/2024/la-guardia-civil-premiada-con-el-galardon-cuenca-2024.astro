@@ -1,0 +1,76 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="LA GUARDIA CIVIL, PREMIADA CON EL GALARDÓN CUENCA 2024 - Baja TT Cuenca"
+    description={"La Guardia Civil de Cuenca ha sido distinguida con el \"Galardón Cuenca\" instaurado por el Club Cuenca Motor 4×4, por el apoyo, la seguridad y la logística que aporta al Rallye de Cuenca. Con esta distinción el Club deportivo ha querido reconocer y agradecer la implicación de la ..."}
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="LA GUARDIA CIVIL, PREMIADA CON EL GALARDÓN CUENCA 2024"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero hero-top">
+        <img src="/img/noticias/hero-galardon-cuenca.jpg" alt="LA GUARDIA CIVIL, PREMIADA CON EL GALARDÓN CUENCA 2024">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 17 de septiembre de 2024</span>
+            <h1 class="noticia-hero-titulo">LA GUARDIA CIVIL, PREMIADA CON EL GALARDÓN CUENCA 2024</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>17 de septiembre de 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>LA GUARDIA CIVIL, PREMIADA CON EL GALARDÓN CUENCA 2024</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>La Guardia Civil de Cuenca ha sido distinguida con el "Galardón Cuenca" instaurado por el Club Cuenca
+                Motor 4×4, por el apoyo, la seguridad y la logística que aporta al Rallye de Cuenca.</p>
+            <p>Con esta distinción el Club deportivo ha querido reconocer y agradecer la implicación de la Comandancia
+                con el Rallye, con el gran apoyo que la Benemérita le ha dado a la carrera, y por el respaldo a la
+                necesaria seguridad de la prueba deportiva nacional. Gracias al esfuerzo de la Guardia Civil, el Rallye
+                de Cuenca ha ofrecido la máxima seguridad en todos los cruces de carretera y todo ello, sin obstaculizar
+                la circulación normal, ya que en ningún momento cortaron el tráfico rodado habitual.</p>
+            <p>El premio instaurado por el Club Cuenca Motor para reconocer los méritos deportivos, el apoyo de las
+                Instituciones Públicas, y las empresas privadas al Rallye que ya es un referente en Castilla La Mancha,
+                será recogido por la teniente coronel María Jesús Pascual Ruiz, como máxima responsable de la
+                Institución.</p>
+            <p>La teniente coronel Pascual Ruiz ha sido la primera mujer en dirigir una Unidad Orgánica de Policía
+                Judicial, la primera jefa de Operaciones y la primera Jefa de Comandancia; y también la primera mujer en
+                hacerse cargo de la Comandancia de la Guardia Civil de Cuenca.</p>
+            <p>La Teniente Coronel recogerá el Galardón Cuenca el próximo 5 de octubre durante la Ceremonia de Entrega
+                de Premios del X Rally TT que, además, pondrá el broche de oro al Campeonato de España de Rallyes
+                Todoterreno 2024.</p>
+                <img src="/img/noticias/teniente-coronel-María-Jesús-Pascual-Ruiz_Rallye-TT-Cuenca.jpeg" alt="Guardia Civil premiada con el Galardón Cuenca 2024" class="noticia-imagen">
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

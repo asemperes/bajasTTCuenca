@@ -13,9 +13,40 @@ Plataforma web oficial diseñada para la **Baja TT Cuenca**, centrada en ofrecer
 
 ## 🛠️ Tecnologías utilizadas
 
-- **HTML5**: Estructura semántica y accesible.
+- **Astro**: Generación de la web estática, con layout y componentes compartidos.
 - **CSS3**: Uso de variables para una gestión de colores centralizada.
-- **JavaScript**: Renderizado dinámico de artículos, mejoras de optimización e interactividad con botones.
+- **Tailwind CSS v4**: Disponible para estilos nuevos (sin el reset de Tailwind, para no alterar el diseño actual).
+- **JavaScript/TypeScript**: Interactividad (menú móvil, scroll reveal, lightbox, formularios).
+
+## 💻 Desarrollo
+
+```bash
+npm install      # instalar dependencias
+npm run dev      # servidor local en http://localhost:4321
+npm run build    # genera la web en dist/
+```
+
+## 📁 Estructura
+
+```
+public/                 Recursos estáticos tal cual (img, videos, pdf, revistas)
+src/
+  config/evento.ts      Año y datos de la edición actual ← cambiar aquí cada año
+  layouts/BaseLayout    <head> común, cabecera, footer y scripts globales
+  components/           Header, Footer, Patrocinadores
+  pages/                Una página por ruta (noticias/AAAA/slug.astro = cada noticia)
+  styles/
+    global.css          Tailwind + capas CSS + colores como clases de Tailwind
+    base.css            Variables, reset y estilos compartidos
+    components/         Estilos de cabecera, footer y patrocinadores
+    pages/              Estilos de cada página
+  scripts/              Scripts compartidos del cliente
+herramientas/           Script antiguo de generación de noticias desde JSON
+```
+
+## 📅 Cambio de edición
+
+Edita `src/config/evento.ts`: el año, las ediciones (XIII Rallye, II Baja...) y el copyright se actualizan solos.
   
 ## 🗺️ Estado del Proyecto (Roadmap)
 

@@ -1,0 +1,332 @@
+/* Estilos de la página prensa (antes styles/estilosprensa.css) */
+@layer components {
+body {
+    background: var(--oscuro);
+    color: var(--claro);
+    overflow-x: hidden;
+}
+
+/*HERO*/
+.hero-prensa {
+    position: relative;
+    padding-top: 80px;
+    min-height: 52vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-bottom: 1px solid var(--borde-gris);
+}
+
+.hero-imagen {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    filter: brightness(.4) saturate(.5);
+    display: block;
+}
+
+.hero-imagen::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10,10,10,.95) 40%, transparent 100%);
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 1;
+    padding: 5rem clamp(1.5rem, 6vw, 6rem) 4rem;
+    max-width: 680px;
+}
+
+.etiqueta-hero {
+    font-size: .6rem;
+    font-weight: 600;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    color: var(--amarillo-principal);
+    margin-bottom: 1.2rem;
+}
+
+.hero-contenido h1 {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: .88;
+    letter-spacing: .03em;
+    color: var(--claro);
+    
+}
+
+.hero-contenido h1 em {
+    font-style: normal;
+    color: var(--principal);
+}
+
+.descripcion-hero {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    font-weight: 300;
+    color: var(--text-gray2);
+    line-height: 1.7;
+}
+
+.descripcion-hero strong {
+    color: var(--claro);
+    font-weight: 500;
+}
+
+/*PRESS MANAGER — FRANJA*/
+.franja-gestor {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 4rem);
+    padding: 2rem clamp(1.5rem, 6vw, 6rem);
+    background: var(--gris);
+    border-bottom: 1px solid var(--borde-gris);
+    flex-wrap: wrap;
+}
+
+.gestor-identidad {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    flex-shrink: 0;
+}
+
+.gestor-cargo {
+    font-size: .55rem;
+    font-weight: 600;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    color: var(--principal);
+}
+
+.gestor-nombre {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    letter-spacing: .06em;
+    color: var(--claro);
+    line-height: 1;
+}
+
+.gestor-plazo {
+    font-size: .78rem;
+    font-weight: 300;
+    color: var(--text-gray2);
+}
+
+.gestor-plazo strong {
+    color: var(--amarillo-principal);
+    font-weight: 500;
+}
+
+.gestor-contactos {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+    flex: 1;
+    min-width: 220px;
+    border-left: 1px solid var(--borde-gris);
+    padding-left: clamp(1.5rem, 3vw, 3rem);
+}
+
+.enlace-contacto {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    font-size: .88rem;
+    font-weight: 300;
+    color: var(--text-light-gray);
+    text-decoration: none;
+    transition: color .2s;
+    word-break: break-all;
+}
+
+.enlace-contacto svg {
+    flex-shrink: 0;
+    color: var(--text-gray);
+    transition: color .2s;
+}
+
+.enlace-contacto:hover {
+    color: var(--claro);
+}
+
+.enlace-contacto:hover svg {
+    color: var(--amarillo-principal);
+}
+
+.boton-solicitud {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .85rem 1.8rem;
+    background: var(--principal);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    letter-spacing: .1em;
+    text-decoration: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    transition: .2s;
+    box-shadow: -3px 5px 0px 3px var(--amarillo-principal);
+    border:1px solid var(--amarillo-principal)
+}
+.boton-solicitud svg{
+    transition: .2s;
+}
+
+.boton-solicitud:hover{
+    box-shadow:none;
+    box-shadow: 0px 0px 0px 0px var(--amarillo-principal);
+    transform: translateY(3px);
+}
+
+/*AVISO INDIVIDUAL*/
+.barra-aviso {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    padding: .9rem clamp(1.5rem, 6vw, 6rem);
+    background: rgba(230, 175, 73, .06);
+    border-bottom: 1px solid rgba(230, 175, 73, .18);
+    font-size: .78rem;
+    font-weight: 300;
+    color: var(--text-gray2);
+    line-height: 1.55;
+}
+
+.barra-aviso svg {
+    flex-shrink: 0;
+    color: var(--amarillo-principal);
+}
+
+/*REQUISITOS*/
+.cuerpo-prensa {
+    padding: 4rem clamp(1.5rem, 6vw, 6rem);
+}
+
+.bloque-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.etiqueta-seccion {
+    font-size: .55rem;
+    font-weight: 600;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    padding-bottom: .6rem;
+    border-bottom: 1px solid var(--borde-gris);
+}
+
+.titulo-bloque {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    letter-spacing: .05em;
+    color: var(--claro);
+    margin-top: .2rem;
+}
+
+.descripcion-bloque {
+    font-size: .92rem;
+    font-weight: 300;
+    color: var(--text-gray2);
+    line-height: 1.75;
+    max-width: 620px;
+}
+
+.descripcion-bloque strong {
+    color: var(--claro);
+    font-weight: 500;
+}
+
+.cuadricula-requisitos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--borde-gris);
+    border: 1px solid var(--borde-gris);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.requisito {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.4rem 1.5rem;
+    background: var(--gris-fondo);
+    transition: background .2s;
+}
+
+.requisito-numero {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    letter-spacing: .04em;
+    color: var(--principal);
+
+    line-height: 1;
+}
+
+.requisito-nombre {
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--claro);
+    letter-spacing: .02em;
+    line-height: 1.3;
+}
+
+.requisito-detalle {
+    font-size: .73rem;
+    font-weight: 300;
+    color: var(--text-gray2);
+    line-height: 1.45;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1100px) {
+    .cuadricula-requisitos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-contenido h1 em {
+        display: block;
+    }
+
+    .franja-gestor {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .gestor-contactos {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid var(--borde-gris);
+        padding-top: 1.2rem;
+        width: 100%;
+    }
+
+    .boton-solicitud {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cuadricula-requisitos {
+        grid-template-columns: 1fr;
+    }
+}
+}

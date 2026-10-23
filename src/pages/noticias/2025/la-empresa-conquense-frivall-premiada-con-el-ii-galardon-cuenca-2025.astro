@@ -1,0 +1,70 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="LA EMPRESA CONQUENSE FRIVALL, PREMIADA CON EL II GALARDÓN CUENCA 2025 - Baja TT Cuenca"
+    description={"La empresa conquense FRIVALL ha sido reconocida con el \"II Galardón Cuenca 2025\" otorgado por el Club Cuenca Motor 4×4, en agradecimiento a su \"apoyo incondicional al Rallye TT desde sus inicios hace ya 11 años\". El club deportivo ha querido reconocer la implicación del Grupo Va..."}
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="LA EMPRESA CONQUENSE FRIVALL, PREMIADA CON EL II GALARDÓN CUENCA 2025"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="/img/noticias/3_FRIVAL-II-Galardon-Honor-2025_MG_0205-262x300.jpg" alt="LA EMPRESA CONQUENSE FRIVALL, PREMIADA CON EL II GALARDÓN CUENCA 2025">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 30 de septiembre de 2025</span>
+            <h1 class="noticia-hero-titulo">LA EMPRESA CONQUENSE FRIVALL, PREMIADA CON EL II GALARDÓN CUENCA 2025</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>30 de septiembre de 2025</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>LA EMPRESA CONQUENSE FRIVALL, PREMIADA CON EL II GALARDÓN CU...</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>La empresa conquense FRIVALL ha sido reconocida con el "II Galardón Cuenca 2025" otorgado por el Club
+                Cuenca Motor 4×4, en agradecimiento a su "apoyo incondicional al Rallye TT desde sus inicios hace ya 11
+                años".</p>
+            <p>El club deportivo ha querido reconocer la implicación del Grupo Vall Companys, a través de FRIVALL, con
+                el deporte y su respaldo al Rallye TT Cuenca, considerado uno de los grandes referentes deportivos de
+                Castilla-La Mancha.</p>
+            <p>Cristina Gil Velázquez, gerente de FRIVALL en Cuenca, recibirá el premio de manos de Víctor Alijas
+                durante la Ceremonia de Entrega de Premios del XI Rally TT el próximo 4 de octubre.</p>
+            <p>El Grupo Vall Companys, con más de 60 años de trayectoria, lidera el sector agroalimentario. Su matadero
+                y sala de despiece de porcino en Villar de Olalla destaca como uno de sus pilares principales. La
+                empresa está comprometida con la sostenibilidad ambiental y social, implementando planes para reducir
+                emisiones de gases contaminantes y consumo de agua.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

@@ -1,0 +1,61 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="EL RALLY TT DE CUENCA YA TIENE FECHA PARA 2021 - Baja TT Cuenca"
+    description="El calendario del Campeonato de España de Rallys Todoterreno ya tiene fechas provisionales de cara al próximo año. En 2021 recuperará algunas pruebas que no pudieron disputarse este último año, en el que finalmente solo se pudo celebrar tres pruebas. Si todo va bien, la p..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="EL RALLY TT DE CUENCA YA TIENE FECHA PARA 2021"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="https://cuencamotor4x4.com/wp-content/uploads/2021/10/Rally-tt-cuenca-eldeporteconquense.jpg" alt="EL RALLY TT DE CUENCA YA TIENE FECHA PARA 2021">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 22 de diciembre de 2020</span>
+            <h1 class="noticia-hero-titulo">EL RALLY TT DE CUENCA YA TIENE FECHA PARA 2021</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>22 de diciembre de 2020</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>EL RALLY TT DE CUENCA YA TIENE FECHA PARA 2021</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>El calendario del Campeonato de España de Rallys Todoterreno ya tiene fechas provisionales de cara al próximo año. En 2021 recuperará algunas pruebas que no pudieron disputarse este último año, en el que finalmente solo se pudo celebrar tres pruebas.
+Si todo va bien, la próxima edición contará con ocho carreras. Entre estas citas figura la relativa a Cuenca, que regresó al campeonato nacional en 2019 tras dos años de ausencia. El evento organizado por Cuenca 4×4 Motor se celebrará, en principio, los días 23 y 24 de octubre de 2021.
+Este es el calendario, todavía sujeto a aprobación por posibles cambios: – TT Mar de Olivos (1-2 Mayo) Septiembre – TT Extremadura (12-13 Junio) – Baja Aragón (23-24-25 Julio) – TT Zuera (4-5) – TT Guadalajara (2-3 Octubre) – TT Cuenca (23-24 Octubre) – TT Lorca (6-7 Noviembre) – TT Trasandalucia 13-14 Noviembre)
+Fuente:
+eldeporteconquense.com</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

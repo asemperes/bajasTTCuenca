@@ -1,0 +1,59 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="PRESALIDA DEL VII RALLYE TT CUENCA - Baja TT Cuenca"
+    description="Estamos de enhorabuena, gracias al acuerdo establecido con el Ayuntamiento de Cuenca, os podemos comunicar que este año la Pre-salida del VII Rallye TT Cuenca se realizará el viernes a las 18:30 desde un lugar icónico para todos los conquenses. Nos referimos a la Catedral (declaramos..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="PRESALIDA DEL VII RALLYE TT CUENCA"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="https://cuencamotor4x4.com/wp-content/uploads/2021/10/catedral-cuenca-plaza-mayor-salida-vii-rally-tt-cuenca.jpg" alt="PRESALIDA DEL VII RALLYE TT CUENCA">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 18 de octubre de 2021</span>
+            <h1 class="noticia-hero-titulo">PRESALIDA DEL VII RALLYE TT CUENCA</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>18 de octubre de 2021</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>PRESALIDA DEL VII RALLYE TT CUENCA</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>Estamos de enhorabuena, gracias al acuerdo establecido con el Ayuntamiento de Cuenca, os podemos comunicar que este año la Pre-salida del VII Rallye TT Cuenca se realizará el viernes a las 18:30 desde un lugar icónico para todos los conquenses. Nos referimos a la Catedral (declarada monumento nacional)ubicada en la Plaza Mayor dentro del casco histórico.
+Hashtag Oficial: #rallyettcuenca2021
+#RFEdA #CERTT #fcmm #Cuenca #Motor #RALLYE #castillalamancha #CuencaVenYDisfruta #VIIRallyeTTCuenca #RallyeTTCuenca2021 #RallyeTTCuenca #Roadbook #CampeonatodeEspañaTT #AyuntamientodeCuenca #DiputaciondeCuenca #dipucuenca #apoyandoeldeporte #JCCM #GOBJCCM #RFDEA #cuencamotor4x4.com #frivall #globalcaja #globalcajaconeldeporte #globalcajaconeldeporteconquense #ACDCuenca @RFDEA @campeonatott @AyuntamientodeCuenca @DiputaciondeCuenca @f_globalcaja_cu @dipucuenca @gobjccm @JCCM @acdcuenca @kikebelenguer</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

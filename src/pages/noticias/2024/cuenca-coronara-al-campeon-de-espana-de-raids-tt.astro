@@ -1,0 +1,73 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="RAID TT CUENCA. CUENCA CORONARÁ AL CAMPEÓN DE ESPAÑA DE RAIDS TT - Baja TT Cuenca"
+    description="Cuenca será el escenario perfecto para que los más de 60 pilotos inscritos en esta disciplina disfruten de un gran final de temporada, que se prevé lleno de expectación. A tierras castellano manchegas llegará el dakariano Javier Vega con su Yamaha WR 450 Rallye, como líder provi..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="RAID TT CUENCA. CUENCA CORONARÁ AL CAMPEÓN DE ESPAÑA DE RAIDS TT"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="/img/noticias/motos-campeonato-españa-2024-cuenca-1024x724.webp" alt="RAID TT CUENCA. CUENCA CORONARÁ AL CAMPEÓN DE ESPAÑA DE RAIDS TT">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 2 de octubre de 2024</span>
+            <h1 class="noticia-hero-titulo">RAID TT CUENCA. CUENCA CORONARÁ AL CAMPEÓN DE ESPAÑA DE RAIDS TT</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>2 de octubre de 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>RAID TT CUENCA. CUENCA CORONARÁ AL CAMPEÓN DE ESPAÑA DE RAID...</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>Cuenca será el escenario perfecto para que los más de 60 pilotos inscritos en esta disciplina disfruten
+                de un gran final de temporada, que se prevé lleno de expectación.</p>
+            <p>A tierras castellano manchegas llegará el dakariano Javier Vega con su Yamaha WR 450 Rallye, como líder
+                provisional del Campeonato de España. El madrileño, que ha corrido en cinco ediciones del mítico Dakar,
+                se empleará a fondo para hacerse con el Título Nacional.</p>
+            <p>Hasta Cuenca también acudirá Guillem Martínez Boronat con su KTM 450 Rally. El piloto de Reus es segundo
+                provisional y no está muy lejos en la clasificación con Javier Vega, por lo que el duelo entre ambos
+                será de máximo nivel.</p>
+            <p>Además, todo apunta a que la carrera estará llena de emoción, ya que casi con la misma puntuación
+                provisional acudirán Iñigo Zardoya con Husqvarna, Marco Antonio Montes con Sherco, y Miguel Sanz con
+                KTM, que lucharán por alcanzar el Podio.</p>
+            <p>El rallye que se disputará este fin de semana tendrá un recorrido de casi 400 kilómetros de los que 300
+                serán cronometrados. La carrera comienza este viernes 4 de octubre con una Súper Especial de 8
+                kilómetros para continuar el sábado 5 con los dos Sectores Selectivos. En Cuenca se podrá disfrutar del
+                mejor pilotaje de las categorías Enduro, Trail, Maxi Trail, Quad GPS y Moto GPS.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

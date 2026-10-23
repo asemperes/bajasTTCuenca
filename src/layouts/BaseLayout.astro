@@ -1,0 +1,86 @@
+---
+import '@/styles/global.css';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { SITIO } from '@/config/evento';
+
+interface Props {
+    title: string;
+    description: string;
+    // Texto de la cabecera en tablet y enlace activo del menú
+    seccion: string;
+    activo?: 'inicio' | 'nosotros' | 'noticias' | 'contacto' | 'multimedia' | 'patrocinadores';
+    ogTitle?: string;
+    ogDescription?: string;
+    ogImage?: string;
+    ogType?: 'website' | 'article';
+}
+
+const {
+    title,
+    description,
+    seccion,
+    activo,
+    ogTitle = title,
+    ogDescription = description,
+    ogImage = '/img/hero.webp',
+    ogType = 'website',
+} = Astro.props;
+
+const ogUrl = new URL(Astro.url.pathname, Astro.site);
+const ogImageUrl = new URL(ogImage, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f0f0f">
+    <meta name="author" content={SITIO.autor}>
+    <!-- Desarrollado por Álvaro Sempere Serrano y Hugo Gallego Palacios -->
+    <meta name="description" content={description}>
+    <meta property="og:title" content={ogTitle}>
+    <meta property="og:description" content={ogDescription}>
+    <meta property="og:image" content={ogImageUrl}>
+    <meta property="og:url" content={ogUrl}>
+    <meta property="og:type" content={ogType}>
+    <title>{title}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500&display=swap"></noscript>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicons2/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons2/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons2/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons2/apple-touch-icon.png">
+
+    <!-- COOKIES -->
+    <script is:inline id="cookieyes" type="text/javascript" src={SITIO.cookieYes}></script>
+    <!-- AQUÍ VA A IR EL ADSENSE -->
+    <slot name="head" />
+</head>
+
+<body>
+    <Header seccion={seccion} activo={activo} />
+
+    <slot />
+
+    <Footer />
+
+    <script>
+        import '@/scripts/scrollReveal';
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${SITIO.gaId}`}></script>
+    <script is:inline define:vars={{ gaId: SITIO.gaId }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', gaId);
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/contacto.css';
+---
+
+<BaseLayout
+    title="Contacto | Baja TT Cuenca"
+    description="Contacta con el Club Deportivo Cuenca Motor 4x4, organizadores de la Baja TT Cuenca. Email, redes sociales y formulario directo."
+    seccion="Contacto"
+    activo="contacto"
+    ogTitle="Contacto - Baja TT Cuenca"
+    ogDescription="Ponte en contacto con el equipo organizador de la Baja TT Cuenca. Estamos disponibles por email y redes sociales."
+>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <p class="hero-tag">Baja TT Cuenca - Club Cuenca Motor 4×4</p>
+            <h1>Habla<br>con<br><em>nosotros</em></h1>
+            <p class="hero-sub">Escríbenos por email, síguenos en redes o usa el formulario. Respondemos lo antes
+                posible.</p>
+        </div>
+        <div class="hero-right">
+            <img src="/img/heroContacto.webp" alt="Baja TT Cuenca" />
+            <span class="watermark">4×4</span>
+        </div>
+    </section>
+
+    <!-- BODY -->
+    <div class="contact-body">
+
+        <aside class="sidebar">
+
+            <div class="info-block reveal">
+                <p class="info-label">Email directo</p>
+                <a class="email-link" href="mailto:cuencamotor4x4@hotmail.com">cuencamotor4x4@hotmail.com</a>
+                <p class="email-note">Para solución de dudas, <br>prensa o cualquier consulta.</p>
+            </div>
+
+            <div class="info-block reveal" style="transition-delay:.1s">
+                <p class="info-label">Redes sociales</p>
+                <a class="social-row" href="https://www.facebook.com/p/Rallye-TT-Cuenca-100063715416500/" target="_blank">
+                    <div class="social-left">
+                        <span class="social-platform">Facebook</span>
+                        <span class="social-handle">Rallye TT Cuenca</span>
+                    </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+            </svg>
+                </a>
+                <a class="social-row" href="https://www.instagram.com/cuencamotor4x4/" target="_blank">
+                    <div class="social-left">
+                        <span class="social-platform">Instagram</span>
+                        <span class="social-handle">@cuencamotor4x4</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="info-block reveal" style="transition-delay:.2s">
+                <p class="info-label">¿Quieres participar?</p>
+                <p class="cta-note">Consulta todas las categorías disponibles y accede al formulario de inscripción.</p>
+                <a class="btn-cta" href="/inscripciones">
+                    Ver inscripciones
+                </a>
+            </div>
+
+        </aside>
+
+        <div class="form-col">
+            <div class="reveal">
+                <h2 class="form-title">Envíanos un mensaje</h2>
+                <p class="form-subtitle">Tu mensaje llegará directamente a nuestro equipo.</p>
+                <div class="fgrid">
+                    <div class="fg">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre" />
+                    </div>
+                    <div class="fg">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="+34 600 000 000" />
+                    </div>
+                    <div class="fg full">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required />
+                    </div>
+                    <div class="fg full">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto">
+                            <option value="" disabled selected>Selecciona un tema…</option>
+                            <option>Inscripciones y participación</option>
+                            <option>Patrocinio y colaboración</option>
+                            <option>Prensa y medios</option>
+                            <option>Voluntariado</option>
+                            <option>Información general</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="fg full">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí…"></textarea>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button class="btn-send" type="button">
+                        Enviar mensaje
+                    </button>
+                    <p class="send-note">Se abrirá tu cliente de correo<br>con los datos rellenados.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+
+<script>
+    // Abre el cliente de correo con los datos del formulario de contacto
+    import { SITIO } from '@/config/evento';
+
+    const valor = (id: string) => (document.getElementById(id) as HTMLInputElement).value;
+
+    document.querySelector('.btn-send')?.addEventListener('click', () => {
+        const email = valor('email');
+        const nombre = valor('nombre');
+        // Si el asunto está vacío se usa 'Contacto web'
+        const asunto = valor('asunto') || 'Contacto web';
+        const mensaje = valor('mensaje');
+        if (!nombre) { alert('Por favor, introduce tu nombre.'); return; }
+        if (!email) { alert('Por favor, introduce tu email.'); return; }
+        const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\n\n${mensaje}`);
+        window.location.href = `mailto:${SITIO.email}?subject=${encodeURIComponent(asunto)}&body=${body}`;
+    });
+</script>
+</BaseLayout>

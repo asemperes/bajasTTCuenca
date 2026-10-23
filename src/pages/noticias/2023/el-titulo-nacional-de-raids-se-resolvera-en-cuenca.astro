@@ -1,0 +1,61 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="EL TÍTULO NACIONAL DE RAIDS SE RESOLVERÁ EN CUENCA - Baja TT Cuenca"
+    description="FOTO de Kike Belenguer Motos. Raid TT Cuenca. Campeonato de España de Raids TT, 4ª y última Prueba La última cita del Campeonato de España de Raids TT se disputará los próximos 20 y 21 de octubre en Cuenca, donde los pilotos de Enduro recorrerán cerca de 350 kilómetros por los im..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="EL TÍTULO NACIONAL DE RAIDS SE RESOLVERÁ EN CUENCA"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="https://cuencamotor4x4.com/wp-content/uploads/2023/09/Foto-Kike-Belenguer.-Motos-protagonistas-en-Raid-de-Cuenca-2023-1024x683.jpg" alt="EL TÍTULO NACIONAL DE RAIDS SE RESOLVERÁ EN CUENCA">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 24 de septiembre de 2023</span>
+            <h1 class="noticia-hero-titulo">EL TÍTULO NACIONAL DE RAIDS SE RESOLVERÁ EN CUENCA</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>24 de septiembre de 2023</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>EL TÍTULO NACIONAL DE RAIDS SE RESOLVERÁ EN CUENCA</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>FOTO de Kike Belenguer
+Motos. Raid TT Cuenca. Campeonato de España de Raids TT, 4ª y última Prueba
+La última cita del Campeonato de España de Raids TT se disputará los próximos 20 y 21 de octubre en Cuenca, donde los pilotos de Enduro recorrerán cerca de 350 kilómetros por los impresionantes y técnicos parajes conquenses.
+La reconocida prueba del Nacional no se lo pondrá fácil a los pilotos españoles ya que la última carrera se prevé, en palabras de la Organización, muy técnica, rápida y de gran pilotaje.
+Además será una carrera muy disputada ya que a la última cita del nacional llegarán muy apretados en la clasificación Josep Pedro Subirats, y Marc Calmet, que este año correrá su tercer Dakar y con su propio equipo. Y desde luego, el valenciano Tosha Schareina, Adrià Pascuet y Salvador Vargas no se lo pondrán fácil a los dos primeros, ya que también optan a obtener el Título de Campeón de España de Raids 2023.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

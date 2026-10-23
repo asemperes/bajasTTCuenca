@@ -1,0 +1,142 @@
+---
+import { EVENTO, EDICION } from '@/config/evento';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/prensa.css';
+---
+
+<BaseLayout
+    title="Prensa | Baja TT Cuenca"
+    description={`Zona de prensa de la Baja TT Cuenca ${EVENTO.anio}. Información de acreditación para medios de comunicación. ${EDICION.rallye} Rallye TT Cuenca - ${EVENTO.fechas}.`}
+    seccion="Prensa"
+    activo="noticias"
+    ogTitle="Prensa - Baja TT Cuenca"
+    ogDescription={`Acreditación oficial para medios de comunicación. ${EDICION.baja} Baja TT Cuenca y ${EDICION.rallye} Rallye TT Cuenca ${EVENTO.anio}.`}
+>
+    <!-- HERO -->
+    <section class="hero-prensa">
+        <div class="hero-contenido">
+            <p class="etiqueta-hero">Acreditación de prensa - Baja TT Cuenca Y {EDICION.rallye} Rallye TT Cuenca</p>
+            <h1>INSCRIPCIONES DE <em>PRENSA</em></h1>
+            <p class="descripcion-hero">Exclusivo para profesionales de los medios de comunicación.</p>
+        </div>
+        <div class="hero-imagen">
+            <img src="/img/rallyRaid.webp" alt="Baja TT Cuenca - Zona de prensa">
+        </div>
+    </section>
+
+    <!-- PRESS MANAGER - FRANJA DESTACADA -->
+    <div class="franja-gestor reveal">
+        <div class="gestor-identidad">
+            <span class="gestor-cargo">Press Manager</span>
+            <span class="gestor-nombre">Irene González</span>
+            <span class="gestor-plazo">Plazo de solicitud: <strong>{EVENTO.plazoPrensa}</strong></span>
+        </div>
+
+        <div class="gestor-contactos">
+            <a href="mailto:mediaage.irene@gmail.com" class="enlace-contacto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                mediaage.irene@gmail.com
+            </a>
+            <a href="tel:+34609425862" class="enlace-contacto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37A16 16 0 0 0 16 16.46l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                (+34) 609 425 862
+            </a>
+        </div>
+
+        <a href={`mailto:mediaage.irene@gmail.com?subject=${encodeURIComponent(`Solicitud acreditación prensa Baja TT Cuenca ${EVENTO.anio}`)}`} class="boton-solicitud">
+            Solicitar acreditación
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- AVISO -->
+    <div class="barra-aviso">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" />
+        </svg>
+        Cada profesional debe enviar una solicitud individual, incluso si pertenece al mismo medio de comunicación.
+    </div>
+
+    <!-- REQUISITOS -->
+    <div class="cuerpo-prensa">
+        <div class="bloque-info reveal">
+            <p class="etiqueta-seccion">Cómo acreditarse</p>
+            <h2 class="titulo-bloque">Datos necesarios para la solicitud</h2>
+            <p class="descripcion-bloque">
+                Envía un correo a la Press Manager con la siguiente información antes del <strong>{EVENTO.plazoPrensa}</strong>. La acreditación es exclusiva para <strong>profesionales de los medios de comunicación</strong>.
+            </p>
+
+            <div class="cuadricula-requisitos">
+                <div class="requisito">
+                    <span class="requisito-numero">01</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">Nombre y apellido</span>
+                        <br><span class="requisito-detalle"> del profesional</span>
+                    </div>
+                </div>
+                <div class="requisito">
+                    <span class="requisito-numero">02</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">Medio de comunicación</span>
+                        <br><span class="requisito-detalle">Nombre del medio al que perteneces</span>
+                    </div>
+                </div>
+                <div class="requisito">
+                    <span class="requisito-numero">03</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">Teléfono</span>
+                        <br><span class="requisito-detalle">Número de contacto directo</span>
+                    </div>
+                </div>
+                <div class="requisito">
+                    <span class="requisito-numero">04</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">Email</span>
+                        <br><span class="requisito-detalle">Correo electrónico profesional</span>
+                    </div>
+                </div>
+                <div class="requisito">
+                    <span class="requisito-numero">05</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">Enlace al medio</span>
+                        <br><span class="requisito-detalle">URL de la web o perfil del medio</span>
+                    </div>
+                </div>
+                <div class="requisito">
+                    <span class="requisito-numero">06</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">DNI o Pasaporte</span>
+                        <br><span class="requisito-detalle">Documento de identidad oficial</span>
+                    </div>
+                </div>
+                <div class="requisito">
+                    <span class="requisito-numero">07</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">Labor a realizar</span>
+                        <br><span class="requisito-detalle">Prensa escrita, fotografía, vídeo o radio</span>
+                    </div>
+                </div>
+                <div class="requisito">
+                    <span class="requisito-numero">08</span>
+                    <div class="requisito-info">
+                        <span class="requisito-nombre">Vehículo</span>
+                        <br><span class="requisito-detalle">Matrícula y modelo del vehículo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

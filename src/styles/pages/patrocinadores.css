@@ -1,0 +1,284 @@
+/* Estilos de la página patrocinadores (antes styles/estilopatrocinadores.css) */
+@layer components {
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--borde-gris);
+    padding-top: 80px;
+    background: linear-gradient(135deg, rgba(137, 72, 72, 0.18), rgba(15, 15, 15, 1));
+
+}
+.hero-body {
+    padding: 60px 56px 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.hero-body::after {
+    content: '2026';
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-25deg);
+    font-family: var(--font-display);
+    font-size: 180px;
+    font-weight: 900;
+    color: var(--claro);
+    opacity: .2;
+
+    letter-spacing: -4px;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+.hero-overline {
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--amarillo-principal);
+
+    margin-bottom: 20px;
+}
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 7vw, 80px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: .9;
+    letter-spacing: .03em;
+    color: var(--claro);
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+}
+.hero-title .color-titulo {
+    color: var(--amarillo-principal);
+}
+.hero-desc {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--text-gray2);
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 1;
+}
+.hero-bottom {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-right: 32px;
+    border-right: 1px solid var(--borde-gris);
+}
+.hero-stat:last-of-type {
+    border-right: none;
+}
+.stat-num {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--claro);
+    line-height: 1;
+}
+.stat-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+.nav-link:hover {
+    color: var(--amarillo-principal);
+    background: var(--gris-claro);
+}
+/* PÁGINA*/
+.sponsors-page {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.sponsors-category {
+    border-bottom: 1px solid var(--borde-gris);
+    padding: 56px;
+    scroll-margin-top: 48px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 56px;
+    align-items: start;
+}
+.cat-sidebar {
+    position: sticky;
+    top: 56px;
+}
+.cat-number {
+    font-family: var(--font-display);
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--gris-claro);
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: -2px;
+}
+.cat-name {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--claro);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.cat-line {
+    width: 28px;
+    height: 2px;
+    background: var(--principal);
+    margin-bottom: 14px;
+}
+.cat-desc {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text-gray2);
+    line-height: 1.7;
+}
+.cat-back {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    text-decoration: none;
+    font-family: var(--font-body);
+    transition: color .2s;
+    background-color: var(--gris);
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    border:1px solid var(--borde-gris);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.cat-back svg {
+    width: .95em;
+    height: .95em;
+    vertical-align: middle;
+    transition: transform .2s;
+    color:var(--text-gray);
+    fill:var(--text-gray)
+}
+.cat-back:hover, .cat-back:hover svg {
+    color: var(--amarillo-principal);
+    fill:var(--amarillo-principal);
+    border-color: var(--amarillo-principal);
+}
+
+.sponsors-grid {
+    display: grid;
+    gap: 8px;
+}
+.grid-institucional {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+.grid-tecnico {
+    grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+}
+.grid-local {
+    grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+}
+.sponsor-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--claro);
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+    padding: 16px 12px;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    text-decoration: none;
+    transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+a.sponsor-card:hover {
+    border-color: var(--principal);
+    box-shadow: 3px 3px 0 var(--principal);
+    transform: translate(-1px, -1px);
+}
+span.sponsor-card {
+    opacity: 0.35;
+    cursor: default;
+}
+.sponsor-card img {
+    max-width: 100%;
+    max-height: 68px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.grid-institucional .sponsor-card img {
+    max-height: 78px;
+}
+.fondo-fia {
+    background-color: var(--fia-blue);
+    box-shadow: 0 0 10px var(--fia-blue);
+}
+
+/* Responsive*/
+@media (max-width: 900px) {
+    .sponsors-category {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+        gap: 24px;
+    }
+    .cat-sidebar {
+        position: static;
+    }
+    .cat-number {
+        font-size: 56px;
+    }
+    .hero-body {
+        padding: 40px 24px 36px;
+    }
+    .hero-body::after {
+        display: none;
+    }.cat-back {
+        width: max-content;
+}
+}
+
+@media (max-width: 640px) {
+    .grid-institucional {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-tecnico {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-local {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-title {
+    letter-spacing: -.03em;
+    }
+}
+
+}

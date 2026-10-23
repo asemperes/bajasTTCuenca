@@ -1,0 +1,70 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="COMIENZAN LAS INSCRIPCIONES DEL X RALLY TT DE CUENCA 2024 - Baja TT Cuenca"
+    description="La décima edición del Rally TT de Cuenca ha abierto inscripciones para equipos nacionales e internacionales hasta el 25 de septiembre. Se trata de la última carrera del Campeonato de España de Rallyes Todoterreno 2024. La organización presenta un recorrido inédito de aproximadam..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="COMIENZAN LAS INSCRIPCIONES DEL X RALLY TT DE CUENCA 2024"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="/img/noticias/jpeg-optimizer_image-20-11-22-06-32-1-1024x683.webp" alt="COMIENZAN LAS INSCRIPCIONES DEL X RALLY TT DE CUENCA 2024">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 26 de agosto de 2024</span>
+            <h1 class="noticia-hero-titulo">COMIENZAN LAS INSCRIPCIONES DEL X RALLY TT DE CUENCA 2024</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>26 de agosto de 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>COMIENZAN LAS INSCRIPCIONES DEL X RALLY TT DE CUENCA 2024</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>La décima edición del Rally TT de Cuenca ha abierto inscripciones para equipos nacionales e
+                internacionales hasta el 25 de septiembre. Se trata de la última carrera del Campeonato de España de
+                Rallyes Todoterreno 2024.</p>
+            <p>La organización presenta un recorrido inédito de aproximadamente 400 kilómetros atravesando 20
+                localidades de Castilla La Mancha, con amplios cambios de terreno y con grandes áreas de monte, que
+                serán muy severas.</p>
+            <p>El evento se desarrollará los días 4 y 5 de octubre. El viernes comienza con la etapa Prólogo a las 16:30
+                horas, seguida de ceremonia de pódium. El sábado se disputarán más de 400 kilómetros finalizando con
+                gala de entrega de trofeos.</p>
+            <p>Cuenca, declarada Patrimonio de la Humanidad por la UNESCO desde 1996, alberga esta competición con
+                objetivos de posicionarse como candidata para la Copa del Mundo de Raids, fusionando naturaleza,
+                turismo, gastronomía, y deporte del motor.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

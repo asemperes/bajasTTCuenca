@@ -1,0 +1,62 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="UN FINAL DE CAMPEONATO, DE INFARTO - Baja TT Cuenca"
+    description="Foto: Kike Belenguer. Texto: Irene González Ultima carrera del Campeonato de España de Rallyes Todoterreno 2023. Los días 20 y 21 de octubre será la gran final. Algunos pilotos ucranianos, que fueron llamados a filas en la guerra y que sufrieron heridas de consideración, tomarán..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="UN FINAL DE CAMPEONATO, DE INFARTO"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="https://cuencamotor4x4.com/wp-content/uploads/2023/10/Rallye-TT-Cuenca-FOTO-Kike-Belenguer-cuenca-1024x683.jpg" alt="UN FINAL DE CAMPEONATO, DE INFARTO">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 3 de octubre de 2023</span>
+            <h1 class="noticia-hero-titulo">UN FINAL DE CAMPEONATO, DE INFARTO</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>3 de octubre de 2023</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>UN FINAL DE CAMPEONATO, DE INFARTO</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>Foto: Kike Belenguer. Texto: Irene González
+Ultima carrera del Campeonato de España de Rallyes Todoterreno 2023. Los días 20 y 21 de octubre será la gran final. Algunos pilotos ucranianos, que fueron llamados a filas en la guerra y que sufrieron heridas de consideración, tomarán la salida del rally conquense.
+Empieza la cuenta atrás para la final del Campeonato de España de Rallyes TT 2023, que se prevé de infarto. La séptima y última cita del Nacional se disputará en la provincia conquense, y tendrá su epicentro en la ciudad de Cuenca, que es Patrimonio de la Humanidad por la UNESCO.
+En la novena edición del Rally TT de Cuenca, que se celebrará los días 21 y 22 de octubre, se lucharán varios títulos, entre los que destaca el del Campeonato de España, por lo que de Cuenca saldrá el flamante campeón de España de Rallyes TT 2023.
+El recorrido, que es secreto, será de unos 450 kilómetros y ofrecerá muchas novedades, ya que el cincuenta por ciento será totalmente nuevo. Lo que sí se puede avanzar es que será un trazado muy técnico donde los navegantes serán los grandes protagonistas. En algunos tramos será muy lento por la dificultad del trazado, y aunque no se prevé que sea una carrera rompedora, se caracterizará por ser muy técnica. Y también habrá algún tramo espectáculo en los increíbles parajes naturales conquenses.
+Uno de los aspectos más sugerentes de esta edición será la participación de militares ucranianos que han sufrido alguna discapacidad en la Guerra de Ucrania. A través de la Federación Española algunos pilotos ucranianos, que fueron llamados a filas en la guerra y que sufrieron heridas de consideración, tomarán la salida del rally conquense. De momento, ya están confirmados dos militares ucranianos en el IX Rallye TT Cuenca.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

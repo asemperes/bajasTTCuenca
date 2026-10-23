@@ -1,0 +1,302 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/multimedia.css';
+---
+
+<BaseLayout
+    title="Multimedia | Baja TT Cuenca"
+    description="Galería de fotos de la Baja TT Cuenca. Imágenes de todas las ediciones desde 2016."
+    seccion="Multimedia"
+    activo="multimedia"
+    ogTitle="Multimedia - Baja TT Cuenca"
+    ogImage="/img/fimEurope.webp"
+>
+  <!--HERO-->
+  <section class="hero-foto">
+    <img class="hero-foto-img" src="/img/fimEurope.webp" alt="Baja TT Cuenca">
+    <div class="hero-foto-capa"></div>
+
+    <!-- Texto anclado abajo a la izquierda -->
+    <div class="hero-foto-texto">
+      <span class="hero-etiqueta">Galería - 2016 ~ 2025</span>
+      <h1 class="hero-titulo">Cada edición,<br>una historia.</h1>
+      <p class="hero-bajada">53 fotografías - 8 ediciones - Cuenca, España</p>
+    </div>
+
+    <!-- Índice de años superpuesto abajo a la derecha -->
+    <nav class="hero-indice" aria-label="Ir a año">
+      <span class="hero-indice-label">Ediciones</span>
+      <a href="#">2025</a>
+      <a href="#y2024">2024</a>
+      <a href="#y2023">2023</a>
+      <a href="#y2021">2021</a>
+      <a href="#y2020">2020</a>
+      <a href="#y2019">2019</a>
+      <a href="#y2017">2017</a>
+      <a href="#y2016">2016</a>
+    </nav>
+
+    <!-- Flecha scroll down -->
+    <a class="hero-scroll" href="#y2025" aria-label="Ver galería">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- GALERÍA -->
+  <main class="galeria">
+
+    <!-- 2025 -->
+    <section class="edicion" id="y2025">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2025</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Baja TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">OCTAVA EDICIÓN</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal foto-grande"><img src="/img/galeria/fotos/foto1-2025.webp" alt="2025" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto2-2025.webp" alt="2025" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto3-2025.webp" alt="2025" loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto4-2025.webp" alt="2025" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto5-2025.webp" alt="2025" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto6-2025.webp" alt="2025" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto7-2025.webp" alt="2025" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- 2024 -->
+    <section class="edicion" id="y2024">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2024</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Baja TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">SÉPTIMA EDICIÓN</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal foto-grande"><img src="/img/galeria/fotos/foto2-2024.webp" alt="2024" loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto1-2024.webp" alt="2024" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto3-2024.png" alt="2024" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto4-2024.webp" alt="2024" loading="lazy"></div>
+        <div class="foto-item reveal "><img src="/img/galeria/fotos/foto5-2024.webp" alt="2024" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto6-2024.webp" alt="2024" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto7-2024.webp" alt="2024" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- 2023 -->
+    <section class="edicion" id="y2023">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2023</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Baja TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">SEXTA EDICIÓN</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal foto-grande"><img src="/img/galeria/fotos/foto1-2023.webp" alt="2023" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto2-2023.webp" alt="2023" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto3-2023.webp" alt="2023" loading="lazy"></div>
+        <div class="foto-item reveal foto-grande"><img src="/img/galeria/fotos/foto4-2023.webp" alt="2023" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto5-2023.webp" alt="2023" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto6-2023.webp" alt="2023" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto7-2023.webp" alt="2023" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- 2021 -->
+    <section class="edicion" id="y2021">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2021</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Baja TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">QUINTA EDICIÓN</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto1-2021.webp" alt="2021" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto2-2021.webp" alt="2021" loading="lazy"></div>
+        <div class="foto-item reveal foto-grande"><img src="/img/galeria/fotos/foto3-2021.webp" alt="2021" loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto4-2021.webp" alt="2021" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto5-2021.webp" alt="2021" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto6-2021.webp" alt="2021" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto7-2021.webp" alt="2021" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- 2020 -->
+    <section class="edicion" id="y2020">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2020</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Baja TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">CUARTA EDICIÓN</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal foto-grande"><img src="/img/galeria/fotos/foto1-2020.webp" alt="2020" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto2-2020.webp" alt="2020" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto3-2020.webp" alt="2020" loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto4-2020.webp" alt="2020" loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto5-2020.webp" alt="2020" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto6-2020.webp" alt="2020" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto7-2020.webp" alt="2020" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- 2019 -->
+    <section class="edicion" id="y2019">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2019</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Baja TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">TERCERA EDICIÓN</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal "><img src="/img/galeria/fotos/foto1-2019.webp" alt="2019" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto3-2019.webp" alt="2019" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto4-2019.webp" alt="2019" loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto7-2019.webp" alt="2019" loading="lazy"></div>
+        <div class="foto-item reveal "><img src="/img/galeria/fotos/foto2-2019.webp" alt="2019" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto5-2019.webp" alt="2019" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto6-2019.webp" alt="2019" loading="lazy"></div>
+
+      </div>
+    </section>
+
+    <!-- 2017 -->
+    <section class="edicion" id="y2017">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2017</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Rallye TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">SEGUNDA EDICIÓN</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal foto-grande"><img src="/img/galeria/fotos/foto1-2017.webp" alt="2017" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto2-2017.webp" alt="2017" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto3-2017.webp" alt="2017" loading="lazy"></div>
+        <div class="foto-item reveal "><img src="/img/galeria/fotos/foto4-2017.webp" alt="2017" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto5-2017.webp" alt="2017" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- 2016 -->
+    <section class="edicion" id="y2016">
+      <div class="edicion-cabecera">
+        <div class="edicion-meta">
+          <span class="edicion-num">2016</span>
+          <div class="edicion-info">
+            <span class="edicion-titulo">Rallye TT Cuenca</span>
+            <span class="edicion-categoria cat-origen">Primera edición</span>
+          </div>
+        </div>
+        <a class="edicion-volver" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Volver al inicio</a>
+      </div>
+      <div class="foto-mosaico">
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto1-2016.webp" alt="2016" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto2-2016.webp" alt="2016" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto4-2016.webp" alt="2016" loading="lazy"></div>
+        <div class="foto-item reveal foto-apaisada"><img src="/img/galeria/fotos/foto3-2016.webp" alt="2016" loading="lazy"></div>
+        <div class="foto-item reveal "><img src="/img/galeria/fotos/foto5-2016.webp" alt="2016" loading="lazy"></div>
+        <div class="foto-item reveal"><img src="/img/galeria/fotos/foto6-2016.webp" alt="2016" loading="lazy"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-cerrar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+    </button>
+    <img class="lightbox-foto" id="lightboxFoto" src="" alt="">
+  </div>
+
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+
+<script>
+    // Lightbox de la galería de fotos
+    const lightbox = document.getElementById('lightbox')!;
+    const foto = document.getElementById('lightboxFoto') as HTMLImageElement;
+
+    function cerrarLightbox() {
+        lightbox.classList.remove('activo');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll<HTMLElement>('.foto-item').forEach(card => {
+        card.addEventListener('click', () => {
+            foto.src = card.querySelector('img')!.src;
+            lightbox.classList.add('activo');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    lightbox.addEventListener('click', cerrarLightbox);
+    foto.addEventListener('click', e => e.stopPropagation());
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') cerrarLightbox();
+    });
+</script>
+</BaseLayout>

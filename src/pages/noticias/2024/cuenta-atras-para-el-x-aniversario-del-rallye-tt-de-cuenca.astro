@@ -1,0 +1,72 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import '@/styles/pages/noticia.css';
+---
+
+<BaseLayout
+    title="CUENTA ATRÁS PARA EL X ANIVERSARIO DEL RALLYE TT DE CUENCA - Baja TT Cuenca"
+    description="La edición 2024 del Rallye TT de Cuenca será toda una celebración, ya que la carrera cumple una década prodigiosa en la que se ha convertido en un icono en la competición del motor, tanto en coches como en motos. El rallye, que requiere una gran organización, ya se ha puesto en ..."
+    seccion="Noticias"
+    activo="noticias"
+    ogTitle="CUENTA ATRÁS PARA EL X ANIVERSARIO DEL RALLYE TT DE CUENCA"
+    ogImage="/img/noticias/1_201_Luis-Recuenco_Toyota_FOTO-K13-SPORT_20251004-_1FM7029-1024x683.webp"
+    ogType="article"
+>
+    <!-- HERO -->
+    <div class="noticia-hero">
+        <img src="/img/noticias/1_empieza-Rallye-TT-Cuenca_-foto-kike-belenguer-cuenca-noticiaweb-1024x683.webp" alt="CUENTA ATRÁS PARA EL X ANIVERSARIO DEL RALLYE TT DE CUENCA">
+        <div class="noticia-hero-overlay"></div>
+        <div class="noticia-hero-content">
+            <span class="noticia-tag">Noticias · 6 de agosto de 2024</span>
+            <h1 class="noticia-hero-titulo">CUENTA ATRÁS PARA EL X ANIVERSARIO DEL RALLYE TT DE CUENCA</h1>
+            <div class="noticia-meta">
+                <span>Cuenca Motor 4x4</span>
+                <span class="noticia-meta-dot"></span>
+                <span>6 de agosto de 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="noticia-body">
+        <div class="noticia-breadcrumb">
+            <a href="/">Inicio</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <a href="/noticias">Noticias</a>
+            <span class="noticia-breadcrumb-sep">›</span>
+            <span>CUENTA ATRÁS PARA EL X ANIVERSARIO DEL RALLYE TT DE CUENCA</span>
+        </div>
+
+        <div class="noticia-divider"></div>
+
+        <div class="noticia-contenido reveal">
+            <p>La edición 2024 del Rallye TT de Cuenca será toda una celebración, ya que la carrera cumple una década
+                prodigiosa en la que se ha convertido en un icono en la competición del motor, tanto en coches como en
+                motos.</p>
+            <p>El rallye, que requiere una gran organización, ya se ha puesto en marcha, por lo que en un par de
+                semanas, el próximo 26 de agosto, la Organización abrirá las inscripciones para la carrera. Así que
+                Cuenca y todas las poblaciones por las que pasa la prueba deportiva se están preparando para la llegada
+                de los equipos que tomarán parte en la última cita del Campeonato de España; pero también de los medios
+                de comunicación y de los aficionados.</p>
+            <p>Según Víctor Alijas, presidente del Club Deportivo Cuenca Motor 4×4, "este año será un rallye con mucha
+                fuerza que transcurrirá por un recorrido cien por cien nuevo" que pasará por 20 municipios. Cuenca
+                combina excelentes pistas para todoterreno con paisajes espectaculares.</p>
+            <p>La carrera estará próxima a aficionados y vecinos en el Recinto Ferial La Hípica y el Parque de
+                Asistencia. La competición se celebrará el 4 y 5 de octubre, siendo puntuable para varios campeonatos
+                españoles y regionales.</p>
+        </div>
+
+        <a href="/noticias" class="noticia-back">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Volver a noticias
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>
