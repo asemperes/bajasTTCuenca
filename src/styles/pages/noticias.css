@@ -244,7 +244,7 @@ main {
         border-right: 1px solid var(--borde-gris);
 }
 
-@media (max-width: 1072px) {
+@media (max-width: 1092px) {
     .separador {
         top: 75px;
     }
@@ -463,6 +463,37 @@ main {
     transform: translateY(6px);
     transition: opacity .3s ease, transform .3s ease;
     pointer-events: none;
+}
+
+/* Distintivo fijo de la esquina: indica que la portada abre la revista */
+.revista-badge {
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .4rem .7rem;
+    background: var(--amarillo-principal);
+    color: var(--oscuro);
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: opacity .3s ease;
+}
+
+.revista-badge svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* Al pasar el ratón ya aparece el botón inferior, así que el distintivo se aparta */
+.revista-wrap:hover .revista-badge {
+    opacity: 0;
 }
 
 .revista-wrap:hover .revista-cta {

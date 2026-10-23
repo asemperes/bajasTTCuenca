@@ -1,0 +1,193 @@
+/* Estilos propios de la página voluntarios (la base viene de prensa.css) */
+@layer components {
+
+/* -- HERO: foto de fondo + recorte del voluntario a la derecha -- */
+.hero-voluntarios {
+    min-height: 62vh;
+}
+
+.hero-recorte {
+    position: absolute;
+    right: clamp(1rem, 8vw, 9rem);
+    bottom: 0;
+    z-index: 1;
+    height: 92%;
+    max-height: 560px;
+    width: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .7));
+    pointer-events: none;
+}
+
+/* Botón del formulario mientras no haya enlace */
+.boton-proximamente {
+    background: var(--gris-claro);
+    color: var(--text-gray2);
+    border-color: var(--borde-gris);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* -- TAREAS -- */
+.vol-tareas {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    border-bottom: 1px solid var(--borde-gris);
+}
+
+/* La foto va recortada con forma de ventanilla de coche y separada de los bordes de la sección */
+.vol-foto {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0 3rem clamp(1.5rem, 5vw, 5rem);
+}
+
+
+
+.vol-ventana {
+    width: 100%;
+    padding: 2px;
+    background: var(--borde-gris);
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+
+.vol-ventana img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    filter: brightness(.85) saturate(.9);
+}
+
+.vol-texto {
+    padding: 4rem clamp(1.5rem, 5vw, 5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.vol-parrafo {
+    margin-top: 1.2rem;
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--text-gray2);
+    max-width: 560px;
+}
+
+.vol-parrafo strong {
+    color: var(--claro);
+    font-weight: 500;
+}
+
+/* En esta página las etiquetas van sin línea debajo: menos bordes */
+.etiqueta-seccion {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.vol-subtitulo {
+    margin-top: 2.2rem;
+    font-size: 1.5rem;
+    letter-spacing: .04em;
+    color: var(--claro);
+}
+
+.vol-requisitos {
+    margin-top: .8rem;
+    padding: 0;
+    list-style: none;
+    counter-reset: requisito;
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    max-width: 560px;
+}
+
+.vol-requisitos li {
+    counter-increment: requisito;
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    padding: 1rem 1.2rem;
+    background: var(--gris);
+    border: 1px solid var(--borde-gris);
+    border-left: 3px solid var(--principal);
+    border-radius: 4px;
+    font-size: .92rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--text-gray2);
+}
+
+.vol-requisitos li::before {
+    content: counter(requisito, decimal-leading-zero);
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    line-height: 1.3;
+    color: var(--principal);
+}
+
+.vol-requisitos strong {
+    color: var(--claro);
+    font-weight: 500;
+}
+
+.vol-nota {
+    margin-top: 1.4rem;
+    font-size: .82rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--text-gray);
+    max-width: 560px;
+}
+
+/* -- INSCRIPCIÓN -- */
+.vol-inscripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3.5rem clamp(1.5rem, 6vw, 6rem);
+    border-bottom: 1px solid var(--borde-gris);
+}
+
+.vol-aviso {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    font-size: .78rem;
+    font-weight: 300;
+    color: var(--text-gray);
+}
+
+.vol-inscripcion .descripcion-bloque {
+    margin-top: .6rem;
+}
+
+/* -- RESPONSIVE -- */
+@media (max-width: 900px) {
+    /* En móvil el recorte va detrás del texto y atenuado, para que las letras se lean encima */
+    .hero-recorte {
+        z-index: 0;
+        opacity: .45;
+        right: -2rem;
+    }
+
+    .hero-voluntarios .hero-contenido {
+        z-index: 2;
+    }
+
+    .vol-tareas {
+        grid-template-columns: 1fr;
+    }
+
+    /* En móvil primero el texto y después la foto */
+    .vol-foto {
+        order: 2;
+        padding: 0 clamp(1.5rem, 5vw, 5rem) 3rem;
+    }
+}
+}

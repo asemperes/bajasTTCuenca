@@ -1,4 +1,5 @@
 ---
+import { SITIO } from '@/config/evento';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Patrocinadores from '@/components/Patrocinadores.astro';
 import '@/styles/pages/nosotros.css';
@@ -109,6 +110,12 @@ import '@/styles/pages/nosotros.css';
                     </div>
 
                 </div>
+                {SITIO.youtube && (
+                    <a class="agenda-directos" href={SITIO.youtube} target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4" /><path d="M10 9.5v5l4.5-2.5z" /></svg>
+                        Directos de las carreras en YouTube
+                    </a>
+                )}
             </div>
             <div class="eventos-imagen">
                 <img src="/img/seccionEventos-1024x683.webp" alt="Baja TT Cuenca en acción">

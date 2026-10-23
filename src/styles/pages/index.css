@@ -184,39 +184,49 @@
         }
 
         /* ---------------------
-           STATS BAR
+           PRÓXIMA EDICIÓN
         --------------------- */
-        .stats-bar {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+        .proxima-edicion {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem 3rem;
+            padding: 1.1rem clamp(1.5rem, 6vw, 5rem);
             border-top: 1px solid var(--borde-gris);
             border-bottom: 1px solid var(--borde-gris);
+            background-color: var(--principal);
         }
-        .stat-item {
-            padding: 1.8rem 2rem;
-            border-right: 1px solid var(--borde-gris);
-            display: flex;
-            flex-direction: column;
-            gap: .3rem;
+        .proxima-edicion[data-estado="durante"],
+        .proxima-edicion[data-estado="despues"] {
+            display: none;
         }
-        .stat-item:last-child { border-right: none; }
-        .stat-num {
-            font-family: var(--font-display);
-            font-size: 2.8rem;
+        .proxima-titulo {
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
             line-height: 1;
-            color: var(--principal);
             letter-spacing: .04em;
         }
-        .stat-label {
-            font-size: .62rem;
-            font-weight: 600;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-            color: var(--text-gray);
+        /* Versión compacta del contador para esta franja */
+        .proxima-edicion .contador {
+            width: min(400px, 100%);
         }
+        .proxima-edicion .contador-unidad {
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+            gap: .4rem;
+            padding: .5rem .4rem;
+        }
+        .proxima-edicion .contador-num {
+            font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+        }
+        /* En móvil, número encima de la etiqueta para que no quede apretado */
         @media (max-width: 600px) {
-            .stats-bar { grid-template-columns: 1fr 1fr; }
-            .stat-item:nth-child(2) { border-right: none; }
+            .proxima-edicion .contador-unidad {
+                flex-direction: column;
+                align-items: center;
+                gap: .15rem;
+            }
         }
 
         /* ---------------------
@@ -317,8 +327,8 @@
             justify-content: space-between;
             gap: 3rem;
             flex-wrap: wrap;
+            /* Sin borde superior: ya lo pone la sección .about que va justo encima */
             border-bottom: 1px solid var(--borde-gris);
-            border-top: 1px solid var(--borde-gris);
 
         }
         .inscripcion-cta::before {
@@ -565,7 +575,20 @@
         .noticia-card:hover .noticia-arrow { color: var(--principal); gap: .6rem; }
 
         @media (max-width: 900px) {
-            .noticias-grid { grid-template-columns: 1fr 1fr; }
+            /* Tarjetas sueltas, cada una con su borde, como en inscripciones */
+            .noticias-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.25rem;
+                background: none;
+                border: none;
+                border-radius: 0;
+                overflow: visible;
+            }
+            .noticia-card {
+                border: 1px solid var(--borde-gris);
+                border-radius: 6px;
+                overflow: hidden;
+            }
         }
         @media (max-width: 500px) {
             .noticias-grid { grid-template-columns: 1fr; }

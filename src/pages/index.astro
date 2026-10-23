@@ -1,6 +1,7 @@
 ---
 import { EVENTO, EDICION } from '@/config/evento';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Contador from '@/components/Contador.astro';
 import Patrocinadores from '@/components/Patrocinadores.astro';
 import '@/styles/pages/index.css';
 ---
@@ -41,25 +42,11 @@ import '@/styles/pages/index.css';
         </div>
     </section>
 
-    <!-- STATS -->
-    <div class="stats-bar reveal">
-        <div class="stat-item">
-            <span class="stat-num">2016</span>
-            <span class="stat-label">Primera edición</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-num">+400</span>
-            <span class="stat-label">Km de recorrido</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-num">+20</span>
-            <span class="stat-label">Municipios implicados</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-num">2026</span>
-            <span class="stat-label">FIA European Cup</span>
-        </div>
-    </div>
+    <!-- PRÓXIMA EDICIÓN (se oculta sola durante y después del evento) -->
+    <section class="proxima-edicion reveal" data-estado="antes">
+        <h2 class="proxima-titulo">Próxima edición</h2>
+        <Contador />
+    </section>
 
     <!-- ABOUT -->
     <section class="about">
@@ -83,11 +70,6 @@ import '@/styles/pages/index.css';
             </a>
         </div>
     </section>
-    <!-- Anuncio banner Google AdSense -->
-    <div class="ad-container ad-leaderboard">
-        <ins class="adsbygoogle" data-ad-client="" data-ad-slot="" data-ad-format="" data-full-width-responsive="true">
-        </ins>
-    </div>
     <!-- INSCRIPCIÓN CTA -->
     <section class="inscripcion-cta reveal">
         <div class="cta-left">
@@ -208,11 +190,6 @@ import '@/styles/pages/index.css';
             </a>
         </div>
     </section>
-    <!-- Anuncio banner Google AdSense -->
-    <div class="ad-container ad-leaderboard">
-        <ins class="adsbygoogle" data-ad-client="" data-ad-slot="" data-ad-format="" data-full-width-responsive="true">
-        </ins>
-    </div>
 
     <!-- PATROCINADORES -->
     <Patrocinadores />

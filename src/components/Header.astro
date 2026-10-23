@@ -13,9 +13,9 @@ const clase = (clave: Props['activo']) => (clave === activo ? 'enlace-nav-activo
 ---
 
 <header class="header" nombre-seccion={seccion}>
-    <div class="contenedor-logo">
+    <a href="/" class="contenedor-logo" aria-label="Ir a inicio">
         <img src="/img/placabajasttcuenca-photoroom.webp" alt="Logo cuencamotor">
-    </div>
+    </a>
     <div class="contenedor-navegacion">
         <nav>
             <ul class="nav-escritorio">
@@ -35,20 +35,20 @@ const clase = (clave: Props['activo']) => (clave === activo ? 'enlace-nav-activo
                     </ul>
                 </li>
 
-                <li class="listas-nav listas-nav--con-submenu">
-                    <a href="/noticias" class={`${clase('noticias')} enlace-nav--con-submenu`}>Noticias</a>
-                    <ul class="submenu">
-                        <li><a href="/prensa">Prensa</a></li>
-                    </ul>
-                </li>
+                <li class="listas-nav"><a href="/noticias" class={clase('noticias')}>Noticias</a></li>
 
                 <li class="listas-nav"><a href="/contacto" class={clase('contacto')}>Contacto</a></li>
                 <li class="listas-nav"><a href="/multimedia" class={clase('multimedia')}>Multimedia</a></li>
                 <li class="listas-nav"><a href="/patrocinadores" class={clase('patrocinadores')}>Patrocinadores</a></li>
             </ul>
 
+            <!-- Inscribirse: al pasar el ratón (o con el teclado) despliega prensa y voluntarios -->
             <div class="contenedor-inscripcion">
                 <a href="/inscripciones" class="boton-inscripcion">Inscribirse</a>
+                <ul class="submenu-inscripcion">
+                    <li><a href="/prensa">Prensa</a></li>
+                    <li><a href="/voluntarios">Voluntario</a></li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -78,6 +78,10 @@ const clase = (clave: Props['activo']) => (clave === activo ? 'enlace-nav-activo
             <path d="M9 18l6-6-6-6" />
         </svg>
     </a>
+    <div class="nav-mobile-sub">
+        <a href="/prensa">Prensa</a>
+        <a href="/voluntarios">Voluntarios</a>
+    </div>
 </div>
 
 <script>

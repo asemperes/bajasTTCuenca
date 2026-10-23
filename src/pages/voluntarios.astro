@@ -1,0 +1,85 @@
+---
+import { EVENTO } from '@/config/evento';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+// Reutiliza la estructura de la página de prensa y añade lo propio de voluntarios
+import '@/styles/pages/prensa.css';
+import '@/styles/pages/voluntarios.css';
+---
+
+<BaseLayout
+    title="Voluntarios | Baja TT Cuenca"
+    description={`Hazte voluntario de la Baja TT Cuenca ${EVENTO.anio}. Requisitos, tareas y formulario de inscripción para colaborar con la organización.`}
+    seccion="Voluntarios"
+    ogTitle="Voluntarios - Baja TT Cuenca"
+    ogImage="/img/voluntarios/voluntarios-bajas-tt-cuenca.webp"
+>
+    <!-- HERO -->
+    <section class="hero-prensa hero-voluntarios">
+        <div class="hero-contenido">
+            <p class="etiqueta-hero">Voluntariado - Baja TT Cuenca {EVENTO.anio}</p>
+            <h1>INSCRIPCIONES DE <em>VOLUNTARIOS</em></h1>
+            <p class="descripcion-hero">Colabora en las tareas de organización y vive la competición 
+                <strong> desde dentro</strong>.</p>
+        </div>
+        <div class="hero-imagen">
+            <img src="/img/voluntarios/voluntarios-bajas-tt-cuenca-2.webp" alt="">
+        </div>
+        <img class="hero-recorte" src="/img/voluntarios/voluntarios-bajas-tt-cuenca-2-removebg.png" alt="Miembro de la organización con el chaleco de Cuenca Motor 4x4">
+    </section>
+
+    <!-- INTRO -->
+    <section class="vol-tareas">
+        <div class="vol-foto reveal">
+            <div class="vol-ventana">
+                <img src="/img/voluntarios/voluntarios-bajas-tt-cuenca.webp" alt="Voluntarios controlando una zona de público durante el rally" loading="lazy">
+            </div>
+        </div>
+        <div class="vol-texto reveal">
+            <p class="etiqueta-seccion">Voluntarios Baja TT Cuenca {EVENTO.anio}</p>
+            <h2 class="titulo-bloque">Vive el rally desde dentro</h2>
+            <p class="vol-parrafo">La Baja TT Cuenca {EVENTO.anio} busca voluntarios para colaborar en distintas tareas de
+                organización durante el desarrollo de la prueba.</p>
+            <p class="vol-parrafo">Si te apasiona el mundo del motor, eres aficionado al automovilismo o al 4×4 y quieres
+                vivir una competición desde dentro, esta es tu oportunidad. Ser voluntario te permitirá conocer el rally
+                desde una perspectiva única y <strong>formar parte activa de su organización</strong>.</p>
+
+            <!-- REQUISITOS -->
+            <h3 class="vol-subtitulo">Requisitos</h3>
+            <ol class="vol-requisitos">
+                <li><span><strong>Ser mayor de edad</strong>, o acudir acompañado de una persona adulta que se haga responsable.</span></li>
+                <li><span><strong>Plena disponibilidad y compromiso</strong> para realizar las funciones que asigne la Organización durante el fin de semana de la prueba.</span></li>
+            </ol>
+            <p class="vol-nota">La Organización intentará compensar la colaboración de los voluntarios de la mejor manera posible.</p>
+        </div>
+    </section>
+
+    <!-- INSCRIPCIÓN -->
+    <section class="vol-inscripcion reveal">
+        <div>
+            <p class="etiqueta-seccion">Inscripción</p>
+            <h2 class="titulo-bloque">Apúntate a través del formulario</h2>
+            <p class="descripcion-bloque">La inscripción de voluntarios se realizará <strong>únicamente</strong> a través
+                del formulario oficial.</p>
+            <p class="vol-aviso">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+                No se atenderán inscripciones por correo electrónico ni por otros medios.
+            </p>
+        </div>
+        {EVENTO.formVoluntarios ? (
+            <a href={EVENTO.formVoluntarios} target="_blank" rel="noopener" class="boton-solicitud">
+                Inscribirse aquí
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17 17 7M7 7h10v10" />
+                </svg>
+            </a>
+        ) : (
+            <span class="boton-solicitud boton-proximamente" aria-disabled="true">Formulario próximamente</span>
+        )}
+    </section>
+
+    <!-- PATROCINADORES -->
+    <Patrocinadores />
+</BaseLayout>

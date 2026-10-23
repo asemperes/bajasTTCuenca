@@ -522,9 +522,21 @@
     }
 }
 @media (max-width: 640px) {
+    /* En móvil cada tarjeta va suelta, con aire entre ellas, para que no se
+       confundan los botones de una categoría con la foto de la siguiente */
     .cards-grid {
         grid-template-columns: 1fr;
-        gap: 1px;
+        gap: 1.75rem;
+        background: none;
+        border: none;
+        border-radius: 0;
+        overflow: visible;
+    }
+
+    .card {
+        border: 1.5px solid var(--borde-gris);
+        border-radius: 8px;
+        overflow: hidden;
     }
 
     .card-head {

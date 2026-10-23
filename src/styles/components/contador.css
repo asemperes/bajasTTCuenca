@@ -1,0 +1,47 @@
+/* Contador de la próxima edición (components/Contador.astro) */
+@layer components {
+
+.contador {
+    display: flex;
+    gap: .6rem;
+}
+
+/* Durante y después del evento no hay nada que contar */
+.contador[data-estado="durante"],
+.contador[data-estado="despues"] {
+    display: none;
+}
+
+.contador-unidad {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .35rem;
+    padding: 1rem .6rem .8rem;
+    background: var(--gris);
+    border: 1px solid var(--borde-gris);
+}
+
+.contador-num {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+}
+
+.contador-etiqueta {
+    font-size: .58rem;
+    font-weight: 600;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--text-gray);
+}
+
+@media (max-width: 500px) {
+    .contador {
+        gap: .4rem;
+    }
+}
+}

@@ -1,0 +1,66 @@
+---
+// Contador hasta el inicio de la próxima edición (fechas en config/evento.ts).
+// Además de actualizar los números, escribe el estado del evento en data-estado
+// ("antes", "durante" o "despues"), tanto en el propio contador como en el
+// elemento padre más cercano que tenga data-estado. Así cada página puede
+// cambiar su diseño según el estado sin tocar este componente.
+// Mientras el evento está en marcha o ha terminado, el contador se oculta solo.
+import '@/styles/components/contador.css';
+import { EVENTO } from '@/config/evento';
+---
+
+<div class="contador" role="timer" aria-live="off" data-inicio={EVENTO.inicio} data-fin={EVENTO.fin}>
+    <div class="contador-unidad">
+        <span class="contador-num" data-unidad="dias">--</span>
+        <span class="contador-etiqueta">Días</span>
+    </div>
+    <div class="contador-unidad">
+        <span class="contador-num" data-unidad="horas">--</span>
+        <span class="contador-etiqueta">Horas</span>
+    </div>
+    <div class="contador-unidad">
+        <span class="contador-num" data-unidad="minutos">--</span>
+        <span class="contador-etiqueta">Min</span>
+    </div>
+    <div class="contador-unidad">
+        <span class="contador-num" data-unidad="segundos">--</span>
+        <span class="contador-etiqueta">Seg</span>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll<HTMLElement>('.contador').forEach(contador => {
+        const inicio = new Date(contador.dataset.inicio!).getTime();
+        const fin = new Date(contador.dataset.fin!).getTime();
+        const zona = contador.parentElement?.closest<HTMLElement>('[data-estado]');
+        const num = (unidad: string) => contador.querySelector<HTMLElement>(`[data-unidad="${unidad}"]`)!;
+        const dosCifras = (n: number) => String(n).padStart(2, '0');
+
+        function ponerEstado(estado: string) {
+            contador.dataset.estado = estado;
+            if (zona) zona.dataset.estado = estado;
+        }
+
+        function actualizar() {
+            const ahora = Date.now();
+            if (ahora >= fin) {
+                ponerEstado('despues');
+                clearInterval(intervalo);
+                return;
+            }
+            if (ahora >= inicio) {
+                ponerEstado('durante');
+                return;
+            }
+            ponerEstado('antes');
+            const s = Math.floor((inicio - ahora) / 1000);
+            num('dias').textContent = String(Math.floor(s / 86400));
+            num('horas').textContent = dosCifras(Math.floor(s / 3600) % 24);
+            num('minutos').textContent = dosCifras(Math.floor(s / 60) % 60);
+            num('segundos').textContent = dosCifras(s % 60);
+        }
+
+        const intervalo = setInterval(actualizar, 1000);
+        actualizar();
+    });
+</script>

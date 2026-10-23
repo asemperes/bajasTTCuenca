@@ -149,6 +149,31 @@ main {
     border-bottom: 1px solid var(--borde-gris);
     margin-bottom: 2px;
 }
+/* Enlace discreto a los directos, con la tipografía de las etiquetas de la agenda */
+.agenda-directos {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    width: fit-content;
+    margin-top: 6px;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: color .2s;
+}
+.agenda-directos svg {
+    width: 16px;
+    height: 16px;
+    color: var(--principal);
+    transition: color .2s;
+}
+.agenda-directos:hover,
+.agenda-directos:hover svg {
+    color: var(--amarillo-principal);
+}
 .evento-card {
     background: var(--gris);
     color: var(--claro);

@@ -18,6 +18,12 @@
 
 }
 
+/* El logo es un enlace a inicio: se comporta como el antiguo div */
+.contenedor-logo {
+    display: flex;
+    flex-shrink: 0;
+}
+
 .contenedor-logo img {
     margin: 10px;
     height: clamp(25px, 55px, 70px);
@@ -50,17 +56,118 @@
     right: 6px;
 }
 
+/* Medidas comunes del botón "Inscribirse" y de los dos del desplegable */
+.boton-inscripcion,
+.submenu-inscripcion a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Medidas en rem: no dependen del tamaño de letra que herede cada botón */
+    min-width: 8.5rem;
+    height: 1.8rem;
+    line-height: 1;
+    font-size: .9rem;
+    box-sizing: border-box;
+}
+
 .boton-inscripcion {
+    /* Borde transparente para medir lo mismo que los botones con borde */
+    border: 1px solid transparent;
+    text-align: center;
+    white-space: nowrap;
     color: var(--claro);
     text-decoration: none;
     position: relative;
     z-index: 1000;
     transition: all 0.2s;
-    padding: 5px 8px;
+    padding: 0 8px;
     border-radius: 25px;
 
     background-image: linear-gradient(to right, var(--amarillo-principal), var(--principal));
+    /* El degradado también pinta bajo el borde transparente (si no, se repite y asoma por los lados) */
+    background-origin: border-box;
+}
 
+/* Desplegable de "Inscribirse": una "nube" flotando bajo la barra, con el mismo
+   fondo y borde que el header. El hueco entre los botones y el borde (6px + 1px
+   de borde) es el mismo que hay entre "Inscribirse" y el borde de la barra,
+   así su lado derecho queda alineado con el de la barra */
+.submenu-inscripcion {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: -7px;
+    right: -7px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 6px;
+    list-style: none;
+    background-color: var(--gris);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--principal);
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+    z-index: 999;
+}
+
+/* Puente invisible para que el ratón no "caiga" entre el botón y el desplegable */
+.contenedor-inscripcion::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 16px;
+}
+
+.contenedor-inscripcion:hover .submenu-inscripcion,
+.contenedor-inscripcion:focus-within .submenu-inscripcion {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Botones del desplegable: iguales que .boton-inscripcion */
+.submenu-inscripcion a {
+    color: var(--claro);
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0 8px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, var(--amarillo-principal), var(--principal));
+    background-origin: border-box;
+    transition: filter .2s;
+}
+
+.submenu-inscripcion a:hover {
+    filter: brightness(1.12);
+}
+
+.submenu-inscripcion::before {
+    content: "";
+    position: absolute;
+    width:25px;
+    height: 10px;
+    background-color: var(--color-oscuro);
+    border: 1px solid var(--principal);
+    top:-10px;
+    left:50%;
+    transform: translate(-50%);
+    z-index: -1000;
+}
+/* Enlaces secundarios bajo "Inscribirse" en el menú móvil */
+.nav-mobile .nav-mobile-sub {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: -1.2rem;
+}
+
+.nav-mobile .nav-mobile-sub a {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    color: var(--text-light-gray);
+    letter-spacing: .1em;
 }
 
 .contenedor-navegacion nav .nav-escritorio {
@@ -343,7 +450,7 @@
     }
 }
 
-@media (max-width: 1072px) {
+@media (max-width: 1092px) {
     .header {
         flex-direction: row;
         align-items: center;

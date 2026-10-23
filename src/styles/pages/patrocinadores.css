@@ -10,9 +10,10 @@
 }
 .hero-body {
     padding: 60px 56px 52px;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+    align-items: end;
+    gap: 56px;
     position: relative;
     overflow: hidden;
     max-width: 1440px;
@@ -20,7 +21,8 @@
     margin: 0 auto;
 }
 .hero-body::after {
-    content: '2026';
+    /* El año llega desde src/config/evento.ts (variable --anio) */
+    content: var(--anio);
     position: absolute;
     right: 40px;
     top: 50%;
@@ -29,7 +31,7 @@
     font-size: 180px;
     font-weight: 900;
     color: var(--claro);
-    opacity: .2;
+    opacity: .06;
 
     letter-spacing: -4px;
     line-height: 1;
@@ -72,24 +74,6 @@
     position: relative;
     z-index: 1;
 }
-.hero-bottom {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 1;
-}
-.hero-stat {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    padding-right: 32px;
-    border-right: 1px solid var(--borde-gris);
-}
-.hero-stat:last-of-type {
-    border-right: none;
-}
 .stat-num {
     font-family: var(--font-display);
     font-size: 36px;
@@ -104,6 +88,139 @@
     color: var(--text-gray);
     font-weight: 400;
 }
+/* Botón del hero */
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-start;
+    width: max-content;
+    padding: 12px 22px;
+    background: var(--principal);
+    color: var(--claro);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--principal);
+    border-radius: 2px;
+    transition: background .2s, border-color .2s, color .2s;
+}
+.hero-cta:hover {
+    background: transparent;
+    border-color: var(--amarillo-principal);
+    color: var(--amarillo-principal);
+}
+.hero-cta svg {
+    transition: transform .2s;
+}
+.hero-cta:hover svg {
+    transform: translateX(3px);
+}
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Índice de categorías del hero */
+.hero-indice {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--borde-gris);
+    background: rgba(15, 15, 15, .6);
+    backdrop-filter: blur(6px);
+}
+.indice-total {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 22px;
+    border-bottom: 1px solid var(--borde-gris);
+}
+.indice-item {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 22px;
+    color: var(--text-claro);
+    text-decoration: none;
+    border-bottom: 1px solid var(--borde-gris);
+    transition: background .2s, color .2s;
+}
+.indice-item:last-child {
+    border-bottom: none;
+}
+.indice-num {
+    font-family: var(--font-display);
+    font-size: 30px;
+    line-height: 1;
+    color: var(--amarillo-principal);
+}
+.indice-nombre {
+    font-family: var(--font-display);
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.indice-item svg {
+    color: var(--text-gray);
+    transition: transform .2s, color .2s;
+}
+.indice-item:hover {
+    background: var(--gris-claro);
+    color: var(--claro);
+}
+.indice-item:hover svg {
+    color: var(--amarillo-principal);
+    transform: translateY(2px);
+}
+
+/* Cinta de logos */
+.hero-cinta {
+    overflow: hidden;
+    border-top: 1px solid var(--borde-gris);
+    padding: 18px 0;
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.cinta-pista {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    animation: cinta 70s linear infinite;
+}
+.hero-cinta:hover .cinta-pista {
+    animation-play-state: paused;
+}
+.cinta-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 60px;
+    padding: 8px 12px;
+    background: var(--claro);
+    border-radius: 2px;
+    opacity: .85;
+}
+.cinta-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+@keyframes cinta {
+    to { transform: translateX(calc(-50% - 6px)); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .cinta-pista {
+        animation: none;
+    }
+}
+
 .nav-link:hover {
     color: var(--amarillo-principal);
     background: var(--gris-claro);
@@ -116,33 +233,31 @@
 .sponsors-category {
     border-bottom: 1px solid var(--borde-gris);
     padding: 56px;
-    scroll-margin-top: 48px;
+    /* Deja hueco para la cabecera fija (~95px) al saltar desde el índice */
+    scroll-margin-top: 100px;
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 56px;
     align-items: start;
 }
+/* La última categoría no lleva borde: ya lo pone el footer */
+.sponsors-category:last-child {
+    border-bottom: none;
+}
 .cat-sidebar {
     position: sticky;
-    top: 56px;
-}
-.cat-number {
-    font-family: var(--font-display);
-    font-size: 80px;
-    font-weight: 900;
-    color: var(--gris-claro);
-    line-height: 1;
-    margin-bottom: 6px;
-    letter-spacing: -2px;
+    /* Por debajo de la cabecera fija (~95px de alto contando su margen) */
+    top: 115px;
 }
 .cat-name {
     font-family: var(--font-display);
-    font-size: 15px;
-    font-weight: 700;
+    font-size: clamp(30px, 3.2vw, 40px);
+    font-weight: 400;
     color: var(--claro);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 14px;
 }
 .cat-line {
     width: 28px;
@@ -253,8 +368,9 @@ span.sponsor-card {
     .cat-sidebar {
         position: static;
     }
-    .cat-number {
-        font-size: 56px;
+    .hero-body {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
     .hero-body {
         padding: 40px 24px 36px;

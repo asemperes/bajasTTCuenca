@@ -21,9 +21,9 @@ Plataforma web oficial diseñada para la **Baja TT Cuenca**, centrada en ofrecer
 ## 💻 Desarrollo
 
 ```bash
-npm install      # instalar dependencias
-npm run dev      # servidor local en http://localhost:4321
-npm run build    # genera la web en dist/
+pnpm install     # instalar dependencias
+pnpm dev         # servidor local en http://localhost:4321
+pnpm build       # genera la web en dist/
 ```
 
 ## 📁 Estructura
@@ -34,6 +34,7 @@ src/
   config/evento.ts      Año y datos de la edición actual ← cambiar aquí cada año
   layouts/BaseLayout    <head> común, cabecera, footer y scripts globales
   components/           Header, Footer, Patrocinadores
+  data/patrocinadores.ts  Lista de patrocinadores por categoría
   pages/                Una página por ruta (noticias/AAAA/slug.astro = cada noticia)
   styles/
     global.css          Tailwind + capas CSS + colores como clases de Tailwind
@@ -60,10 +61,16 @@ Edita `src/config/evento.ts`: el año, las ediciones (XIII Rallye, II Baja...) y
 
 [X] Multimedia: Galería de fotos (falta la galería de vídeos).
 
-[X] Contacto: Consultas técnicas.
+[X] Contacto: Consultas técnicas, temas de contacto y cuenta atrás de la próxima edición.
 
 [X] Patrocinadores: Espacio dedicado a las marcas que apoyan la Baja TT Cuenca.
 
 [X] Inscripciones: Enlaces externos para inscribirse en cada competición, ver reglamentos etc...
 
-[ ] Inscripciones Voluntarios: Voluntarios que quieran contribuir a cuencamotor.
+[X] Prensa: Normas y datos para la acreditación de medios.
+
+[X] Inscripciones Voluntarios: Requisitos e inscripción (falta el enlace al formulario de Google en `src/config/evento.ts`).
+
+[ ] Galería de vídeos en Multimedia.
+
+[ ] Nav móvil: rediseñar el menú de navegación para móvil (incluidos los submenús).

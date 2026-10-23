@@ -11,12 +11,20 @@ export const EVENTO = {
   plazoPrensa: '28 de abril de 2027',
   // TODO: confirmar las fechas reales de 2027
   fechas: '7, 8, 9 y 10 de mayo de 2027',
+  // Inicio y fin exactos para la cuenta atrás (hora peninsular, +02:00 en mayo)
+  inicio: '2027-05-07T00:00:00+02:00',
+  fin: '2027-05-10T23:59:59+02:00',
+  // Formulario de Google para voluntarios.
+  // TODO: pegar la URL. Mientras esté vacía, el botón sale como "Próximamente"
+  formVoluntarios: '',
 };
 
 export const SITIO = {
   nombre: 'Baja TT Cuenca',
   autor: 'Club Deportivo Cuenca Motor 4x4',
   email: 'cuencamotor4x4@hotmail.com',
+  // Canal de directos de las carreras. Si se deja vacío, no se muestra en ningún sitio
+  youtube: 'https://www.youtube.com/@bajacuenca2026grabacionendirec',
   gaId: 'G-62VNT8HSR0',
   cookieYes: 'https://cdn-cookieyes.com/client_data/557454200c22beb96a436e76/script.js',
 };
